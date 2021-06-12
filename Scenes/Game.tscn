@@ -434,10 +434,10 @@ __meta__ = {
 }
 
 [node name="OptionButton" type="OptionButton" parent="AgencyPanel/CenterContainer"]
-margin_left = 158.0
-margin_top = 264.0
-margin_right = 241.0
-margin_bottom = 286.0
+margin_left = 144.0
+margin_top = 263.0
+margin_right = 256.0
+margin_bottom = 287.0
 text = "Agency A"
 
 [node name="NewspaperCreationPanel" type="Panel" parent="."]
@@ -471,9 +471,9 @@ rect_min_size = Vector2( 400, 400 )
 scroll_horizontal_enabled = false
 
 [node name="Paper" type="VBoxContainer" parent="NewspaperCreationPanel/CenterContainer/ScrollContainer"]
-margin_left = 94.0
-margin_right = 305.0
-margin_bottom = 271.0
+margin_left = 90.0
+margin_right = 309.0
+margin_bottom = 279.0
 size_flags_horizontal = 6
 alignment = 1
 
@@ -566,10 +566,10 @@ __meta__ = {
 }
 
 [node name="VBoxContainer" type="VBoxContainer" parent="BillPanel/CenterContainer"]
-margin_left = 142.0
-margin_top = 142.0
-margin_right = 257.0
-margin_bottom = 408.0
+margin_left = 124.0
+margin_top = 137.0
+margin_right = 275.0
+margin_bottom = 413.0
 
 [node name="HSeparator5" type="HSeparator" parent="BillPanel/CenterContainer/VBoxContainer"]
 margin_right = 115.0
@@ -681,7 +681,6 @@ margin_right = 200.0
 margin_bottom = 60.0
 text = "£0"
 align = 1
-
 [connection signal="pressed" from="EventPanel/CenterContainer/VBoxContainer/EventButton" to="." method="_on_EventButton_pressed"]
 [connection signal="item_selected" from="AgencyPanel/CenterContainer/OptionButton" to="." method="_on_OptionButton_item_selected"]
 [connection signal="pressed" from="NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper/Publish" to="." method="_on_Publish_pressed"]
