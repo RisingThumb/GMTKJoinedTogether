@@ -25,11 +25,24 @@
                 "images": [
                     {
                         "text": "res://Art/RatsKillingPerson.jpg",
-                        
+                        "discourse": 100,
+                        "money": 10000
                     }
                 ],
-                "interviews": [],
-                "studies": []
+                "interviews": [
+                    {
+                        "text": "I am a art expert and I am scared",
+                        "discourse": 100,
+                        "money": 234834095834
+                    }
+                ],
+                "studies": [
+                    {
+                        "text": "Arts are bad mostly but sometimes ok",
+                        "discourse": 23904,
+                        "money": 092384203948
+                    }
+                ]
             }
         }
     }
