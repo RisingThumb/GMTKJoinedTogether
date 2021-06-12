@@ -39,6 +39,8 @@ func setupTopicDropDowns():
 	var captions = ["Colorised: Chungal Fungi"]
 	var studies = ["10% liklihood of making a chungus big"]
 	
+	
+	
 	for title in titles:
 		titleChoice.add_item(title)
 	for text in texts:
