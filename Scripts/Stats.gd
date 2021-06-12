@@ -14,5 +14,5 @@ func set_discord(newDiscord: int) -> void:
 	$HSlider.value = newDiscord
 
 func set_money(newMoney: int) -> void:
-	$MoneyAmount.text = "£ %d" % newMoney
+	$HBoxContainer/MoneyAmount.text = str(newMoney)
 	
