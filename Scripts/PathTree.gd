@@ -6,13 +6,14 @@ var path_tree_states
 class State:
 	var name: String
 	var description: String
+	var event_index: int
 	
 	var children: Array
 	var ranges: Array
 	
 	func get_name():
 		return name
-		
+	
 	func get_description():
 		return description
 	
@@ -22,9 +23,10 @@ class State:
 	func get_ranges():
 		return ranges
 		
-	func _init(_name: String, _description: String):
+	func _init(_name: String, _description: String, _event_index: int):
 		name = _name
 		description = _description
+		event_index = _event_index
 	
 	func _set_children(_children: Array):
 		children = _children
@@ -53,7 +55,7 @@ func _construct_tree(data):
 	var states = []
 	
 	for object in data["states"]:
-		states.push_back(State.new(object["name"], object["description"]))
+		states.push_back(State.new(object["name"], object["description"], object["event_index"]))
 	
 	for association in data["associations"]:
 		var to = association["to"]
