@@ -3,6 +3,12 @@ extends Control
 
 var day = 1
 var money = 30
+onready var topicLabel = $NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper/Topic
+onready var titleChoice = $NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper/ArticleTitle
+onready var textChoice = $NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper/TextChoice
+onready var imageChoice = $NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper/Imagechoice
+onready var captionChoice = $NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper/CaptionChoice
+onready var studyChoice = $NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper/StudyChoice
 
 func _ready():
 	$DayPanel.visible = true
@@ -23,8 +29,26 @@ func setupAgenciesAvailable():
 	$AgencyPanel/CenterContainer/OptionButton.add_item("Agency day 1")
 
 func setupTopicDropDowns():
+	for a in [titleChoice, textChoice, imageChoice, captionChoice, studyChoice]:
+		a.clear()
+	# populate this guy
+	var titles = ["Big chungus, has fungus"]
+	var texts = ["Big chungus has escaped, be careful"]
+	var images = [load("res://icon.png")]
+	var captions = ["Colorised: Chungal Fungi"]
+	var studies = ["10% liklihood of making a chungus big"]
+	
+	for title in titles:
+		titleChoice.add_item(title)
+	for text in texts:
+		textChoice.add_item(text)
+	for image in images:
+		imageChoice.add_icon_item(image, "")
+	for caption in captions:
+		captionChoice.add_item(caption)
+	for study in studies:
+		studyChoice.add_item(study)
 	# Gets called when the agency is selected.
-	pass
 
 
 func _on_OptionButton_item_selected(index):
