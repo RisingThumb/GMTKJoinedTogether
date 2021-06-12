@@ -83,14 +83,14 @@ func _on_Publish_pressed() -> void:
 	calc.add_study(studyChoice.selected)
 	money = calc.get_money()
 	discord = calc.get_discord()
-	$Stats.set_discord(discord)
-	$Stats.set_money(money)
+	$BillPanel2/Stats.set_discord(discord)
+	$BillPanel2/Stats.set_money(money)
 	
 	$NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper/Publish.disabled = true
 
 
 func _on_FinishFinanceButton_pressed() -> void:
 	
-	$Stats.set_money(money)
+	$BillPanel2/Stats.set_money(money)
 	$Fader.play("BillFadeout")
 	dayForward()

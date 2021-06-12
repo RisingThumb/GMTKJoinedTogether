@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://Scripts/DayLabel.gd" type="Script" id=1]
 [ext_resource path="res://Scripts/Game.gd" type="Script" id=2]
@@ -7,6 +7,9 @@
 [ext_resource path="res://Themes/NewspaperTheme.tres" type="Theme" id=5]
 [ext_resource path="res://Themes/BodyText.tres" type="DynamicFont" id=6]
 [ext_resource path="res://Art/Background.png" type="Texture" id=7]
+[ext_resource path="res://Scripts/Billing.gd" type="Script" id=8]
+[ext_resource path="res://Fonts/JMH Typewriter.ttf" type="DynamicFontData" id=9]
+[ext_resource path="res://Themes/SymbolFont.tres" type="DynamicFont" id=10]
 
 [sub_resource type="Animation" id=1]
 resource_name = "AgencyPanelFadeOut"
@@ -320,6 +323,11 @@ tracks/3/keys = {
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
 
+[sub_resource type="DynamicFont" id=6]
+size = 18
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 9 )
+
 [node name="Game" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -557,6 +565,10 @@ margin_right = 200.0
 margin_bottom = 275.0
 rect_min_size = Vector2( 400, 550 )
 theme = ExtResource( 5 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="CenterContainer" type="CenterContainer" parent="BillPanel"]
 anchor_right = 1.0
@@ -590,19 +602,19 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="CheckBox" type="CheckButton" parent="BillPanel/CenterContainer/VBoxContainer"]
+[node name="CheckBill" type="CheckButton" parent="BillPanel/CenterContainer/VBoxContainer"]
 margin_top = 44.0
 margin_right = 115.0
 margin_bottom = 76.0
 text = "Bills"
 
-[node name="CheckBox2" type="CheckButton" parent="BillPanel/CenterContainer/VBoxContainer"]
+[node name="CheckConnection" type="CheckButton" parent="BillPanel/CenterContainer/VBoxContainer"]
 margin_top = 80.0
 margin_right = 115.0
 margin_bottom = 112.0
 text = "Connections"
 
-[node name="CheckBox3" type="CheckButton" parent="BillPanel/CenterContainer/VBoxContainer"]
+[node name="CheckInterview" type="CheckButton" parent="BillPanel/CenterContainer/VBoxContainer"]
 margin_top = 116.0
 margin_right = 115.0
 margin_bottom = 148.0
@@ -646,7 +658,7 @@ __meta__ = {
 margin_top = 252.0
 margin_right = 115.0
 margin_bottom = 266.0
-text = "MoneySorted"
+text = "Pay"
 
 [node name="Fader" type="AnimationPlayer" parent="."]
 anims/AgencyPanelFadeOut = SubResource( 1 )
@@ -655,12 +667,25 @@ anims/DayPanelFadeOut = SubResource( 3 )
 anims/EventPanelFadeOut = SubResource( 4 )
 anims/NewspaperCreationPanelFadeOut = SubResource( 5 )
 
-[node name="Stats" type="VBoxContainer" parent="."]
+[node name="BillPanel2" type="Panel" parent="."]
 anchor_left = 0.5
 anchor_right = 0.5
 margin_left = -100.0
 margin_right = 100.0
 margin_bottom = 40.0
+rect_min_size = Vector2( 200, 60 )
+theme = ExtResource( 5 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Stats" type="VBoxContainer" parent="BillPanel2"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -100.0
+margin_right = 100.0
+margin_bottom = 60.0
 rect_min_size = Vector2( 200, 0 )
 theme = ExtResource( 5 )
 script = ExtResource( 4 )
@@ -668,18 +693,34 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="HSlider" type="HSlider" parent="Stats"]
+[node name="HSlider" type="HSlider" parent="BillPanel2/Stats"]
 margin_right = 200.0
 margin_bottom = 32.0
 min_value = -500.0
 max_value = 500.0
 editable = false
 
-[node name="MoneyAmount" type="Label" parent="Stats"]
+[node name="HBoxContainer" type="HBoxContainer" parent="BillPanel2/Stats"]
 margin_top = 36.0
 margin_right = 200.0
 margin_bottom = 60.0
-text = "£0"
+alignment = 1
+
+[node name="Symbol" type="Label" parent="BillPanel2/Stats/HBoxContainer"]
+margin_left = 88.0
+margin_top = 4.0
+margin_right = 98.0
+margin_bottom = 20.0
+custom_fonts/font = ExtResource( 10 )
+text = "$"
+align = 1
+
+[node name="MoneyAmount" type="Label" parent="BillPanel2/Stats/HBoxContainer"]
+margin_left = 102.0
+margin_right = 112.0
+margin_bottom = 24.0
+custom_fonts/font = SubResource( 6 )
+text = "0"
 align = 1
 [connection signal="pressed" from="EventPanel/CenterContainer/VBoxContainer/EventButton" to="." method="_on_EventButton_pressed"]
 [connection signal="item_selected" from="AgencyPanel/CenterContainer/OptionButton" to="." method="_on_OptionButton_item_selected"]
