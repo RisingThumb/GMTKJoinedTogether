@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Scripts/DayLabel.gd" type="Script" id=1]
 [ext_resource path="res://Scripts/Game.gd" type="Script" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://Scripts/Stats.gd" type="Script" id=4]
 [ext_resource path="res://Themes/NewspaperTheme.tres" type="Theme" id=5]
 [ext_resource path="res://Themes/BodyText.tres" type="DynamicFont" id=6]
+[ext_resource path="res://Art/Background.png" type="Texture" id=7]
 
 [sub_resource type="Animation" id=1]
 resource_name = "AgencyPanelFadeOut"
@@ -327,18 +328,25 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Panel" type="Panel" parent="."]
+[node name="Panel" type="TextureRect" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
 theme = ExtResource( 5 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+texture = ExtResource( 7 )
+expand = true
+stretch_mode = 1
 
 [node name="DayPanel" type="Panel" parent="."]
 visible = false
-anchor_right = 1.0
-anchor_bottom = 1.0
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -200.0
+margin_top = -275.0
+margin_right = 200.0
+margin_bottom = 275.0
+rect_min_size = Vector2( 400, 550 )
 theme = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -350,18 +358,25 @@ anchor_bottom = 1.0
 theme = ExtResource( 5 )
 
 [node name="DayLabel" type="Label" parent="DayPanel/CenterContainer"]
-margin_left = 935.0
-margin_top = 528.0
-margin_right = 985.0
-margin_bottom = 552.0
+margin_left = 175.0
+margin_top = 263.0
+margin_right = 225.0
+margin_bottom = 287.0
 theme = ExtResource( 5 )
 text = "Day 1"
 script = ExtResource( 1 )
 
 [node name="EventPanel" type="Panel" parent="."]
 visible = false
-anchor_right = 1.0
-anchor_bottom = 1.0
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -200.0
+margin_top = -275.0
+margin_right = 200.0
+margin_bottom = 275.0
+rect_min_size = Vector2( 400, 550 )
 theme = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -376,10 +391,10 @@ __meta__ = {
 }
 
 [node name="VBoxContainer" type="VBoxContainer" parent="EventPanel/CenterContainer"]
-margin_left = 905.0
-margin_top = 514.0
-margin_right = 1015.0
-margin_bottom = 566.0
+margin_left = 145.0
+margin_top = 249.0
+margin_right = 255.0
+margin_bottom = 301.0
 theme = ExtResource( 5 )
 
 [node name="EventLabel" type="Label" parent="EventPanel/CenterContainer/VBoxContainer"]
@@ -397,9 +412,15 @@ text = "Ok"
 
 [node name="AgencyPanel" type="Panel" parent="."]
 visible = false
-modulate = Color( 1, 1, 1, 0 )
-anchor_right = 1.0
-anchor_bottom = 1.0
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -200.0
+margin_top = -275.0
+margin_right = 200.0
+margin_bottom = 275.0
+rect_min_size = Vector2( 400, 550 )
 theme = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -413,16 +434,23 @@ __meta__ = {
 }
 
 [node name="OptionButton" type="OptionButton" parent="AgencyPanel/CenterContainer"]
-margin_left = 918.0
-margin_top = 529.0
-margin_right = 1001.0
-margin_bottom = 551.0
+margin_left = 158.0
+margin_top = 264.0
+margin_right = 241.0
+margin_bottom = 286.0
 text = "Agency A"
 
 [node name="NewspaperCreationPanel" type="Panel" parent="."]
 visible = false
-anchor_right = 1.0
-anchor_bottom = 1.0
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -200.0
+margin_top = -275.0
+margin_right = 200.0
+margin_bottom = 275.0
+rect_min_size = Vector2( 400, 550 )
 theme = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -436,10 +464,9 @@ __meta__ = {
 }
 
 [node name="ScrollContainer" type="ScrollContainer" parent="NewspaperCreationPanel/CenterContainer"]
-margin_left = 760.0
-margin_top = 340.0
-margin_right = 1160.0
-margin_bottom = 740.0
+margin_top = 75.0
+margin_right = 400.0
+margin_bottom = 475.0
 rect_min_size = Vector2( 400, 400 )
 scroll_horizontal_enabled = false
 
@@ -451,78 +478,84 @@ size_flags_horizontal = 6
 alignment = 1
 
 [node name="HSeparator3" type="HSeparator" parent="NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper"]
-margin_right = 151.0
+margin_right = 211.0
 margin_bottom = 4.0
 
 [node name="Topic" type="Label" parent="NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper"]
 margin_top = 8.0
-margin_right = 151.0
-margin_bottom = 22.0
+margin_right = 211.0
+margin_bottom = 32.0
 text = "Topic is ABCDEFGHIJK"
 align = 1
 
 [node name="HSeparator2" type="HSeparator" parent="NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper"]
-margin_top = 26.0
-margin_right = 151.0
-margin_bottom = 30.0
+margin_top = 36.0
+margin_right = 211.0
+margin_bottom = 40.0
 
 [node name="ArticleTitle" type="OptionButton" parent="NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper"]
-margin_top = 34.0
-margin_right = 151.0
-margin_bottom = 54.0
+margin_top = 44.0
+margin_right = 211.0
+margin_bottom = 66.0
 
 [node name="TextChoice" type="OptionButton" parent="NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper"]
-margin_top = 58.0
-margin_right = 151.0
-margin_bottom = 78.0
+margin_top = 70.0
+margin_right = 211.0
+margin_bottom = 92.0
 text = "Select Introduction"
 
 [node name="Imagechoice" type="OptionButton" parent="NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper"]
-margin_left = 29.0
-margin_top = 82.0
-margin_right = 122.0
-margin_bottom = 152.0
+margin_left = 61.0
+margin_top = 96.0
+margin_right = 149.0
+margin_bottom = 160.0
 size_flags_horizontal = 4
 icon = ExtResource( 3 )
 items = [ "", ExtResource( 3 ), false, 0, null ]
 selected = 0
 
 [node name="CaptionChoice" type="OptionButton" parent="NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper"]
-margin_top = 156.0
-margin_right = 151.0
-margin_bottom = 176.0
+margin_top = 164.0
+margin_right = 211.0
+margin_bottom = 186.0
 text = "Select Caption"
 
 [node name="StudyChoice" type="OptionButton" parent="NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper"]
-margin_top = 180.0
-margin_right = 151.0
-margin_bottom = 200.0
+margin_top = 190.0
+margin_right = 211.0
+margin_bottom = 212.0
 text = "Select Study"
 
 [node name="HSeparator" type="HSeparator" parent="NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper"]
-margin_top = 204.0
-margin_right = 151.0
-margin_bottom = 208.0
+margin_top = 216.0
+margin_right = 211.0
+margin_bottom = 220.0
 
 [node name="Publish" type="Button" parent="NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper"]
-margin_left = 46.0
-margin_top = 212.0
-margin_right = 105.0
-margin_bottom = 251.0
+margin_left = 82.0
+margin_top = 224.0
+margin_right = 129.0
+margin_bottom = 263.0
 rect_min_size = Vector2( 0, 39 )
 size_flags_horizontal = 4
 text = "Publish"
 
 [node name="HSeparator4" type="HSeparator" parent="NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper"]
-margin_top = 255.0
-margin_right = 151.0
-margin_bottom = 259.0
+margin_top = 267.0
+margin_right = 211.0
+margin_bottom = 271.0
 
 [node name="BillPanel" type="Panel" parent="."]
 visible = false
-modulate = Color( 1, 1, 1, 0 )
-anchor_right = 1.0
-anchor_bottom = 1.0
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -200.0
+margin_top = -275.0
+margin_right = 200.0
+margin_bottom = 275.0
+rect_min_size = Vector2( 400, 550 )
 theme = ExtResource( 5 )
 
 [node name="CenterContainer" type="CenterContainer" parent="BillPanel"]
@@ -533,25 +566,25 @@ __meta__ = {
 }
 
 [node name="VBoxContainer" type="VBoxContainer" parent="BillPanel/CenterContainer"]
-margin_left = 902.0
-margin_top = 407.0
-margin_right = 1017.0
-margin_bottom = 673.0
+margin_left = 142.0
+margin_top = 142.0
+margin_right = 257.0
+margin_bottom = 408.0
 
 [node name="HSeparator5" type="HSeparator" parent="BillPanel/CenterContainer/VBoxContainer"]
-margin_right = 151.0
+margin_right = 115.0
 margin_bottom = 4.0
 
 [node name="Label" type="Label" parent="BillPanel/CenterContainer/VBoxContainer"]
 margin_top = 8.0
-margin_right = 151.0
+margin_right = 115.0
 margin_bottom = 32.0
 text = "Finances"
 align = 1
 
 [node name="HSeparator6" type="HSeparator" parent="BillPanel/CenterContainer/VBoxContainer"]
 margin_top = 36.0
-margin_right = 151.0
+margin_right = 115.0
 margin_bottom = 40.0
 __meta__ = {
 "_edit_use_anchors_": false
@@ -559,25 +592,25 @@ __meta__ = {
 
 [node name="CheckBox" type="CheckButton" parent="BillPanel/CenterContainer/VBoxContainer"]
 margin_top = 44.0
-margin_right = 151.0
+margin_right = 115.0
 margin_bottom = 76.0
 text = "Bills"
 
 [node name="CheckBox2" type="CheckButton" parent="BillPanel/CenterContainer/VBoxContainer"]
 margin_top = 80.0
-margin_right = 151.0
+margin_right = 115.0
 margin_bottom = 112.0
 text = "Connections"
 
 [node name="CheckBox3" type="CheckButton" parent="BillPanel/CenterContainer/VBoxContainer"]
 margin_top = 116.0
-margin_right = 151.0
+margin_right = 115.0
 margin_bottom = 148.0
 text = "Interview"
 
 [node name="Money" type="HSeparator" parent="BillPanel/CenterContainer/VBoxContainer"]
 margin_top = 152.0
-margin_right = 151.0
+margin_right = 115.0
 margin_bottom = 156.0
 __meta__ = {
 "_edit_use_anchors_": false
@@ -585,25 +618,25 @@ __meta__ = {
 
 [node name="CurrentMoney" type="Label" parent="BillPanel/CenterContainer/VBoxContainer"]
 margin_top = 160.0
-margin_right = 151.0
+margin_right = 115.0
 margin_bottom = 184.0
 text = "$10"
 
 [node name="CurrentExpenses" type="Label" parent="BillPanel/CenterContainer/VBoxContainer"]
 margin_top = 188.0
-margin_right = 151.0
+margin_right = 115.0
 margin_bottom = 212.0
 text = "-$5"
 
 [node name="NewMoneyAmount" type="Label" parent="BillPanel/CenterContainer/VBoxContainer"]
 margin_top = 216.0
-margin_right = 151.0
+margin_right = 115.0
 margin_bottom = 240.0
 text = "$5"
 
 [node name="Money2" type="HSeparator" parent="BillPanel/CenterContainer/VBoxContainer"]
 margin_top = 244.0
-margin_right = 151.0
+margin_right = 115.0
 margin_bottom = 248.0
 __meta__ = {
 "_edit_use_anchors_": false
@@ -611,8 +644,8 @@ __meta__ = {
 
 [node name="FinishFinanceButton" type="Button" parent="BillPanel/CenterContainer/VBoxContainer"]
 margin_top = 252.0
-margin_right = 151.0
-margin_bottom = 276.0
+margin_right = 115.0
+margin_bottom = 266.0
 text = "MoneySorted"
 
 [node name="Fader" type="AnimationPlayer" parent="."]
