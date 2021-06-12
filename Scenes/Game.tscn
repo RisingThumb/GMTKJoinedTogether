@@ -336,9 +336,11 @@ theme = ExtResource( 5 )
 texture = ExtResource( 7 )
 expand = true
 stretch_mode = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="DayPanel" type="Panel" parent="."]
-visible = false
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -393,9 +395,9 @@ __meta__ = {
 
 [node name="VBoxContainer" type="VBoxContainer" parent="EventPanel/CenterContainer"]
 margin_left = 145.0
-margin_top = 249.0
+margin_top = 241.0
 margin_right = 255.0
-margin_bottom = 301.0
+margin_bottom = 309.0
 theme = ExtResource( 5 )
 
 [node name="EventLabel" type="Label" parent="EventPanel/CenterContainer/VBoxContainer"]
@@ -403,16 +405,27 @@ margin_right = 110.0
 margin_bottom = 24.0
 text = "Event name"
 
-[node name="EventButton" type="Button" parent="EventPanel/CenterContainer/VBoxContainer"]
+[node name="HSeparator" type="HSeparator" parent="EventPanel/CenterContainer/VBoxContainer"]
 margin_top = 28.0
 margin_right = 110.0
-margin_bottom = 52.0
+margin_bottom = 32.0
+theme = ExtResource( 5 )
+
+[node name="EventButton" type="Button" parent="EventPanel/CenterContainer/VBoxContainer"]
+margin_top = 36.0
+margin_right = 110.0
+margin_bottom = 60.0
 theme = ExtResource( 5 )
 custom_fonts/font = ExtResource( 6 )
 text = "Ok"
 
+[node name="HSeparator2" type="HSeparator" parent="EventPanel/CenterContainer/VBoxContainer"]
+margin_top = 64.0
+margin_right = 110.0
+margin_bottom = 68.0
+theme = ExtResource( 5 )
+
 [node name="AgencyPanel" type="Panel" parent="."]
-visible = false
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -547,7 +560,6 @@ margin_right = 211.0
 margin_bottom = 271.0
 
 [node name="BillPanel" type="Panel" parent="."]
-visible = false
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -573,80 +585,80 @@ margin_right = 271.0
 margin_bottom = 401.0
 
 [node name="HSeparator5" type="HSeparator" parent="BillPanel/CenterContainer/VBoxContainer"]
-margin_right = 115.0
+margin_right = 143.0
 margin_bottom = 4.0
 
 [node name="Label" type="Label" parent="BillPanel/CenterContainer/VBoxContainer"]
 margin_top = 8.0
-margin_right = 115.0
+margin_right = 143.0
 margin_bottom = 32.0
 text = "Finances"
 align = 1
 
 [node name="HSeparator6" type="HSeparator" parent="BillPanel/CenterContainer/VBoxContainer"]
 margin_top = 36.0
-margin_right = 115.0
+margin_right = 143.0
 margin_bottom = 40.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="CheckBox" type="CheckButton" parent="BillPanel/CenterContainer/VBoxContainer"]
+[node name="CheckBill" type="CheckButton" parent="BillPanel/CenterContainer/VBoxContainer"]
 margin_top = 44.0
-margin_right = 115.0
-margin_bottom = 76.0
+margin_right = 143.0
+margin_bottom = 68.0
 text = "Bills"
 
-[node name="CheckBox2" type="CheckButton" parent="BillPanel/CenterContainer/VBoxContainer"]
-margin_top = 80.0
-margin_right = 115.0
-margin_bottom = 112.0
+[node name="CheckConnection" type="CheckButton" parent="BillPanel/CenterContainer/VBoxContainer"]
+margin_top = 72.0
+margin_right = 143.0
+margin_bottom = 96.0
 text = "Connections"
 
-[node name="CheckBox3" type="CheckButton" parent="BillPanel/CenterContainer/VBoxContainer"]
-margin_top = 116.0
-margin_right = 115.0
-margin_bottom = 148.0
+[node name="CheckInterview" type="CheckButton" parent="BillPanel/CenterContainer/VBoxContainer"]
+margin_top = 100.0
+margin_right = 143.0
+margin_bottom = 124.0
 text = "Interview"
 
 [node name="Money" type="HSeparator" parent="BillPanel/CenterContainer/VBoxContainer"]
-margin_top = 152.0
-margin_right = 115.0
-margin_bottom = 156.0
+margin_top = 128.0
+margin_right = 143.0
+margin_bottom = 132.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="CurrentMoney" type="Label" parent="BillPanel/CenterContainer/VBoxContainer"]
-margin_top = 160.0
-margin_right = 115.0
-margin_bottom = 184.0
+margin_top = 136.0
+margin_right = 143.0
+margin_bottom = 160.0
 text = "$10"
 
 [node name="CurrentExpenses" type="Label" parent="BillPanel/CenterContainer/VBoxContainer"]
-margin_top = 188.0
-margin_right = 115.0
-margin_bottom = 212.0
+margin_top = 164.0
+margin_right = 143.0
+margin_bottom = 188.0
 text = "-$5"
 
 [node name="NewMoneyAmount" type="Label" parent="BillPanel/CenterContainer/VBoxContainer"]
-margin_top = 216.0
-margin_right = 115.0
-margin_bottom = 240.0
+margin_top = 192.0
+margin_right = 143.0
+margin_bottom = 216.0
 text = "$5"
 
 [node name="Money2" type="HSeparator" parent="BillPanel/CenterContainer/VBoxContainer"]
-margin_top = 244.0
-margin_right = 115.0
-margin_bottom = 248.0
+margin_top = 220.0
+margin_right = 143.0
+margin_bottom = 224.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="FinishFinanceButton" type="Button" parent="BillPanel/CenterContainer/VBoxContainer"]
-margin_top = 252.0
-margin_right = 115.0
-margin_bottom = 266.0
+margin_top = 228.0
+margin_right = 143.0
+margin_bottom = 252.0
 text = "MoneySorted"
 
 [node name="BillPanel2" type="Panel" parent="."]
@@ -657,6 +669,9 @@ margin_right = 150.0
 margin_bottom = 60.0
 rect_min_size = Vector2( 300, 60 )
 theme = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Stats" type="VBoxContainer" parent="BillPanel2"]
 anchor_right = 1.0
@@ -730,4 +745,7 @@ anims/NewspaperCreationPanelFadeOut = SubResource( 5 )
 [connection signal="pressed" from="EventPanel/CenterContainer/VBoxContainer/EventButton" to="." method="_on_EventButton_pressed"]
 [connection signal="item_selected" from="AgencyPanel/CenterContainer/OptionButton" to="." method="_on_OptionButton_item_selected"]
 [connection signal="pressed" from="NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper/Publish" to="." method="_on_Publish_pressed"]
+[connection signal="pressed" from="BillPanel/CenterContainer/VBoxContainer/CheckBill" to="." method="_on_CheckBill_pressed"]
+[connection signal="pressed" from="BillPanel/CenterContainer/VBoxContainer/CheckConnection" to="." method="_on_CheckConnection_pressed"]
+[connection signal="pressed" from="BillPanel/CenterContainer/VBoxContainer/CheckInterview" to="." method="_on_CheckInterview_pressed"]
 [connection signal="pressed" from="BillPanel/CenterContainer/VBoxContainer/FinishFinanceButton" to="." method="_on_FinishFinanceButton_pressed"]

@@ -5,7 +5,11 @@ var day = 1
 var money = 0
 var discord = 0
 var connections = 1
+var moneyCost = 0
 var interviews = false
+export(int) var billsCost = 100
+export(int) var connectionCost = 20
+export(int) var interviewCost = 30
 
 onready var topicLabel = $NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper/Topic
 onready var titleChoice = $NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper/ArticleTitle
@@ -36,6 +40,7 @@ func setupAgenciesAvailable() -> void:
 	var agencies = ArticleContent.get_agencies(day - 1)
 	for agency in agencies:
 		$AgencyPanel/CenterContainer/OptionButton.add_item(agency)
+	$EventPanel/CenterContainer/VBoxContainer/EventLabel.text = ArticleContent.get_event(day-1)
 
 func setupTopicDropDowns() -> void:
 	for a in [titleChoice, textChoice, imageChoice, captionChoice, studyChoice]:
@@ -88,9 +93,38 @@ func _on_Publish_pressed() -> void:
 	
 	$NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper/Publish.disabled = true
 
+func bankruptEnding():
+	print("You went bankrupt")
 
 func _on_FinishFinanceButton_pressed() -> void:
-	
+	money -= moneyCost
+	if moneyCost < 0 :
+		bankruptEnding()
+	if !$BillPanel/CenterContainer/VBoxContainer/CheckBill.pressed:
+		bankruptEnding()
 	$BillPanel2/Stats.set_money(money)
 	$Fader.play("BillFadeout")
 	dayForward()
+
+func recalculateBills():
+	moneyCost = 0
+	if $BillPanel/CenterContainer/VBoxContainer/CheckBill.pressed:
+		moneyCost+=billsCost
+	if $BillPanel/CenterContainer/VBoxContainer/CheckConnection.pressed:
+		moneyCost+=connectionCost
+	if $BillPanel/CenterContainer/VBoxContainer/CheckInterview.pressed:
+		moneyCost+=interviewCost
+	$BillPanel/CenterContainer/VBoxContainer/CurrentMoney.text = str(money)
+	$BillPanel/CenterContainer/VBoxContainer/CurrentExpenses.text = str(moneyCost)
+	$BillPanel/CenterContainer/VBoxContainer/NewMoneyAmount.text = str(money-moneyCost)
+
+func _on_CheckBill_pressed():
+	recalculateBills()
+
+
+func _on_CheckConnection_pressed():
+	recalculateBills()
+
+
+func _on_CheckInterview_pressed():
+	recalculateBills()
