@@ -121,6 +121,20 @@ tracks/3/keys = {
 "update": 0,
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
+tracks/4/type = "method"
+tracks/4/path = NodePath("Fader")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 2 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [ "DayPanelFadeOut", -1, 1.0, false ],
+"method": "play"
+} ]
+}
 
 [sub_resource type="Animation" id=3]
 length = 5.0
@@ -167,7 +181,7 @@ tracks/3/loop_wrap = true
 tracks/3/imported = false
 tracks/3/enabled = true
 tracks/3/keys = {
-"times": PoolRealArray( 0.5 ),
+"times": PoolRealArray( 3.8 ),
 "transitions": PoolRealArray( 1 ),
 "values": [ {
 "args": [  ],
@@ -318,8 +332,6 @@ __meta__ = {
 }
 
 [node name="DayPanel" type="Panel" parent="."]
-visible = false
-modulate = Color( 1, 1, 1, 0.495519 )
 anchor_right = 1.0
 anchor_bottom = 1.0
 __meta__ = {
@@ -573,16 +585,17 @@ margin_bottom = 176.0
 text = "$5"
 
 [node name="Money2" type="HSeparator" parent="BillPanel/CenterContainer/VBoxContainer"]
-margin_top = 118.0
+margin_top = 180.0
 margin_right = 107.0
-margin_bottom = 122.0
+margin_bottom = 184.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="FinishFinanceButton" type="Button" parent="BillPanel/CenterContainer/VBoxContainer"]
-margin_right = 12.0
-margin_bottom = 20.0
+margin_top = 188.0
+margin_right = 107.0
+margin_bottom = 208.0
 text = "MoneySorted"
 
 [node name="Fader" type="AnimationPlayer" parent="."]
@@ -591,6 +604,30 @@ anims/BillFadeout = SubResource( 2 )
 anims/DayPanelFadeOut = SubResource( 3 )
 anims/EventPanelFadeOut = SubResource( 4 )
 anims/NewspaperCreationPanelFadeOut = SubResource( 5 )
+
+[node name="Control" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -100.0
+margin_right = 100.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 200, 0 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HSlider" type="HSlider" parent="Control"]
+margin_right = 200.0
+margin_bottom = 16.0
+min_value = -500.0
+max_value = 500.0
+
+[node name="MoneyAmount" type="Label" parent="Control"]
+margin_top = 20.0
+margin_right = 200.0
+margin_bottom = 34.0
+text = "$25"
+align = 1
 
 [connection signal="pressed" from="EventPanel/CenterContainer/VBoxContainer/EventButton" to="." method="_on_EventButton_pressed"]
 [connection signal="item_selected" from="AgencyPanel/CenterContainer/OptionButton" to="." method="_on_OptionButton_item_selected"]
