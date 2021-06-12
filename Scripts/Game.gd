@@ -23,14 +23,14 @@ func _ready() -> void:
 	$Fader.play("DayPanelFadeOut")
 
 func dayForward() -> void:
-	day+=1
+	day += 1
 	$DayPanel/CenterContainer/DayLabel.updateDayText(day)
 
 func setupAgenciesAvailable() -> void:
 	$AgencyPanel/CenterContainer/OptionButton.items.clear()
 	$AgencyPanel/CenterContainer/OptionButton.add_item("Select an Agency to work for")
 	$AgencyPanel/CenterContainer/OptionButton.selected = 0
-	var agencies = ArticleContent.get_agencies(day-1)
+	var agencies = ArticleContent.get_agencies(day - 1)
 	for agency in agencies:
 		$AgencyPanel/CenterContainer/OptionButton.add_item(agency)
 
@@ -38,11 +38,11 @@ func setupTopicDropDowns() -> void:
 	for a in [titleChoice, textChoice, imageChoice, captionChoice, studyChoice]:
 		a.clear()
 
-	var titles = ArticleContent.get_title_strings(day-1, selectedAgency)
-	var texts = ArticleContent.get_content_strings(day-1, selectedAgency)
-	var images = ArticleContent.get_image_strings(day-1, selectedAgency)
-	var captions = ArticleContent.get_caption_strings(day-1, selectedAgency)
-	var studies = ArticleContent.get_study_strings(day-1, selectedAgency)
+	var titles = ArticleContent.get_title_strings(day - 1, selectedAgency)
+	var texts = ArticleContent.get_content_strings(day - 1, selectedAgency)
+	var images = ArticleContent.get_image_strings(day - 1, selectedAgency)
+	var captions = ArticleContent.get_caption_strings(day - 1, selectedAgency)
+	var studies = ArticleContent.get_study_strings(day - 1, selectedAgency)
 	
 	for title in titles:
 		titleChoice.add_item(title)
