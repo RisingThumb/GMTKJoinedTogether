@@ -50,8 +50,6 @@ func _construct_tree(data):
 	
 	return states[0]
 
-func 
-
 func _ready():
 	var document = _load_file(path_tree_file)
 	var parsed = JSON.parse(document)
