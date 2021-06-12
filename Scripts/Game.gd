@@ -4,6 +4,8 @@ extends Control
 var day = 1
 var money = 0
 var discord = 0
+var connections = 1
+var interviews = false
 
 onready var topicLabel = $NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper/Topic
 onready var titleChoice = $NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper/ArticleTitle
@@ -88,6 +90,7 @@ func _on_Publish_pressed() -> void:
 
 
 func _on_FinishFinanceButton_pressed() -> void:
-	discord = 0
+	
+	$Stats.set_money(money)
 	$Fader.play("BillFadeout")
 	dayForward()
