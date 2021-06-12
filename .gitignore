@@ -2,3 +2,4 @@
 *.md5
 *.import
 .import
+*.DS_Store

@@ -2,43 +2,53 @@
     "states": [
         {
             "name": "New writer in town",
-            "description": ""
+            "description": "",
+            "event_index": 0
         },
         {
             "name": "Rat Infestation",
-            "description": "Rats have decended upon the city"
+            "description": "Rats have decended upon the city",
+            "event_index": 1
         },
         {
             "name": "City in Unrest",
-            "description": ""
+            "description": "",
+            "event_index": 2
         },
         {
             "name": "Rat Infestation Decreased",
-            "description": ""
+            "description": "",
+            "event_index": 3
         },
         {
             "name": "Rat Riots",
-            "description": "Riots decend on to the city due to the growing rat issue"
+            "description": "Riots decend on to the city due to the growing rat issue",
+            "event_index": 4
         },
         {
-            "name": "PM makes speach reguarding Rat issue",
-            "description": ""
+            "name": "Mayor makes speach reguarding Rat issue",
+            "description": "",
+            "event_index": 5
         },
         {
             "name": "City of peace",
-            "description": "The city is calm"
+            "description": "The city is calm",
+            "event_index": 6
         },
         {
             "name": "SOCIETY COLLAPSES",
-            "description": "Observation: Society has collapsed and the city is in ruins. it's all your fault."
+            "description": "Observation: Society has collapsed and the city is in ruins. it's all your fault.",
+            "event_index": 7
         },
         {
             "name": "This is the good ending",
-            "description": "Congratulations. You have managed to keep society intact without going bankrupt.."
+            "description": "Congratulations. You have managed to keep society intact without going bankrupt..",
+            "event_index": 8
         },
         {
             "name": "NO Money",
-            "description": "Statement: No one read your boring articles You are out of money, unfortunate."
+            "description": "Statement: No one read your boring articles You are out of money, unfortunate.",
+            "event_index": 9
         }
     ],
     "associations": [

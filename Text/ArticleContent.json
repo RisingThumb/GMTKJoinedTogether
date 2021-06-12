@@ -1,8 +1,8 @@
 [
     {
-        "event": "Rat Infestion",
+        "event": "New writer in town",
         "agencies": {
-            "name of the agency": {
+            "agency A": {
                 "titles": [
                     {
                         "text": "Rats are Taking Over!!!!",
@@ -29,13 +29,6 @@
                         "money": 10000
                     }
                 ],
-                "captions": [
-                    {
-                        "text": "Rats killing person",
-                        "discourse": 12323,
-                        "money": 234234
-                    }
-                ],
                 "interviews": [
                     {
                         "text": "I am a art expert and I am scared",
@@ -50,7 +43,183 @@
                         "money": 092384203948
                     }
                 ]
+            },
+            "agency B": {
+                "titles": [],
+                "content": [],
+                "images": [],
+                "interviews": [],
+                "studies": []
+            },
+            "agency C": {
+                "titles": [],
+                "content": [],
+                "images": [],
+                "interviews": [],
+                "studies": []
             }
+        }
+    },
+    {
+        "event": "Rat Infestation",
+        "agencies": {
+            "agency A": {
+                "titles": [],
+                "content": [],
+                "images": [],
+                "interviews": [],
+                "studies": []
+            },
+            "agency B": {
+                "titles": [],
+                "content": [],
+                "images": [],
+                "interviews": [],
+                "studies": []
+            },
+            "agency C": {
+                "titles": [],
+                "content": [],
+                "images": [],
+                "interviews": [],
+                "studies": []
+            }
+            
+        }
+    },
+    {
+        "event": "City in Unrest",
+        "agencies": {
+            "agency A": {
+                "titles": [],
+                "content": [],
+                "images": [],
+                "interviews": [],
+                "studies": []
+            },
+            "agency B": {
+                "titles": [],
+                "content": [],
+                "images": [],
+                "interviews": [],
+                "studies": []
+            },
+            "agency C": {
+                "titles": [],
+                "content": [],
+                "images": [],
+                "interviews": [],
+                "studies": []
+            }
+            
+        }
+    },
+    {
+        "event": "Rat Infestation Decreased",
+        "agencies": {
+            "agency A": {
+                "titles": [],
+                "content": [],
+                "images": [],
+                "interviews": [],
+                "studies": []
+            },
+            "agency B": {
+                "titles": [],
+                "content": [],
+                "images": [],
+                "interviews": [],
+                "studies": []
+            },
+            "agency C": {
+                "titles": [],
+                "content": [],
+                "images": [],
+                "interviews": [],
+                "studies": []
+            }
+            
+        }
+    },
+    {
+        "event": "Rat Riots",
+        "agencies": {
+            "agency A": {
+                "titles": [],
+                "content": [],
+                "images": [],
+                "interviews": [],
+                "studies": []
+            },
+            "agency B": {
+                "titles": [],
+                "content": [],
+                "images": [],
+                "interviews": [],
+                "studies": []
+            },
+            "agency C": {
+                "titles": [],
+                "content": [],
+                "images": [],
+                "interviews": [],
+                "studies": []
+            }
+            
+        }
+    },
+    {
+        "event": "Mayor makes speach reguarding Rat issue",
+        "agencies": {
+            "agency A": {
+                "titles": [],
+                "content": [],
+                "images": [],
+                "interviews": [],
+                "studies": []
+            },
+            "agency B": {
+                "titles": [],
+                "content": [],
+                "images": [],
+                "interviews": [],
+                "studies": []
+            },
+            "agency C": {
+                "titles": [],
+                "content": [],
+                "images": [],
+                "interviews": [],
+                "studies": []
+            }
+            
+        }
+    },
+    {
+        "event": "City of peace",
+        "agencies": {
+            "agency A": {
+                "titles": [],
+                "content": [],
+                "images": [],
+                "interviews": [],
+                "studies": []
+            },
+            "agency B": {
+                "titles": [],
+                "content": [],
+                "images": [],
+                "interviews": [],
+                "studies": []
+            },
+            "agency C": {
+                "titles": [],
+                "content": [],
+                "images": [],
+                "interviews": [],
+                "studies": []
+            }
+            
         }
     }
 ]
