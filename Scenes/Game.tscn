@@ -1,9 +1,11 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Scripts/DayLabel.gd" type="Script" id=1]
 [ext_resource path="res://Scripts/Game.gd" type="Script" id=2]
 [ext_resource path="res://icon.png" type="Texture" id=3]
 [ext_resource path="res://Scripts/Stats.gd" type="Script" id=4]
+[ext_resource path="res://Themes/NewspaperTheme.tres" type="Theme" id=5]
+[ext_resource path="res://Themes/BodyText.tres" type="DynamicFont" id=6]
 
 [sub_resource type="Animation" id=1]
 resource_name = "AgencyPanelFadeOut"
@@ -342,12 +344,14 @@ __meta__ = {
 [node name="CenterContainer" type="CenterContainer" parent="DayPanel"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+theme = ExtResource( 5 )
 
 [node name="DayLabel" type="Label" parent="DayPanel/CenterContainer"]
-margin_left = 942.0
-margin_top = 533.0
-margin_right = 978.0
-margin_bottom = 547.0
+margin_left = 935.0
+margin_top = 528.0
+margin_right = 985.0
+margin_bottom = 552.0
+custom_fonts/font = ExtResource( 6 )
 text = "Day 1"
 script = ExtResource( 1 )
 
@@ -362,25 +366,30 @@ __meta__ = {
 [node name="CenterContainer" type="CenterContainer" parent="EventPanel"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+theme = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="VBoxContainer" type="VBoxContainer" parent="EventPanel/CenterContainer"]
-margin_left = 922.0
-margin_top = 521.0
-margin_right = 997.0
-margin_bottom = 559.0
+margin_left = 905.0
+margin_top = 514.0
+margin_right = 1015.0
+margin_bottom = 566.0
+theme = ExtResource( 5 )
 
 [node name="EventLabel" type="Label" parent="EventPanel/CenterContainer/VBoxContainer"]
-margin_right = 75.0
-margin_bottom = 14.0
+margin_right = 110.0
+margin_bottom = 24.0
+custom_fonts/font = ExtResource( 6 )
 text = "Event name"
 
 [node name="EventButton" type="Button" parent="EventPanel/CenterContainer/VBoxContainer"]
-margin_top = 18.0
-margin_right = 75.0
-margin_bottom = 38.0
+margin_top = 28.0
+margin_right = 110.0
+margin_bottom = 52.0
+theme = ExtResource( 5 )
+custom_fonts/font = ExtResource( 6 )
 text = "Ok"
 
 [node name="AgencyPanel" type="Panel" parent="."]
@@ -407,6 +416,7 @@ margin_bottom = 550.0
 text = "Agency A"
 
 [node name="NewspaperCreationPanel" type="Panel" parent="."]
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 __meta__ = {
@@ -508,6 +518,7 @@ visible = false
 modulate = Color( 1, 1, 1, 0 )
 anchor_right = 1.0
 anchor_bottom = 1.0
+theme = ExtResource( 5 )
 
 [node name="CenterContainer" type="CenterContainer" parent="BillPanel"]
 anchor_right = 1.0
@@ -517,86 +528,86 @@ __meta__ = {
 }
 
 [node name="VBoxContainer" type="VBoxContainer" parent="BillPanel/CenterContainer"]
-margin_left = 906.0
-margin_top = 436.0
-margin_right = 1013.0
-margin_bottom = 644.0
+margin_left = 884.0
+margin_top = 402.0
+margin_right = 1035.0
+margin_bottom = 678.0
 
 [node name="HSeparator5" type="HSeparator" parent="BillPanel/CenterContainer/VBoxContainer"]
-margin_right = 107.0
+margin_right = 151.0
 margin_bottom = 4.0
 
 [node name="Label" type="Label" parent="BillPanel/CenterContainer/VBoxContainer"]
 margin_top = 8.0
-margin_right = 107.0
-margin_bottom = 22.0
+margin_right = 151.0
+margin_bottom = 32.0
 text = "Finances"
 align = 1
 
 [node name="HSeparator6" type="HSeparator" parent="BillPanel/CenterContainer/VBoxContainer"]
-margin_top = 26.0
-margin_right = 107.0
-margin_bottom = 30.0
+margin_top = 36.0
+margin_right = 151.0
+margin_bottom = 40.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="CheckBox" type="CheckBox" parent="BillPanel/CenterContainer/VBoxContainer"]
-margin_top = 34.0
-margin_right = 107.0
-margin_bottom = 58.0
+[node name="CheckBox" type="CheckButton" parent="BillPanel/CenterContainer/VBoxContainer"]
+margin_top = 44.0
+margin_right = 151.0
+margin_bottom = 76.0
 text = "Bills"
 
-[node name="CheckBox2" type="CheckBox" parent="BillPanel/CenterContainer/VBoxContainer"]
-margin_top = 62.0
-margin_right = 107.0
-margin_bottom = 86.0
+[node name="CheckBox2" type="CheckButton" parent="BillPanel/CenterContainer/VBoxContainer"]
+margin_top = 80.0
+margin_right = 151.0
+margin_bottom = 112.0
 text = "Connections"
 
-[node name="CheckBox3" type="CheckBox" parent="BillPanel/CenterContainer/VBoxContainer"]
-margin_top = 90.0
-margin_right = 107.0
-margin_bottom = 114.0
+[node name="CheckBox3" type="CheckButton" parent="BillPanel/CenterContainer/VBoxContainer"]
+margin_top = 116.0
+margin_right = 151.0
+margin_bottom = 148.0
 text = "Interview"
 
 [node name="Money" type="HSeparator" parent="BillPanel/CenterContainer/VBoxContainer"]
-margin_top = 118.0
-margin_right = 107.0
-margin_bottom = 122.0
+margin_top = 152.0
+margin_right = 151.0
+margin_bottom = 156.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="CurrentMoney" type="Label" parent="BillPanel/CenterContainer/VBoxContainer"]
-margin_top = 126.0
-margin_right = 107.0
-margin_bottom = 140.0
+margin_top = 160.0
+margin_right = 151.0
+margin_bottom = 184.0
 text = "$10"
 
 [node name="CurrentExpenses" type="Label" parent="BillPanel/CenterContainer/VBoxContainer"]
-margin_top = 144.0
-margin_right = 107.0
-margin_bottom = 158.0
+margin_top = 188.0
+margin_right = 151.0
+margin_bottom = 212.0
 text = "-$5"
 
 [node name="NewMoneyAmount" type="Label" parent="BillPanel/CenterContainer/VBoxContainer"]
-margin_top = 162.0
-margin_right = 107.0
-margin_bottom = 176.0
+margin_top = 216.0
+margin_right = 151.0
+margin_bottom = 240.0
 text = "$5"
 
 [node name="Money2" type="HSeparator" parent="BillPanel/CenterContainer/VBoxContainer"]
-margin_top = 180.0
-margin_right = 107.0
-margin_bottom = 184.0
+margin_top = 244.0
+margin_right = 151.0
+margin_bottom = 248.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="FinishFinanceButton" type="Button" parent="BillPanel/CenterContainer/VBoxContainer"]
-margin_top = 188.0
-margin_right = 107.0
-margin_bottom = 208.0
+margin_top = 252.0
+margin_right = 151.0
+margin_bottom = 276.0
 text = "MoneySorted"
 
 [node name="Fader" type="AnimationPlayer" parent="."]
@@ -613,6 +624,7 @@ margin_left = -100.0
 margin_right = 100.0
 margin_bottom = 40.0
 rect_min_size = Vector2( 200, 0 )
+theme = ExtResource( 5 )
 script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -620,15 +632,15 @@ __meta__ = {
 
 [node name="HSlider" type="HSlider" parent="Stats"]
 margin_right = 200.0
-margin_bottom = 16.0
+margin_bottom = 32.0
 min_value = -500.0
 max_value = 500.0
 editable = false
 
 [node name="MoneyAmount" type="Label" parent="Stats"]
-margin_top = 20.0
+margin_top = 36.0
 margin_right = 200.0
-margin_bottom = 34.0
+margin_bottom = 60.0
 text = "£0"
 align = 1
 
