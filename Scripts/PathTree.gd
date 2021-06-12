@@ -8,7 +8,7 @@ class State:
 	var description: String
 	
 	var children: Array
-	var thresholds: Array
+	var ranges: Array
 	
 	func get_name():
 		return name
@@ -19,8 +19,8 @@ class State:
 	func get_children():
 		return children
 		
-	func get_thresholds():
-		return thresholds
+	func get_ranges():
+		return ranges
 		
 	func _init(_name: String, _description: String):
 		name = _name
@@ -29,8 +29,8 @@ class State:
 	func _set_children(_children: Array):
 		children = _children
 		
-	func _set_thresholds(_thresholds: Array):
-		thresholds = _thresholds
+	func _set_thresholds(_ranges: Array):
+		ranges = _ranges
 		
 func _construct_tree(data):
 	var states = []
@@ -42,10 +42,15 @@ func _construct_tree(data):
 		var to = association["to"]
 		var from = association["from"]
 		
-		var children = states[from].get_children()
-		children.push_back(states[to])
+		var from_state = states[from]
+		var to_state = states[to]
+		
+		from_state.get_children().push_back(to_state)
+		from_state.get_ranges().push_back(to_state)
 	
 	return states[0]
+
+func 
 
 func _ready():
 	var document = _load_file(path_tree_file)
