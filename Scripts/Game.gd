@@ -35,7 +35,7 @@ func dayForward() -> void:
 	$DayPanel/CenterContainer/DayLabel.updateDayText(day)
 
 func setupAgenciesAvailable() -> void:
-	$AgencyPanel/CenterContainer/OptionButton.items.clear()
+	$AgencyPanel/CenterContainer/OptionButton.clear()
 	$AgencyPanel/CenterContainer/OptionButton.add_item("Select an Agency to work for")
 	$AgencyPanel/CenterContainer/OptionButton.selected = 0
 	var agencies = ArticleContent.get_agencies(day - 1)
