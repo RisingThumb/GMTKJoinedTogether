@@ -482,12 +482,11 @@ margin_top = 75.0
 margin_right = 400.0
 margin_bottom = 475.0
 rect_min_size = Vector2( 400, 400 )
-scroll_horizontal_enabled = false
 
 [node name="Paper" type="VBoxContainer" parent="NewspaperCreationPanel/CenterContainer/ScrollContainer"]
 margin_left = 90.0
 margin_right = 309.0
-margin_bottom = 279.0
+margin_bottom = 307.0
 size_flags_horizontal = 6
 alignment = 1
 
@@ -499,7 +498,6 @@ margin_bottom = 4.0
 margin_top = 8.0
 margin_right = 211.0
 margin_bottom = 32.0
-text = "Topic is ABCDEFGHIJK"
 align = 1
 
 [node name="HSeparator2" type="HSeparator" parent="NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper"]
@@ -539,6 +537,11 @@ margin_top = 190.0
 margin_right = 211.0
 margin_bottom = 212.0
 text = "Select Study"
+
+[node name="InterviewChoice" type="OptionButton" parent="NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper"]
+margin_top = 44.0
+margin_right = 211.0
+margin_bottom = 68.0
 
 [node name="HSeparator" type="HSeparator" parent="NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper"]
 margin_top = 216.0

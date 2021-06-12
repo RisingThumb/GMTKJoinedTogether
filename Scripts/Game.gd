@@ -6,7 +6,7 @@ var money = 0
 var discord = 0
 var connections = 1
 var moneyCost = 0
-var interviews = false
+var interviews = true
 export(int) var billsCost = 100
 export(int) var connectionCost = 20
 export(int) var interviewCost = 30
@@ -17,6 +17,7 @@ onready var textChoice = $NewspaperCreationPanel/CenterContainer/ScrollContainer
 onready var imageChoice = $NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper/Imagechoice
 onready var captionChoice = $NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper/CaptionChoice
 onready var studyChoice = $NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper/StudyChoice
+onready var interviewChoice = $NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper/InterviewChoice
 var selectedAgency = ""
 var calc
 
@@ -40,17 +41,19 @@ func setupAgenciesAvailable() -> void:
 	var agencies = ArticleContent.get_agencies(day - 1)
 	for agency in agencies:
 		$AgencyPanel/CenterContainer/OptionButton.add_item(agency)
-	$EventPanel/CenterContainer/VBoxContainer/EventLabel.text = ArticleContent.get_event(day-1)
+	$EventPanel/CenterContainer/VBoxContainer/EventLabel.text = ArticleContent.get_event(day - 1)
 
 func setupTopicDropDowns() -> void:
-	for a in [titleChoice, textChoice, imageChoice, captionChoice, studyChoice]:
+	for a in [titleChoice, textChoice, imageChoice, captionChoice, studyChoice, interviewChoice]:
 		a.clear()
+	$NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper/Topic.text = ArticleContent.get_event(day - 1)
 
 	var titles = ArticleContent.get_title_strings(day - 1, selectedAgency)
 	var texts = ArticleContent.get_content_strings(day - 1, selectedAgency)
 	var images = ArticleContent.get_image_strings(day - 1, selectedAgency)
 	var captions = ArticleContent.get_caption_strings(day - 1, selectedAgency)
 	var studies = ArticleContent.get_study_strings(day - 1, selectedAgency)
+		
 	calc = ArticleContent.Calculator.new(day-1, selectedAgency, discord, money)
 	
 	for title in titles:
@@ -63,6 +66,12 @@ func setupTopicDropDowns() -> void:
 		captionChoice.add_item(caption)
 	for study in studies:
 		studyChoice.add_item(study)
+	interviewChoice.visible = interviews
+	if interviews:
+		var interviewIcon = load("res://icon.png")
+		var interviewItems = ArticleContent.get_interview_strings(day - 1, selectedAgency)
+		for interview in interviewItems:
+			interviewChoice.add_icon_item(interviewIcon, interview)
 
 
 func _on_OptionButton_item_selected(index: int) -> void:
@@ -86,6 +95,8 @@ func _on_Publish_pressed() -> void:
 	calc.add_image(imageChoice.selected)
 	calc.add_caption(captionChoice.selected)
 	calc.add_study(studyChoice.selected)
+	if interviews:
+		calc.add_interview(interviewChoice.selected)
 	money = calc.get_money()
 	discord = calc.get_discord()
 	$BillPanel2/Stats.set_discord(discord)
