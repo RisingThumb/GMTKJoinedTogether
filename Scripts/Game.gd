@@ -102,6 +102,7 @@ func _on_FinishFinanceButton_pressed() -> void:
 		bankruptEnding()
 	if !$BillPanel/CenterContainer/VBoxContainer/CheckBill.pressed:
 		bankruptEnding()
+	interviews = $BillPanel/CenterContainer/VBoxContainer/CheckInterview.pressed
 	$BillPanel2/Stats.set_money(money)
 	$Fader.play("BillFadeout")
 	dayForward()
@@ -114,9 +115,9 @@ func recalculateBills():
 		moneyCost+=connectionCost
 	if $BillPanel/CenterContainer/VBoxContainer/CheckInterview.pressed:
 		moneyCost+=interviewCost
-	$BillPanel/CenterContainer/VBoxContainer/CurrentMoney.text = str(money)
-	$BillPanel/CenterContainer/VBoxContainer/CurrentExpenses.text = str(moneyCost)
-	$BillPanel/CenterContainer/VBoxContainer/NewMoneyAmount.text = str(money-moneyCost)
+	$BillPanel/CenterContainer/VBoxContainer/HBoxContainer/CurrentMoney.text = str(money)
+	$BillPanel/CenterContainer/VBoxContainer/HBoxContainer2/CurrentExpenses.text = str(moneyCost)
+	$BillPanel/CenterContainer/VBoxContainer/HBoxContainer3/NewMoneyAmount.text = str(money-moneyCost)
 
 func _on_CheckBill_pressed():
 	recalculateBills()
