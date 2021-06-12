@@ -43,6 +43,8 @@ func setupTopicDropDowns():
 	var captions = ["Colorised: Chungal Fungi"]
 	var studies = ArticleContent.get_study_strings(day-1, selectedAgency)
 	
+	
+	
 	for title in titles:
 		titleChoice.add_item(title)
 	for text in texts:

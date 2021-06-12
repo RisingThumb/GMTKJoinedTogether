@@ -19,6 +19,9 @@ func get_content_strings(day: int, agency: String) -> Array:
 func get_image_strings(day: int, agency: String) -> Array:
 	return _get_element_strings(day, agency, "images")
 
+func get_caption_strings(day: int, agency: String) -> Array:
+	return _get_element_strings(day, agency, "captions")
+
 func get_interview_strings(day: int, agency: String) -> Array:
 	return _get_element_strings(day, agency, "interviews")
 	

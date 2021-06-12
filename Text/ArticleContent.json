@@ -29,6 +29,13 @@
                         "money": 10000
                     }
                 ],
+                "captions": [
+                    {
+                        "text": "Rats killing person",
+                        "discourse": 12323,
+                        "money": 234234
+                    }
+                ]
                 "interviews": [
                     {
                         "text": "I am a art expert and I am scared",
