@@ -131,10 +131,10 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 3, 4 ),
-"transitions": PoolRealArray( 2.37841, 4.28709 ),
+"times": PoolRealArray( 0, 3, 4 ),
+"transitions": PoolRealArray( 2.37841, 2.37841, 4.28709 ),
 "update": 0,
-"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
 tracks/1/type = "value"
 tracks/1/path = NodePath("DayPanel:visible")
@@ -319,7 +319,7 @@ __meta__ = {
 
 [node name="DayPanel" type="Panel" parent="."]
 visible = false
-modulate = Color( 1, 1, 1, 0 )
+modulate = Color( 1, 1, 1, 0.495519 )
 anchor_right = 1.0
 anchor_bottom = 1.0
 __meta__ = {
@@ -339,6 +339,7 @@ text = "Day 1"
 script = ExtResource( 1 )
 
 [node name="EventPanel" type="Panel" parent="."]
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 __meta__ = {
@@ -363,10 +364,11 @@ margin_right = 75.0
 margin_bottom = 14.0
 text = "Event name"
 
-[node name="Button" type="Button" parent="EventPanel/CenterContainer/VBoxContainer"]
+[node name="EventButton" type="Button" parent="EventPanel/CenterContainer/VBoxContainer"]
 margin_top = 18.0
 margin_right = 75.0
 margin_bottom = 38.0
+text = "Ok"
 
 [node name="AgencyPanel" type="Panel" parent="."]
 visible = false
@@ -392,7 +394,6 @@ margin_bottom = 550.0
 text = "Agency A"
 
 [node name="NewspaperCreationPanel" type="Panel" parent="."]
-visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 __meta__ = {
@@ -571,6 +572,19 @@ margin_right = 107.0
 margin_bottom = 176.0
 text = "$5"
 
+[node name="Money2" type="HSeparator" parent="BillPanel/CenterContainer/VBoxContainer"]
+margin_top = 118.0
+margin_right = 107.0
+margin_bottom = 122.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FinishFinanceButton" type="Button" parent="BillPanel/CenterContainer/VBoxContainer"]
+margin_right = 12.0
+margin_bottom = 20.0
+text = "MoneySorted"
+
 [node name="Fader" type="AnimationPlayer" parent="."]
 anims/AgencyPanelFadeOut = SubResource( 1 )
 anims/BillFadeout = SubResource( 2 )
@@ -578,4 +592,7 @@ anims/DayPanelFadeOut = SubResource( 3 )
 anims/EventPanelFadeOut = SubResource( 5 )
 anims/NewspaperCreationPanelFadeOut = SubResource( 4 )
 
+[connection signal="pressed" from="EventPanel/CenterContainer/VBoxContainer/EventButton" to="." method="_on_EventButton_pressed"]
 [connection signal="item_selected" from="AgencyPanel/CenterContainer/OptionButton" to="." method="_on_OptionButton_item_selected"]
+[connection signal="pressed" from="NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper/Publish" to="." method="_on_Publish_pressed"]
+[connection signal="pressed" from="BillPanel/CenterContainer/VBoxContainer/FinishFinanceButton" to="." method="_on_FinishFinanceButton_pressed"]
