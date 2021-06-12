@@ -34,7 +34,7 @@ func setupTopicDropDowns():
 	# populate this guy
 	var titles = ["Big chungus, has fungus"]
 	var texts = ["Big chungus has escaped, be careful"]
-	var images = [load("res://icon.png")]
+	var images = ["res://icon.png"]
 	var captions = ["Colorised: Chungal Fungi"]
 	var studies = ["10% liklihood of making a chungus big"]
 	
@@ -43,7 +43,7 @@ func setupTopicDropDowns():
 	for text in texts:
 		textChoice.add_item(text)
 	for image in images:
-		imageChoice.add_icon_item(image, "")
+		imageChoice.add_icon_item(load(image), "")
 	for caption in captions:
 		captionChoice.add_item(caption)
 	for study in studies:
