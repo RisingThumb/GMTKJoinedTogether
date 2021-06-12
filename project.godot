@@ -21,6 +21,7 @@ config/icon="res://icon.png"
 [autoload]
 
 ArticleContent="*res://Scenes/ArticleContent.tscn"
+PathTree="*res://Scenes/PathTree.tscn"
 
 [display]
 
