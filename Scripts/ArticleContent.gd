@@ -119,13 +119,7 @@ func _ready():
 	var document = _load_file(article_content_file)
 	var parsed = JSON.parse(document)
 	
-	if parsed.error != OK:
-		_panic()
-	
 	article_content = parsed.result
-	
-	var result = get_title_strings(0, "name of the agency")
-	print(result)
 
 func _load_file(name):
 	var file = File.new()
@@ -135,6 +129,3 @@ func _load_file(name):
 	file.close()
 	
 	return content
-
-func _panic():
-	get_tree().quit()

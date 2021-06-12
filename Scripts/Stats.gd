@@ -11,7 +11,7 @@ func _ready():
 	pass # Replace with function body.
 
 func set_discord(newDiscord: int) -> void:
-	$HSlider.value = newDiscord
+	$HBoxContainer2/HSlider.value = newDiscord
 
 func set_money(newMoney: int) -> void:
 	$HBoxContainer/MoneyAmount.text = str(newMoney)
