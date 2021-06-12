@@ -505,9 +505,9 @@ __meta__ = {
 
 [node name="VBoxContainer" type="VBoxContainer" parent="BillPanel/CenterContainer"]
 margin_left = 906.0
-margin_top = 452.0
+margin_top = 436.0
 margin_right = 1013.0
-margin_bottom = 628.0
+margin_bottom = 644.0
 
 [node name="HSeparator5" type="HSeparator" parent="BillPanel/CenterContainer/VBoxContainer"]
 margin_right = 107.0

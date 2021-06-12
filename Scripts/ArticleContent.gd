@@ -6,6 +6,10 @@ var article_content
 func get_event(day: int) -> String:
 	return article_content[day]["event"]
 
+func get_agencies(day: int) -> String:
+	var agencies = article_content[day]["agencies"]
+	return agencies.keys()
+
 func get_title_strings(day: int, agency: String) -> Array:
 	return _get_element_strings(day, agency, "titles")
 	
