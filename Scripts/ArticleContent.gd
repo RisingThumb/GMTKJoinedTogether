@@ -21,42 +21,42 @@ class Calculator:
 		var _money = ArticleContent._get_money(day, agency, "titles", index)
 		
 		discord += _discord
-		agency += _money
+		money += _money
 		
 	func add_content(index: int):
 		var _discord = ArticleContent._get_discord(day, agency, "content", index)
 		var _money = ArticleContent._get_money(day, agency, "content", index)
 		
 		discord += _discord
-		agency += _money
+		money += _money
 		
 	func add_image(index: int):
 		var _discord = ArticleContent._get_discord(day, agency, "images", index)
 		var _money = ArticleContent._get_money(day, agency, "images", index)
 		
 		discord += _discord
-		agency += _money
+		money += _money
 		
 	func add_caption(index: int):
 		var _discord = ArticleContent._get_discord(day, agency, "captions", index)
 		var _money = ArticleContent._get_money(day, agency, "captions", index)
 		
 		discord += _discord
-		agency += _money
+		money += _money
 		
 	func add_interview(index: int):
 		var _discord = ArticleContent._get_discord(day, agency, "interviews", index)
 		var _money = ArticleContent._get_money(day, agency, "interviews", index)
 		
 		discord += _discord
-		agency += _money
+		money += _money
 		
 	func add_study(index: int):
 		var _discord = ArticleContent._get_discord(day, agency, "studies", index)
 		var _money = ArticleContent._get_money(day, agency, "studies", index)
 		
 		discord += _discord
-		agency += _money
+		money += _money
 	
 	func _init(_day: int, _agency: String, _discord: int, _money: int):
 		day = _day
