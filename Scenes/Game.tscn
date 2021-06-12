@@ -673,7 +673,7 @@ margin_right = 300.0
 margin_bottom = 24.0
 alignment = 1
 
-[node name="MoneyAmount2" type="Label" parent="BillPanel2/Stats/HBoxContainer"]
+[node name="Symbol" type="Label" parent="BillPanel2/Stats/HBoxContainer"]
 margin_left = 138.0
 margin_top = 4.0
 margin_right = 148.0
@@ -694,7 +694,7 @@ margin_top = 28.0
 margin_right = 300.0
 margin_bottom = 60.0
 
-[node name="MoneyAmount3" type="Label" parent="BillPanel2/Stats/HBoxContainer2"]
+[node name="Discord" type="Label" parent="BillPanel2/Stats/HBoxContainer2"]
 margin_top = 8.0
 margin_right = 65.0
 margin_bottom = 24.0
@@ -711,7 +711,7 @@ min_value = -500.0
 max_value = 500.0
 editable = false
 
-[node name="MoneyAmount4" type="Label" parent="BillPanel2/Stats/HBoxContainer2"]
+[node name="Harmony" type="Label" parent="BillPanel2/Stats/HBoxContainer2"]
 margin_left = 226.0
 margin_top = 8.0
 margin_right = 300.0
