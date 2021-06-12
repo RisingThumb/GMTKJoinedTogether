@@ -1,0 +1,112 @@
+{
+"States":[
+    {
+        "name": "New writer in town",
+        "Description": ""
+    },
+    {
+        "name": "Rat Infestation",
+        "Description": "Rats have decended upon the city"
+    },
+    {
+        "name": "City in Unrest",
+        "Description": ""
+    },
+    {
+        "name": "Rat Infestation Decreased",
+        "Description": ""
+    },
+    {
+        "name": "Rat Riots",
+        "Description": "Riots decend on to the city due to the growing rat issue"
+    },
+    {
+        "name": "PM makes speach reguarding Rat issue",
+        "Description": ""
+    },
+    {
+        "name": "City of peace",
+        "Description": "The city is calm"
+    },
+    {
+        "name": "SOCIETY COLLAPSES",
+        "Description": "Observation: Society has collapsed and the city is in ruins. it's all your fault."
+    },
+    {
+        "name": "This is the good ending",
+        "Description": "Congratulations. You have managed to keep society intact without going bankrupt.."
+    },
+    {
+        "name": "NO Money",
+        "Description": "Statement: No one read your boring articles You are out of money, unfortunate."
+    }
+], 
+
+"Associations":[
+    {
+        "to": 1,
+        "from": 0
+    },
+    {
+        "to": 2,
+        "from": 1
+    },
+    {
+        "to": 3,
+        "from": 1
+    },
+    {
+        "to": 4,
+        "from": 2
+    },
+    {
+        "to": 3,
+        "from": 2
+    },
+    {
+        "to": 5,
+        "from": 3
+    },
+    {
+        "to": 6,
+        "from": 3
+    },
+    {
+        "to": 9,
+        "from": 3
+    },
+    {
+        "to": 7,
+        "from": 4
+    },
+    {
+        "to": 8,
+        "from": 4
+    },
+    {
+        "to": 4,
+        "from": 5
+    },
+    {
+        "to": 6,
+        "from": 5
+    },
+    {
+        "to": 4,
+        "from": 6
+    },
+    {
+        "to": 8,
+        "from": 6
+    },
+    {
+        "to": 9,
+        "from": 6
+    }
+
+
+]
+
+
+
+}
