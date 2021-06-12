@@ -44,63 +44,78 @@
     "associations": [
         {
             "to": 1,
-            "from": 0
+            "from": 0,
+            "range": [-500,500]
         },
         {
             "to": 2,
-            "from": 1
+            "from": 1,
+            "range": [-500,0]
         },
         {
             "to": 3,
-            "from": 1
+            "from": 1,
+            "range": [1,500]
         },
         {
             "to": 4,
-            "from": 2
+            "from": 2,
+            "range": [-500,10]
         },
         {
             "to": 3,
-            "from": 2
+            "from": 2,
+            "range": [11,500]
         },
         {
             "to": 5,
-            "from": 3
+            "from": 3,
+            "range": [-500,0]
         },
         {
             "to": 6,
-            "from": 3
+            "from": 3,
+            "range": [1,250]
         },
         {
             "to": 9,
-            "from": 3
+            "from": 3,
+            "range": [251,500]
         },
         {
             "to": 7,
-            "from": 4
+            "from": 4,
+            "range": [-500,200]
         },
         {
             "to": 8,
-            "from": 4
+            "from": 4,
+            "range": [201,500]
         },
         {
             "to": 4,
-            "from": 5
+            "from": 5,
+            "range": [-500,0]
         },
         {
             "to": 6,
-            "from": 5
+            "from": 5,
+            "range": [1,500]
         },
         {
             "to": 4,
-            "from": 6
+            "from": 6,
+            "range": [-500,-101]
         },
         {
             "to": 8,
-            "from": 6
+            "from": 6,
+            "range": [-100,200]
         },
         {
             "to": 9,
-            "from": 6
+            "from": 6,
+            "range": [201,500]
         }
     ]
 }
