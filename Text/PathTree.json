@@ -41,7 +41,7 @@
             "description": "Statement: No one read your boring articles You are out of money, unfortunate."
         }
     ],
-    "Associations": [
+    "associations": [
         {
             "to": 1,
             "from": 0

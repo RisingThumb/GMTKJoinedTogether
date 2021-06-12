@@ -15,13 +15,17 @@ class State:
 		
 	func get_description():
 		return description
-		
+	
 	func get_children():
 		return children
 		
 	func get_thresholds():
 		return thresholds
 		
+	func _init(_name: String, _description: String):
+		name = _name
+		description = _description
+	
 	func _set_children(_children: Array):
 		children = _children
 		
@@ -32,7 +36,7 @@ func _construct_tree(data):
 	var states = []
 	
 	for object in data["states"]:
-		states.push_back(object["name"], object["description"])
+		states.push_back(State.new(object["name"], object["description"]))
 	
 	for association in data["associations"]:
 		var to = association["to"]
