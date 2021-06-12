@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=13 format=2]
+[gd_resource type="Theme" load_steps=14 format=2]
 
 [ext_resource path="res://Themes/NewspaperBG.tres" type="StyleBox" id=1]
 [ext_resource path="res://Art/Checkbox.png" type="Texture" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://Art/Hover.png" type="Texture" id=6]
 [ext_resource path="res://Themes/UnderlineTextStyle.tres" type="StyleBox" id=7]
 [ext_resource path="res://Themes/BoxFlatTransparent.tres" type="StyleBox" id=8]
+[ext_resource path="res://Themes/LineSeperator.tres" type="StyleBox" id=9]
 
 [sub_resource type="StyleBoxFlat" id=6]
 bg_color = Color( 0.6, 0.6, 0.6, 0 )
@@ -86,21 +87,21 @@ OptionButton/styles/hover = ExtResource( 8 )
 OptionButton/styles/normal = null
 OptionButton/styles/pressed = ExtResource( 8 )
 Panel/styles/panel = ExtResource( 1 )
-PopupMenu/colors/font_color = Color( 0.88, 0.88, 0.88, 1 )
+PopupMenu/colors/font_color = Color( 0, 0, 0, 1 )
 PopupMenu/colors/font_color_accel = Color( 0.7, 0.7, 0.7, 0.8 )
-PopupMenu/colors/font_color_disabled = Color( 0.4, 0.4, 0.4, 0.8 )
-PopupMenu/colors/font_color_hover = Color( 0.88, 0.88, 0.88, 1 )
+PopupMenu/colors/font_color_disabled = Color( 0, 0, 0, 0.8 )
+PopupMenu/colors/font_color_hover = Color( 0, 0, 0, 1 )
 PopupMenu/constants/hseparation = 4
 PopupMenu/constants/vseparation = 4
 PopupMenu/fonts/font = ExtResource( 4 )
-PopupMenu/icons/checked = null
-PopupMenu/icons/radio_checked = null
-PopupMenu/icons/radio_unchecked = null
+PopupMenu/icons/checked = ExtResource( 5 )
+PopupMenu/icons/radio_checked = ExtResource( 5 )
+PopupMenu/icons/radio_unchecked = ExtResource( 2 )
 PopupMenu/icons/submenu = null
-PopupMenu/icons/unchecked = null
+PopupMenu/icons/unchecked = ExtResource( 2 )
 PopupMenu/styles/hover = ExtResource( 7 )
-PopupMenu/styles/labeled_separator_left = null
-PopupMenu/styles/labeled_separator_right = null
-PopupMenu/styles/panel = null
-PopupMenu/styles/panel_disabled = null
-PopupMenu/styles/separator = null
+PopupMenu/styles/labeled_separator_left = ExtResource( 1 )
+PopupMenu/styles/labeled_separator_right = ExtResource( 1 )
+PopupMenu/styles/panel = ExtResource( 1 )
+PopupMenu/styles/panel_disabled = ExtResource( 1 )
+PopupMenu/styles/separator = ExtResource( 9 )
