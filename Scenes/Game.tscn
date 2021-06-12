@@ -606,7 +606,7 @@ anims/DayPanelFadeOut = SubResource( 3 )
 anims/EventPanelFadeOut = SubResource( 4 )
 anims/NewspaperCreationPanelFadeOut = SubResource( 5 )
 
-[node name="Control" type="VBoxContainer" parent="."]
+[node name="Stats" type="VBoxContainer" parent="."]
 anchor_left = 0.5
 anchor_right = 0.5
 margin_left = -100.0
@@ -618,14 +618,14 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="HSlider" type="HSlider" parent="Control"]
+[node name="HSlider" type="HSlider" parent="Stats"]
 margin_right = 200.0
 margin_bottom = 16.0
 min_value = -500.0
 max_value = 500.0
 editable = false
 
-[node name="MoneyAmount" type="Label" parent="Control"]
+[node name="MoneyAmount" type="Label" parent="Stats"]
 margin_top = 20.0
 margin_right = 200.0
 margin_bottom = 34.0

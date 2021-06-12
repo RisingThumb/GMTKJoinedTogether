@@ -12,6 +12,7 @@ onready var imageChoice = $NewspaperCreationPanel/CenterContainer/ScrollContaine
 onready var captionChoice = $NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper/CaptionChoice
 onready var studyChoice = $NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper/StudyChoice
 var selectedAgency = ""
+var calc
 
 func _ready() -> void:
 	$DayPanel.visible = true
@@ -43,6 +44,7 @@ func setupTopicDropDowns() -> void:
 	var images = ArticleContent.get_image_strings(day - 1, selectedAgency)
 	var captions = ArticleContent.get_caption_strings(day - 1, selectedAgency)
 	var studies = ArticleContent.get_study_strings(day - 1, selectedAgency)
+	calc = ArticleContent.Calculator.new(day-1, selectedAgency, discord, money)
 	
 	for title in titles:
 		titleChoice.add_item(title)
@@ -66,10 +68,23 @@ func _on_OptionButton_item_selected(index: int) -> void:
 func _on_EventButton_pressed() -> void:
 	$NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper/Publish.disabled = true
 	$Fader.play("EventPanelFadeOut")
+	$NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper/Publish.disabled = false
 
 
 func _on_Publish_pressed() -> void:
 	$Fader.play("NewspaperCreationPanelFadeOut")
+	print(titleChoice.selected)
+	calc.add_title(titleChoice.selected)
+	calc.add_content(textChoice.selected)
+	calc.add_image(imageChoice.selected)
+	calc.add_caption(captionChoice.selected)
+	calc.add_study(studyChoice.selected)
+	money = calc.get_money()
+	discord = calc.get_discord()
+	$Stats.set_discord(discord)
+	$Stats.set_money(money)
+	
+	$NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper/Publish.disabled = true
 
 
 func _on_FinishFinanceButton_pressed() -> void:

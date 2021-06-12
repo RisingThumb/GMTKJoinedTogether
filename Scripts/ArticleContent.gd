@@ -17,8 +17,8 @@ class Calculator:
 		return money
 		
 	func add_title(index: int):
-		var _discord = ArticleContent._get_discord(day, agency, "title", index)
-		var _money = ArticleContent._get_money(day, agency, "title", index)
+		var _discord = ArticleContent._get_discord(day, agency, "titles", index)
+		var _money = ArticleContent._get_money(day, agency, "titles", index)
 		
 		discord += _discord
 		agency += _money
@@ -31,29 +31,29 @@ class Calculator:
 		agency += _money
 		
 	func add_image(index: int):
-		var _discord = ArticleContent._get_discord(day, agency, "image", index)
-		var _money = ArticleContent._get_money(day, agency, "image", index)
+		var _discord = ArticleContent._get_discord(day, agency, "images", index)
+		var _money = ArticleContent._get_money(day, agency, "images", index)
 		
 		discord += _discord
 		agency += _money
 		
 	func add_caption(index: int):
-		var _discord = ArticleContent._get_discord(day, agency, "caption", index)
-		var _money = ArticleContent._get_money(day, agency, "caption", index)
+		var _discord = ArticleContent._get_discord(day, agency, "captions", index)
+		var _money = ArticleContent._get_money(day, agency, "captions", index)
 		
 		discord += _discord
 		agency += _money
 		
 	func add_interview(index: int):
-		var _discord = ArticleContent._get_discord(day, agency, "interview", index)
-		var _money = ArticleContent._get_money(day, agency, "interview", index)
+		var _discord = ArticleContent._get_discord(day, agency, "interviews", index)
+		var _money = ArticleContent._get_money(day, agency, "interviews", index)
 		
 		discord += _discord
 		agency += _money
 		
 	func add_study(index: int):
-		var _discord = ArticleContent._get_discord(day, agency, "study", index)
-		var _money = ArticleContent._get_money(day, agency, "study", index)
+		var _discord = ArticleContent._get_discord(day, agency, "studies", index)
+		var _money = ArticleContent._get_money(day, agency, "studies", index)
 		
 		discord += _discord
 		agency += _money
@@ -103,9 +103,9 @@ func _get_element_strings(day, agency, attribute) -> Array:
 
 func _get_element(day, agency, attribute, index):
 	var agencies = article_content[day]["agencies"]
-	var elements = agencies[agency][attribute]
-	
-	return elements[attribute][index]
+	var temp = agencies[agency]
+	var elements = temp[attribute]
+	return elements[index]
 
 func _get_discord(day, agency, attribute, index):
 	var element = _get_element(day, agency, attribute, index)
