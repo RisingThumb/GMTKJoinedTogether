@@ -199,7 +199,7 @@ tracks/5/keys = {
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=5]
+[sub_resource type="Animation" id=4]
 resource_name = "EventPanelFadeOut"
 length = 2.0
 tracks/0/type = "value"
@@ -251,7 +251,7 @@ tracks/3/keys = {
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
 
-[sub_resource type="Animation" id=4]
+[sub_resource type="Animation" id=5]
 length = 2.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("NewspaperCreationPanel:visible")
@@ -575,7 +575,7 @@ text = "$5"
 anims/AgencyPanelFadeOut = SubResource( 1 )
 anims/BillFadeout = SubResource( 2 )
 anims/DayPanelFadeOut = SubResource( 3 )
-anims/EventPanelFadeOut = SubResource( 5 )
-anims/NewspaperCreationPanelFadeOut = SubResource( 4 )
+anims/EventPanelFadeOut = SubResource( 4 )
+anims/NewspaperCreationPanelFadeOut = SubResource( 5 )
 
 [connection signal="item_selected" from="AgencyPanel/CenterContainer/OptionButton" to="." method="_on_OptionButton_item_selected"]
