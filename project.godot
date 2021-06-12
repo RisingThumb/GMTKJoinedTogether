@@ -11,7 +11,7 @@ config_version=4
 [application]
 
 config/name="JoinedTogether"
-run/main_scene="res://Scenes/Game.tscn"
+run/main_scene="res://Scenes/Title.tscn"
 config/icon="res://icon.png"
 
 [autoload]

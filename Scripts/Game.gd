@@ -13,6 +13,7 @@ onready var studyChoice = $NewspaperCreationPanel/CenterContainer/ScrollContaine
 func _ready():
 	$DayPanel.visible = true
 	$AgencyPanel.visible = false
+	$EventPanel.visible = true
 	$NewspaperCreationPanel.visible = false
 	$BillPanel.visible = false
 	
@@ -52,6 +53,21 @@ func setupTopicDropDowns():
 
 
 func _on_OptionButton_item_selected(index):
-	print(index)
 	$AgencyPanel/CenterContainer/OptionButton.disabled = true
+	$NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper/Publish.disabled = false
 	$Fader.play("AgencyPanelFadeOut")
+
+
+func _on_EventButton_pressed():
+	$NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper/Publish.disabled = true
+	$Fader.play("EventPanelFadeOut")
+
+
+func _on_Publish_pressed():
+	$Fader.play("NewspaperCreationPanelFadeOut")
+
+
+func _on_FinishFinanceButton_pressed():
+	$Fader.play("BillFadeout")
+	dayForward()
+	pass # Replace with function body.
