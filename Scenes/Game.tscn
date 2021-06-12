@@ -629,23 +629,54 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="CurrentMoney" type="Label" parent="BillPanel/CenterContainer/VBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="BillPanel/CenterContainer/VBoxContainer"]
 margin_top = 136.0
 margin_right = 143.0
 margin_bottom = 160.0
-text = "$10"
 
-[node name="CurrentExpenses" type="Label" parent="BillPanel/CenterContainer/VBoxContainer"]
+[node name="Symbol" type="Label" parent="BillPanel/CenterContainer/VBoxContainer/HBoxContainer"]
+margin_right = 9.0
+margin_bottom = 24.0
+text = "$"
+
+[node name="CurrentMoney" type="Label" parent="BillPanel/CenterContainer/VBoxContainer/HBoxContainer"]
+margin_left = 13.0
+margin_right = 13.0
+margin_bottom = 24.0
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="BillPanel/CenterContainer/VBoxContainer"]
 margin_top = 164.0
 margin_right = 143.0
 margin_bottom = 188.0
-text = "-$5"
 
-[node name="NewMoneyAmount" type="Label" parent="BillPanel/CenterContainer/VBoxContainer"]
+[node name="Symbol" type="Label" parent="BillPanel/CenterContainer/VBoxContainer/HBoxContainer2"]
+margin_right = 17.0
+margin_bottom = 24.0
+text = "-$"
+
+[node name="CurrentExpenses" type="Label" parent="BillPanel/CenterContainer/VBoxContainer/HBoxContainer2"]
+margin_left = 21.0
+margin_right = 31.0
+margin_bottom = 24.0
+text = "0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="BillPanel/CenterContainer/VBoxContainer"]
 margin_top = 192.0
 margin_right = 143.0
 margin_bottom = 216.0
-text = "$5"
+
+[node name="Symbol" type="Label" parent="BillPanel/CenterContainer/VBoxContainer/HBoxContainer3"]
+margin_right = 9.0
+margin_bottom = 24.0
+text = "$"
+
+[node name="NewMoneyAmount" type="Label" parent="BillPanel/CenterContainer/VBoxContainer/HBoxContainer3"]
+margin_left = 13.0
+margin_right = 13.0
+margin_bottom = 24.0
 
 [node name="Money2" type="HSeparator" parent="BillPanel/CenterContainer/VBoxContainer"]
 margin_top = 220.0
