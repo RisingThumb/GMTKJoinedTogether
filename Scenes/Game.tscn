@@ -1,8 +1,9 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Scripts/DayLabel.gd" type="Script" id=1]
 [ext_resource path="res://Scripts/Game.gd" type="Script" id=2]
 [ext_resource path="res://icon.png" type="Texture" id=3]
+[ext_resource path="res://Scripts/Stats.gd" type="Script" id=4]
 
 [sub_resource type="Animation" id=1]
 resource_name = "AgencyPanelFadeOut"
@@ -612,6 +613,7 @@ margin_left = -100.0
 margin_right = 100.0
 margin_bottom = 40.0
 rect_min_size = Vector2( 200, 0 )
+script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -621,12 +623,13 @@ margin_right = 200.0
 margin_bottom = 16.0
 min_value = -500.0
 max_value = 500.0
+editable = false
 
 [node name="MoneyAmount" type="Label" parent="Control"]
 margin_top = 20.0
 margin_right = 200.0
 margin_bottom = 34.0
-text = "$25"
+text = "£0"
 align = 1
 
 [connection signal="pressed" from="EventPanel/CenterContainer/VBoxContainer/EventButton" to="." method="_on_EventButton_pressed"]
