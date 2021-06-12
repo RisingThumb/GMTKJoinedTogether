@@ -1,7 +1,7 @@
 extends Node
 
 export(String) var path_tree_file
-var root_path_tree_state
+var path_tree_states
 
 class State:
 	var name: String
@@ -29,9 +29,26 @@ class State:
 	func _set_children(_children: Array):
 		children = _children
 		
-	func _set_thresholds(_ranges: Array):
+	func _set_ranges(_ranges: Array):
 		ranges = _ranges
+
+func get_next_state(state: State, discord: int) -> State:
+	if state == null:
+		state = path_tree_states[0]
+	
+	var counter = 0
 		
+	for bounds in state.get_ranges():
+		var lower_bound = bounds[0]
+		var upper_bound = bounds[1]
+		
+		if discord >= lower_bound && discord <= upper_bound:
+			return state.get_children()[counter]
+		
+		counter += 1
+		
+	return null
+	
 func _construct_tree(data):
 	var states = []
 	
@@ -42,19 +59,18 @@ func _construct_tree(data):
 		var to = association["to"]
 		var from = association["from"]
 		
-		var from_state = states[from]
-		var to_state = states[to]
+		var state = states[from]
 		
-		from_state.get_children().push_back(to_state)
-		from_state.get_ranges().push_back(to_state)
+		state.get_children().push_back(states[to])
+		state.get_ranges().push_back(association["range"])
 	
-	return states[0]
+	return states
 
 func _ready():
 	var document = _load_file(path_tree_file)
 	var parsed = JSON.parse(document)
 	
-	root_path_tree_state = _construct_tree(parsed.result)
+	path_tree_states = _construct_tree(parsed.result)
 
 func _load_file(name):
 	var file = File.new()
