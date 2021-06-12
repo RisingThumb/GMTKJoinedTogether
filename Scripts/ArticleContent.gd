@@ -109,7 +109,7 @@ func _get_element(day, agency, attribute, index):
 
 func _get_discord(day, agency, attribute, index):
 	var element = _get_element(day, agency, attribute, index)
-	return element["discord"]
+	return element["discourse"]
 	
 func _get_money(day, agency, attribute, index):
 	var element = _get_element(day, agency, attribute, index)
