@@ -115,7 +115,6 @@ func _on_EventButton_pressed() -> void:
 
 func _on_Publish_pressed() -> void:
 	$Fader.play("NewspaperCreationPanelFadeOut")
-	print(titleChoice.selected())
 	
 	calc.add_title(titleChoice.selected())
 	calc.add_content(textChoice.selected())

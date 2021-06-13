@@ -1,7 +1,8 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://Scripts/DayLabel.gd" type="Script" id=1]
 [ext_resource path="res://Scripts/Game.gd" type="Script" id=2]
+[ext_resource path="res://Audio/NewDay.wav" type="AudioStream" id=3]
 [ext_resource path="res://Scripts/Stats.gd" type="Script" id=4]
 [ext_resource path="res://Themes/NewspaperTheme.tres" type="Theme" id=5]
 [ext_resource path="res://Themes/BodyText.tres" type="DynamicFont" id=6]
@@ -218,6 +219,20 @@ tracks/5/keys = {
 "update": 0,
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
+tracks/6/type = "audio"
+tracks/6/path = NodePath("NewDayAudio")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"clips": [ {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 3 )
+} ],
+"times": PoolRealArray( 0 )
+}
 
 [sub_resource type="Animation" id=4]
 resource_name = "EventPanelFadeOut"
@@ -342,6 +357,8 @@ __meta__ = {
 }
 
 [node name="DayPanel" type="Panel" parent="."]
+visible = false
+modulate = Color( 1, 1, 1, 0 )
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -371,7 +388,6 @@ text = "Day 1"
 script = ExtResource( 1 )
 
 [node name="EventPanel" type="Panel" parent="."]
-visible = false
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -402,28 +418,28 @@ margin_bottom = 304.0
 theme = ExtResource( 5 )
 
 [node name="EventLabel" type="Label" parent="EventPanel/CenterContainer/VBoxContainer"]
-margin_right = 110.0
-margin_bottom = 24.0
+margin_right = 83.0
+margin_bottom = 19.0
 text = "Event name"
 
 [node name="HSeparator" type="HSeparator" parent="EventPanel/CenterContainer/VBoxContainer"]
-margin_top = 28.0
-margin_right = 110.0
-margin_bottom = 32.0
+margin_top = 23.0
+margin_right = 83.0
+margin_bottom = 27.0
 theme = ExtResource( 5 )
 
 [node name="EventButton" type="Button" parent="EventPanel/CenterContainer/VBoxContainer"]
-margin_top = 36.0
-margin_right = 110.0
-margin_bottom = 60.0
+margin_top = 31.0
+margin_right = 83.0
+margin_bottom = 50.0
 theme = ExtResource( 5 )
 custom_fonts/font = ExtResource( 6 )
 text = "Ok"
 
 [node name="HSeparator2" type="HSeparator" parent="EventPanel/CenterContainer/VBoxContainer"]
-margin_top = 64.0
-margin_right = 110.0
-margin_bottom = 68.0
+margin_top = 54.0
+margin_right = 83.0
+margin_bottom = 58.0
 theme = ExtResource( 5 )
 
 [node name="AgencyPanel" type="Panel" parent="."]
@@ -781,6 +797,13 @@ anims/BillFadeout = SubResource( 2 )
 anims/DayPanelFadeOut = SubResource( 3 )
 anims/EventPanelFadeOut = SubResource( 4 )
 anims/NewspaperCreationPanelFadeOut = SubResource( 5 )
+
+[node name="NewDayAudio" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+
+[node name="SubmitAudio" type="AudioStreamPlayer" parent="."]
+
+[node name="ButtonAudio" type="AudioStreamPlayer" parent="."]
 
 [connection signal="pressed" from="EventPanel/CenterContainer/VBoxContainer/EventButton" to="." method="_on_EventButton_pressed"]
 [connection signal="item_selected" from="AgencyPanel/CenterContainer/OptionButton" to="." method="_on_OptionButton_item_selected"]
