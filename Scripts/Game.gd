@@ -7,6 +7,7 @@ var discord = 0
 var connections = 1
 var moneyCost = 0
 var interviews = true
+var state = null
 export(int) var billsCost = 100
 export(int) var connectionCost = 20
 export(int) var interviewCost = 30
@@ -29,9 +30,12 @@ func _ready() -> void:
 	$BillPanel.visible = false
 	
 	$Fader.play("DayPanelFadeOut")
+	
+	state = PathTree.get_next_state(state, discord)
 
 func dayForward() -> void:
 	day += 1
+	state = PathTree.get_next_state(state, discord)
 	$DayPanel/CenterContainer/DayLabel.updateDayText(day)
 
 func setupAgenciesAvailable() -> void:
@@ -48,13 +52,15 @@ func setupTopicDropDowns() -> void:
 		a.clear()
 	$NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper/Topic.text = ArticleContent.get_event(day - 1)
 
-	var titles = ArticleContent.get_title_strings(day - 1, selectedAgency)
-	var texts = ArticleContent.get_content_strings(day - 1, selectedAgency)
-	var images = ArticleContent.get_image_strings(day - 1, selectedAgency)
-	var captions = ArticleContent.get_caption_strings(day - 1, selectedAgency)
-	var studies = ArticleContent.get_study_strings(day - 1, selectedAgency)
+	var temp = state.get_event_index()
+
+	var titles = ArticleContent.get_title_strings(temp, selectedAgency)
+	var texts = ArticleContent.get_content_strings(temp, selectedAgency)
+	var images = ArticleContent.get_image_strings(temp, selectedAgency)
+	var captions = ArticleContent.get_caption_strings(temp, selectedAgency)
+	var studies = ArticleContent.get_study_strings(temp, selectedAgency)
 		
-	calc = ArticleContent.Calculator.new(day-1, selectedAgency, discord, money)
+	calc = ArticleContent.Calculator.new(temp, selectedAgency, discord, money)
 	
 	for title in titles:
 		titleChoice.add_item(title)
@@ -69,7 +75,7 @@ func setupTopicDropDowns() -> void:
 	interviewChoice.visible = interviews
 	if interviews:
 		var interviewIcon = load("res://icon.png")
-		var interviewItems = ArticleContent.get_interview_strings(day - 1, selectedAgency)
+		var interviewItems = ArticleContent.get_interview_strings(temp, selectedAgency)
 		for interview in interviewItems:
 			interviewChoice.add_icon_item(interviewIcon, interview)
 
@@ -99,6 +105,7 @@ func _on_Publish_pressed() -> void:
 		calc.add_interview(interviewChoice.selected)
 	money = calc.get_money()
 	discord = calc.get_discord()
+	discord = clamp(discord,-500, 500)
 	$BillPanel2/Stats.set_discord(discord)
 	$BillPanel2/Stats.set_money(money)
 	

@@ -17,6 +17,9 @@ class State:
 	func get_description():
 		return description
 	
+	func get_event_index():
+		return event_index
+		
 	func get_children():
 		return children
 		

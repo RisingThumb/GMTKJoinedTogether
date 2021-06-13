@@ -541,7 +541,6 @@ text = "Select Study"
 margin_top = 224.0
 margin_right = 219.0
 margin_bottom = 248.0
-selected = 0
 
 [node name="HSeparator" type="HSeparator" parent="NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper"]
 margin_top = 252.0
@@ -697,7 +696,6 @@ margin_bottom = 252.0
 text = "MoneySorted"
 
 [node name="BillPanel2" type="Panel" parent="."]
-visible = false
 anchor_left = 0.5
 anchor_right = 0.5
 margin_left = -150.0
