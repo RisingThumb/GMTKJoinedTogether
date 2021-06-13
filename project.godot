@@ -10,7 +10,6 @@ config_version=4
 
 _global_script_classes=[  ]
 _global_script_class_icons={
-
 }
 
 [application]
@@ -21,6 +20,7 @@ config/icon="res://icon.png"
 
 [autoload]
 
+Music="*res://Scenes/Music.tscn"
 ArticleContent="*res://Scenes/ArticleContent.tscn"
 PathTree="*res://Scenes/PathTree.tscn"
 
