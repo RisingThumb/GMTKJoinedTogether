@@ -12,18 +12,18 @@
                     {
                         "text": "New writer in Town.",
                         "discourse": 0,
-                        "money": 10
+                        "money": 50
                     },
                     {
                         "text": "First impressions of Bathington.",
-                        "discourse": 0,
-                        "money": 10
+                        "discourse": 10,
+                        "money": 50
                     }
                 ],
                 "content": [
                     {
                         "text": "I am are new to this city and are hoping to have a big impact",
-                        "discourse": 0,
+                        "discourse": 10,
                         "money": 10
                     },
                     {
@@ -35,18 +35,28 @@
                 "images": [
                     {
                         "text": "res://Art/Pictures/CityScape.png",
-                        "discourse": 0,
-                        "money": 0
+                        "discourse": 10,
+                        "money": 10
                     },
                     {
                         "text": "res://Art/Pictures/CityScape2.png",
-                        "discourse": 0,
+                        "discourse": 10,
                         "money": 10
+                    },
+                    {
+                        "text": "res://Art/Pictures/BeachBikini.png",
+                        "discourse": -10,
+                        "money": 16
                     }
                 ],
                 "captions": [
                     {
                         "text": "The city Bathington",
+                        "discourse": 1,
+                        "money": 1
+                    },
+                    {
+                        "text": "My First Day",
                         "discourse": 1,
                         "money": 1
                     }
@@ -81,12 +91,12 @@
                     {
                         "text": "New writer in Town.",
                         "discourse": 0,
-                        "money": 10
+                        "money": 50
                     },
                     {
                         "text": "First impressions of Bathington.",
                         "discourse": 0,
-                        "money": 10
+                        "money": 50
                     }
                 ],
                 "content": [
@@ -105,17 +115,27 @@
                     {
                         "text": "res://Art/Pictures/CityScape.png",
                         "discourse": 0,
-                        "money": 0
+                        "money": 10
                     },
                     {
                         "text": "res://Art/Pictures/CityScape2.png",
                         "discourse": 0,
                         "money": 10
+                    },
+                    {
+                        "text": "res://Art/Pictures/BeachBikini.png",
+                        "discourse": -10,
+                        "money": 16
                     }
                 ],
                 "captions": [
                     {
                         "text": "The city Bathington",
+                        "discourse": 1,
+                        "money": 1
+                    },
+                    {
+                        "text": "My First Day",
                         "discourse": 1,
                         "money": 1
                     }
@@ -150,12 +170,12 @@
                     {
                         "text": "New writer in Town.",
                         "discourse": 0,
-                        "money": 10
+                        "money": 50
                     },
                     {
                         "text": "First impressions of Bathington.",
                         "discourse": 0,
-                        "money": 10
+                        "money": 50
                     }
                 ],
                 "content": [
@@ -180,11 +200,21 @@
                         "text": "res://Art/Pictures/CityScape2.png",
                         "discourse": 0,
                         "money": 10
+                    },
+                    {
+                        "text": "res://Art/Pictures/BeachBikini.png",
+                        "discourse": -10,
+                        "money": 16
                     }
                 ],
                 "captions": [
                     {
                         "text": "The city Bathington",
+                        "discourse": 1,
+                        "money": 1
+                    },
+                    {
+                        "text": "My First Day",
                         "discourse": 1,
                         "money": 1
                     }
@@ -277,7 +307,16 @@
                     }
                 ],
                 "captions": [
-                    
+                    {
+                        "text": "Rats Everywhere",
+                        "discourse": 1,
+                        "money": 1
+                    },
+                    {
+                        "text": "Mayor Billy",
+                        "discourse": 1,
+                        "money": 1
+                    }
                 ],
                 "interviews": [
                     {
@@ -350,10 +389,33 @@
                     }
                 ],
                 "images": [
-                    
+                    {
+                        "text": "res://Art/Pictures/CityScape2.png",
+                        "discourse": 10,
+                        "money": 5
+                    },
+                    {
+                        "text": "res://Art/Pictures/PoorNeighbourhood.png",
+                        "discourse": -30,
+                        "money": 20
+                    },
+                    {
+                        "text": "res://Art/Pictures/BillyBohanScared.png",
+                        "discourse": 20,
+                        "money": 15
+                    }
                 ],
                 "captions": [
-                    
+                    {
+                        "text": "Rats Everywhere",
+                        "discourse": 1,
+                        "money": 1
+                    },
+                    {
+                        "text": "Mayor Billy",
+                        "discourse": 1,
+                        "money": 1
+                    }
                 ],
                 "interviews": [
                     {
@@ -426,10 +488,33 @@
                     }
                 ],
                 "images": [
-                    
+                    {
+                        "text": "res://Art/Pictures/CityScape2.png",
+                        "discourse": 10,
+                        "money": 5
+                    },
+                    {
+                        "text": "res://Art/Pictures/PoorNeighbourhood.png",
+                        "discourse": -30,
+                        "money": 20
+                    },
+                    {
+                        "text": "res://Art/Pictures/BillyBohanScared.png",
+                        "discourse": 20,
+                        "money": 15
+                    }
                 ],
                 "captions": [
-                    
+                    {
+                        "text": "Rats Everywhere",
+                        "discourse": 1,
+                        "money": 1
+                    },
+                    {
+                        "text": "Mayor Bohan",
+                        "discourse": -1,
+                        "money": 1
+                    }
                 ],
                 "interviews": [
                     {
@@ -488,10 +573,33 @@
                     }
                 ],
                 "images": [
-                    
+                    {
+                        "text": "res://Art/Pictures/PoorNeighbourhood.png",
+                        "discourse": 10,
+                        "money": 5
+                    },
+                    {
+                        "text": "res://Art/Pictures/BillyBohanOverwhelmed.png",
+                        "discourse": -20,
+                        "money": 15
+                    },
+                    {
+                        "text": "res://Art/Pictures/Protest against EDL.png",
+                        "discourse": -10,
+                        "money": 17
+                    }
                 ],
                 "captions": [
-                    
+                    {
+                        "text": "Protesters gather in the streets",
+                        "discourse": 7,
+                        "money": 1
+                    },
+                    {
+                        "text": "Mayor Flounders",
+                        "discourse": -5,
+                        "money": 1
+                    }
                 ],
                 "interviews": [
                     
@@ -526,10 +634,33 @@
                     }
                 ],
                 "images": [
-                    
+                    {
+                        "text": "res://Art/Pictures/PoorNeighbourhood.png",
+                        "discourse": 10,
+                        "money": 5
+                    },
+                    {
+                        "text": "res://Art/Pictures/BillyBohanOverwhelmed.png",
+                        "discourse": -20,
+                        "money": 15
+                    },
+                    {
+                        "text": "res://Art/Pictures/Protest against EDL.png",
+                        "discourse": -10,
+                        "money": 17
+                    }
                 ],
                 "captions": [
-                    
+                    {
+                        "text": "Protesters gather in the streets",
+                        "discourse": 7,
+                        "money": 1
+                    },
+                    {
+                        "text": "Mayor Flounders",
+                        "discourse": -5,
+                        "money": 1
+                    }
                 ],
                 "interviews": [
                     
@@ -564,10 +695,33 @@
                     }
                 ],
                 "images": [
-                    
+                    {
+                        "text": "res://Art/Pictures/PoorNeighbourhood.png",
+                        "discourse": 10,
+                        "money": 5
+                    },
+                    {
+                        "text": "res://Art/Pictures/BillyBohanOverwhelmed.png",
+                        "discourse": -20,
+                        "money": 15
+                    },
+                    {
+                        "text": "res://Art/Pictures/Protest against EDL.png",
+                        "discourse": -10,
+                        "money": 17
+                    }
                 ],
                 "captions": [
-                    
+                    {
+                        "text": "Protesters gather in the streets",
+                        "discourse": 7,
+                        "money": 1
+                    },
+                    {
+                        "text": "Mayor Flounders",
+                        "discourse": -5,
+                        "money": 1
+                    }
                 ],
                 "interviews": [
                     
@@ -612,10 +766,28 @@
                     }
                 ],
                 "images": [
-                    
+                    {
+                        "text": "res://Art/Pictures/BillyBohanPonder.png",
+                        "discourse": -10,
+                        "money": 5
+                    },
+                    {
+                        "text": "res://Art/Pictures/BillyBohanPose.png",
+                        "discourse": 10,
+                        "money": 15
+                    }
                 ],
                 "captions": [
-                    
+                    {
+                        "text": "Mayor Ponders after success",
+                        "discourse": -2,
+                        "money": 1
+                    },
+                    {
+                        "text": "Mayor Bohan",
+                        "discourse": 5,
+                        "money": 1
+                    }
                 ],
                 "interviews": [
                     
@@ -664,8 +836,30 @@
                         "money": 35
                     }
                 ],
-                "images": [],
-                "captions": [],
+                "images": [
+                    {
+                        "text": "res://Art/Pictures/BillyBohanPonder.png",
+                        "discourse": -10,
+                        "money": 5
+                    },
+                    {
+                        "text": "res://Art/Pictures/BillyBohanPose.png",
+                        "discourse": 10,
+                        "money": 15
+                    }
+                ],
+                "captions": [
+                    {
+                        "text": "Mayor Ponders after success",
+                        "discourse": -2,
+                        "money": 1
+                    },
+                    {
+                        "text": "Mayor Bohan",
+                        "discourse": 5,
+                        "money": 1
+                    }
+                ],
                 "interviews": [],
                 "studies": [
                     {
@@ -710,8 +904,30 @@
                         "money": 15
                     }
                 ],
-                "images": [],
-                "captions": [],
+                "images": [
+                    {
+                        "text": "res://Art/Pictures/BillyBohanPonder.png",
+                        "discourse": -10,
+                        "money": 5
+                    },
+                    {
+                        "text": "res://Art/Pictures/BillyBohanPose.png",
+                        "discourse": 10,
+                        "money": 15
+                    }
+                ],
+                "captions": [
+                    {
+                        "text": "Mayor Ponders after success",
+                        "discourse": -2,
+                        "money": 1
+                    },
+                    {
+                        "text": "Mayor Bohan",
+                        "discourse": 5,
+                        "money": 1
+                    }
+                ],
                 "interviews": [],
                 "studies": [
                     {
@@ -768,10 +984,33 @@
                     }
                 ],
                 "images": [
-                    
+                    {
+                        "text": "res://Art/Pictures/BillyBohanDepressed.png",
+                        "discourse": -10,
+                        "money": 5
+                    },
+                    {
+                        "text": "res://Art/Pictures/BillyBohanPushback.png",
+                        "discourse": 10,
+                        "money": 15
+                    },
+                    {
+                        "text": "res://Art/Pictures/Riots.png",
+                        "discourse": -10,
+                        "money": 17
+                    }
                 ],
                 "captions": [
-                    
+                    {
+                        "text": "Riots in streets",
+                        "discourse": -2,
+                        "money": 1
+                    },
+                    {
+                        "text": "Mayor Bohan Fails",
+                        "discourse": 5,
+                        "money": 1
+                    }
                 ],
                 "interviews": [
                     
@@ -815,8 +1054,35 @@
                         "money": 58
                     }
                 ],
-                "images": [],
-                "captions": [],
+                "images": [
+                    {
+                        "text": "res://Art/Pictures/BillyBohanDepressed.png",
+                        "discourse": -10,
+                        "money": 5
+                    },
+                    {
+                        "text": "res://Art/Pictures/BillyBohanPushback.png",
+                        "discourse": 10,
+                        "money": 15
+                    },
+                    {
+                        "text": "res://Art/Pictures/Riots.png",
+                        "discourse": -10,
+                        "money": 17
+                    }
+                ],
+                "captions": [
+                    {
+                        "text": "Riots in streets",
+                        "discourse": -2,
+                        "money": 1
+                    },
+                    {
+                        "text": "Mayor Bohan Fails",
+                        "discourse": 5,
+                        "money": 1
+                    }
+                ],
                 "interviews": [],
                 "studies": []
             },
@@ -850,8 +1116,35 @@
                         "money": 27
                     }
                 ],
-                "images": [],
-                "captions": [],
+                "images": [
+                    {
+                        "text": "res://Art/Pictures/BillyBohanDepressed.png",
+                        "discourse": -10,
+                        "money": 5
+                    },
+                    {
+                        "text": "res://Art/Pictures/BillyBohanPushback.png",
+                        "discourse": 10,
+                        "money": 15
+                    },
+                    {
+                        "text": "res://Art/Pictures/Riots.png",
+                        "discourse": -10,
+                        "money": 17
+                    }
+                ],
+                "captions": [
+                    {
+                        "text": "Riots in streets",
+                        "discourse": -2,
+                        "money": 1
+                    },
+                    {
+                        "text": "Mayor Bohan Fails",
+                        "discourse": 5,
+                        "money": 1
+                    }
+                ],
                 "interviews": [],
                 "studies": []
             }
@@ -869,10 +1162,28 @@
                     
                 ],
                 "images": [
-                    
+                    {
+                        "text": "res://Art/Pictures/BillyBohanOfGuard.png",
+                        "discourse": -10,
+                        "money": 5
+                    },
+                    {
+                        "text": "res://Art/Pictures/BillyBohanBodyGuard.png",
+                        "discourse": 10,
+                        "money": 15
+                    }
                 ],
                 "captions": [
-                    
+                    {
+                        "text": "Bohan Hides from cameras",
+                        "discourse": -12,
+                        "money": 1
+                    },
+                    {
+                        "text": "Mayor Bohan",
+                        "discourse": 5,
+                        "money": 1
+                    }
                 ],
                 "interviews": [
                     
@@ -884,16 +1195,60 @@
             "Right-wing Agency": {
                 "titles": [],
                 "content": [],
-                "images": [],
-                "captions": [],
+                "images": [
+                    {
+                        "text": "res://Art/Pictures/BillyBohanOfGuard.png",
+                        "discourse": -10,
+                        "money": 5
+                    },
+                    {
+                        "text": "res://Art/Pictures/BillyBohanBodyGuard.png",
+                        "discourse": 10,
+                        "money": 15
+                    }
+                ],
+                "captions": [
+                    {
+                        "text": "Bohan Hides from cameras",
+                        "discourse": -12,
+                        "money": 1
+                    },
+                    {
+                        "text": "Mayor Bohan",
+                        "discourse": 5,
+                        "money": 1
+                    }
+                ],
                 "interviews": [],
                 "studies": []
             },
             "Center-wing Agency": {
                 "titles": [],
                 "content": [],
-                "images": [],
-                "captions": [],
+                "images": [
+                    {
+                        "text": "res://Art/Pictures/BillyBohanOfGuard.png",
+                        "discourse": -10,
+                        "money": 5
+                    },
+                    {
+                        "text": "res://Art/Pictures/BillyBohanBodyGuard.png",
+                        "discourse": 10,
+                        "money": 15
+                    }
+                ],
+                "captions": [
+                    {
+                        "text": "Bohan Hides from cameras",
+                        "discourse": -12,
+                        "money": 1
+                    },
+                    {
+                        "text": "Mayor Bohan",
+                        "discourse": 5,
+                        "money": 1
+                    }
+                ],
                 "interviews": [],
                 "studies": []
             }
@@ -911,10 +1266,28 @@
                     
                 ],
                 "images": [
-                    
+                    {
+                        "text": "res://Art/Pictures/BillyBohanPose.png",
+                        "discourse": -10,
+                        "money": 5
+                    },
+                    {
+                        "text": "res://Art/Pictures/CityPeople.png",
+                        "discourse": 10,
+                        "money": 15
+                    }
                 ],
                 "captions": [
-                    
+                    {
+                        "text": "City back to normal",
+                        "discourse": -1,
+                        "money": 1
+                    },
+                    {
+                        "text": "City in peace",
+                        "discourse": 5,
+                        "money": 1
+                    }
                 ],
                 "interviews": [
                     
@@ -926,15 +1299,60 @@
             "Right-wing Agency": {
                 "titles": [],
                 "content": [],
-                "images": [],
+                "images": [
+                    {
+                        "text": "res://Art/Pictures/BillyBohanPose.png",
+                        "discourse": -10,
+                        "money": 5
+                    },
+                    {
+                        "text": "res://Art/Pictures/CityPeople.png",
+                        "discourse": 10,
+                        "money": 15
+                    }
+                ],
+                "captions": [
+                    {
+                        "text": "City back to normal",
+                        "discourse": -1,
+                        "money": 1
+                    },
+                    {
+                        "text": "City in peace",
+                        "discourse": 5,
+                        "money": 1
+                    }
+                ],
                 "interviews": [],
                 "studies": []
             },
             "Center-wing Agency": {
                 "titles": [],
                 "content": [],
-                "images": [],
-                "captions": [],
+                "images": [
+                    {
+                        "text": "res://Art/Pictures/BillyBohanPose.png",
+                        "discourse": -10,
+                        "money": 5
+                    },
+                    {
+                        "text": "res://Art/Pictures/CityPeople.png",
+                        "discourse": 10,
+                        "money": 15
+                    }
+                ],
+                "captions": [
+                    {
+                        "text": "City back to normal",
+                        "discourse": -1,
+                        "money": 1
+                    },
+                    {
+                        "text": "City in peace",
+                        "discourse": 5,
+                        "money": 1
+                    }
+                ],
                 "interviews": [],
                 "studies": []
             }
