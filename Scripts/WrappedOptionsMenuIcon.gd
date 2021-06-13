@@ -18,7 +18,12 @@ func set_briefs(var briefs:Array) -> void:
 	self.briefs = briefs
 
 func _process(delta) -> void:
-	var textToUse = briefs[$Label/TextureRect/TextChoice.selected]
+	var index = $Label/TextureRect/TextChoice.selected
+	var textToUse
+	if index == -1:
+		textToUse = ""
+	else:
+		textToUse = briefs[index]
 	$Label.text = "* " + textToUse
 
 func add_item(var textToAdd : String) -> void:

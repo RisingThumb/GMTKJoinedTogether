@@ -618,6 +618,7 @@ margin_bottom = 68.0
 text = "Bills"
 
 [node name="CheckConnection" type="CheckButton" parent="BillPanel/CenterContainer/VBoxContainer"]
+visible = false
 margin_top = 72.0
 margin_right = 143.0
 margin_bottom = 96.0
@@ -698,7 +699,7 @@ __meta__ = {
 margin_top = 228.0
 margin_right = 143.0
 margin_bottom = 252.0
-text = "MoneySorted"
+text = "Purchase and Continue"
 
 [node name="BillPanel2" type="Panel" parent="."]
 anchor_left = 0.5

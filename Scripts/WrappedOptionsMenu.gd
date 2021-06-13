@@ -14,12 +14,18 @@ func set_day(var day:int) -> void:
 
 func set_agency(var agency:String) -> void:
 	self.agency = agency
+	self.briefs = [""]
 
 func set_briefs(var briefs:Array) -> void:
 	self.briefs = briefs
 
 func _process(delta) -> void:
-	var textToUse = briefs[$TextureRect/TextChoice.selected]
+	var index = $TextureRect/TextChoice.selected
+	var textToUse
+	if index == -1:
+		textToUse = ""
+	else:
+		textToUse = briefs[index]
 	self.text = "* " + textToUse
 
 func add_item(var textToAdd : String) -> void:

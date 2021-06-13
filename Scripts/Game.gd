@@ -6,7 +6,7 @@ var money = 0
 var discord = 0
 var connections = 1
 var moneyCost = 0
-var interviews = true
+var interviews = false
 
 export(int) var billsCost = 100
 export(int) var connectionCost = 20
