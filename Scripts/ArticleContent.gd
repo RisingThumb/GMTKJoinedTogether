@@ -3,6 +3,13 @@ extends Node
 export(String) var article_content_file
 var article_content
 
+const DEFAULT_OBJECT = {
+	"discourse": 0,
+	"money": 0	
+}
+
+const MAXIMUM_BRIEF_LENFTH = 100
+
 class Calculator:
 	var day: int
 	var agency: String
@@ -77,7 +84,25 @@ func get_title_strings(day: int, agency: String) -> Array:
 
 func get_content_strings(day: int, agency: String) -> Array:
 	return _get_element_strings(day, agency, "content")
+
+func get_content_strings_brief(day: int, agency: String) -> Array:
+	var result = []
+	var content_strings = get_content_strings(day, agency)
 	
+	var terminator = "."
+	
+	for content_string in content_strings:
+		var index = content_string.find(terminator)
+		
+		if index == -1:
+			index = content_string.length()
+			content_string = str(content_string, terminator)
+		
+		index = min(index + 1, MAXIMUM_BRIEF_LENFTH)		
+		result.push_back(content_string.left(index))
+	
+	return result
+
 func get_image_strings(day: int, agency: String) -> Array:
 	return _get_element_strings(day, agency, "images")
 
@@ -102,9 +127,12 @@ func _get_element_strings(day, agency, attribute) -> Array:
 	return element_strings
 
 func _get_element(day, agency, attribute, index):
+	#if index == -1:
+	#	return DEFAULT_OBJECT
+	
 	var agencies = article_content[day]["agencies"]
-	var temp = agencies[agency]
-	var elements = temp[attribute]
+	var elements = agencies[agency][attribute]
+	
 	return elements[index]
 
 func _get_discord(day, agency, attribute, index):

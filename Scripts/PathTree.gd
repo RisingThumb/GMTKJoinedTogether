@@ -39,7 +39,7 @@ class State:
 
 func get_next_state(state: State, discord: int) -> State:
 	if state == null:
-		state = path_tree_states[0]
+		return path_tree_states[0]
 	
 	var counter = 0
 		

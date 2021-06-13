@@ -7,7 +7,7 @@ var discord = 0
 var connections = 1
 var moneyCost = 0
 var interviews = true
-var state = null
+
 export(int) var billsCost = 100
 export(int) var connectionCost = 20
 export(int) var interviewCost = 30
@@ -19,6 +19,10 @@ onready var imageChoice = $NewspaperCreationPanel/CenterContainer/ScrollContaine
 onready var captionChoice = $NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper/CaptionChoice
 onready var studyChoice = $NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper/StudyChoice
 onready var interviewChoice = $NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper/InterviewChoice
+
+var state
+var event_index
+
 var selectedAgency = ""
 var calc
 
@@ -31,18 +35,22 @@ func _ready() -> void:
 	
 	$Fader.play("DayPanelFadeOut")
 	
-	state = PathTree.get_next_state(state, discord)
+	state = PathTree.get_next_state(null, discord)
+	event_index = state.get_event_index()
 
 func dayForward() -> void:
 	day += 1
+	
 	state = PathTree.get_next_state(state, discord)
+	event_index = state.get_event_index()
+	
 	$DayPanel/CenterContainer/DayLabel.updateDayText(day)
 
 func setupAgenciesAvailable() -> void:
 	$AgencyPanel/CenterContainer/OptionButton.clear()
 	$AgencyPanel/CenterContainer/OptionButton.add_item("Select an Agency to work for")
 	$AgencyPanel/CenterContainer/OptionButton.selected = 0
-	var agencies = ArticleContent.get_agencies(day - 1)
+	var agencies = ArticleContent.get_agencies(event_index)
 	for agency in agencies:
 		$AgencyPanel/CenterContainer/OptionButton.add_item(agency)
 	$EventPanel/CenterContainer/VBoxContainer/EventLabel.text = ArticleContent.get_event(day - 1)
@@ -52,14 +60,13 @@ func setupTopicDropDowns() -> void:
 		a.clear()
 	$NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper/Topic.text = ArticleContent.get_event(day - 1)
 
-	var temp = state.get_event_index()
-	var titles = ArticleContent.get_title_strings(temp-1, selectedAgency)
-	var texts = ArticleContent.get_content_strings(temp-1, selectedAgency)
-	var images = ArticleContent.get_image_strings(temp-1, selectedAgency)
-	var captions = ArticleContent.get_caption_strings(temp-1, selectedAgency)
-	var studies = ArticleContent.get_study_strings(temp-1, selectedAgency)
-		
-	calc = ArticleContent.Calculator.new(temp-1, selectedAgency, discord, money)
+	var titles = ArticleContent.get_title_strings(event_index, selectedAgency)
+	var texts = ArticleContent.get_content_strings_brief(event_index, selectedAgency)
+	var images = ArticleContent.get_image_strings(event_index, selectedAgency)
+	var captions = ArticleContent.get_caption_strings(event_index, selectedAgency)
+	var studies = ArticleContent.get_study_strings(event_index, selectedAgency)
+	
+	calc = ArticleContent.Calculator.new(event_index, selectedAgency, discord, money)
 	
 	for title in titles:
 		titleChoice.add_item(title)
@@ -74,7 +81,7 @@ func setupTopicDropDowns() -> void:
 		studyChoice.add_item(study)
 	interviewChoice.visible = interviews
 	if interviews:
-		var interviewItems = ArticleContent.get_interview_strings(temp-1, selectedAgency)
+		var interviewItems = ArticleContent.get_interview_strings(event_index, selectedAgency)
 		for interview in interviewItems:
 			interviewChoice.add_icon_item("res://icon.png", interview)
 
@@ -95,6 +102,7 @@ func _on_EventButton_pressed() -> void:
 func _on_Publish_pressed() -> void:
 	$Fader.play("NewspaperCreationPanelFadeOut")
 	print(titleChoice.selected())
+	
 	calc.add_title(titleChoice.selected())
 	calc.add_content(textChoice.selected())
 	calc.add_image(imageChoice.selected())
