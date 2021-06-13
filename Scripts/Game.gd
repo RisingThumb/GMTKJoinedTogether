@@ -15,7 +15,7 @@ export(int) var interviewCost = 30
 onready var topicLabel = $NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper/Topic
 onready var titleChoice = $NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper/ArticleTitle
 onready var textChoice = $NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper/TextChoice
-onready var imageChoice = $NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper/Imagechoice
+onready var imageChoice = $NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper/ImageChoice
 onready var captionChoice = $NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper/CaptionChoice
 onready var studyChoice = $NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper/StudyChoice
 onready var interviewChoice = $NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper/InterviewChoice
@@ -54,13 +54,13 @@ func setupTopicDropDowns() -> void:
 
 	var temp = state.get_event_index()
 	print(temp)
-	var titles = ArticleContent.get_title_strings(temp, selectedAgency)
-	var texts = ArticleContent.get_content_strings(temp, selectedAgency)
-	var images = ArticleContent.get_image_strings(temp, selectedAgency)
-	var captions = ArticleContent.get_caption_strings(temp, selectedAgency)
-	var studies = ArticleContent.get_study_strings(temp, selectedAgency)
+	var titles = ArticleContent.get_title_strings(temp-1, selectedAgency)
+	var texts = ArticleContent.get_content_strings(temp-1, selectedAgency)
+	var images = ArticleContent.get_image_strings(temp-1, selectedAgency)
+	var captions = ArticleContent.get_caption_strings(temp-1, selectedAgency)
+	var studies = ArticleContent.get_study_strings(temp-1, selectedAgency)
 		
-	calc = ArticleContent.Calculator.new(temp, selectedAgency, discord, money)
+	calc = ArticleContent.Calculator.new(temp-1, selectedAgency, discord, money)
 	
 	for title in titles:
 		titleChoice.add_item(title)
@@ -76,7 +76,7 @@ func setupTopicDropDowns() -> void:
 	interviewChoice.visible = interviews
 	if interviews:
 		var interviewIcon = load("res://icon.png")
-		var interviewItems = ArticleContent.get_interview_strings(temp, selectedAgency)
+		var interviewItems = ArticleContent.get_interview_strings(temp-1, selectedAgency)
 		for interview in interviewItems:
 			interviewChoice.add_icon_item(interviewIcon, interview)
 
@@ -97,11 +97,11 @@ func _on_EventButton_pressed() -> void:
 func _on_Publish_pressed() -> void:
 	$Fader.play("NewspaperCreationPanelFadeOut")
 	print(titleChoice.selected)
-	calc.add_title(titleChoice.selected)
+	calc.add_title(titleChoice.selected())
 	calc.add_content(textChoice.selected())
 	calc.add_image(imageChoice.selected)
-	calc.add_caption(captionChoice.selected)
-	calc.add_study(studyChoice.selected)
+	calc.add_caption(captionChoice.selected())
+	calc.add_study(studyChoice.selected())
 	if interviews:
 		calc.add_interview(interviewChoice.selected)
 	money = calc.get_money()

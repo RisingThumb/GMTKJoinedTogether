@@ -7,7 +7,7 @@ extends Label
 
 
 func _process(delta) -> void:
-	self.text = $TextureRect/TextChoice.text
+	self.text = "* " + $TextureRect/TextChoice.text
 
 func add_item(var textToAdd : String) -> void:
 	$TextureRect/TextChoice.add_item(textToAdd)
