@@ -5,72 +5,209 @@
             "Left-wing Agency": {
                 "titles": [
                     {
-                        "text": "Rats are Taking Over!!!!",
+                        "text": "Welcome to the City.",
                         "discourse": 10,
                         "money": 100
                     },
                     {
-                        "text": "Rats the Facts",
-                        "discourse": 1984,
+                        "text": "New writer in Town.",
+                        "discourse": 0,
+                        "money": 10
+                    },
+                    {
+                        "text": "First impressions of Bathington.",
+                        "discourse": 0,
                         "money": 10
                     }
                 ],
                 "content": [
                     {
-                        "text": "The fats killed someone at 9am... please tell me the wrapping is working otherwise I will be very very sad",
-                        "discourse": 1000,
-                        "money": 1000000
+                        "text": "I am are new to this city and are hoping to have a big impact",
+                        "discourse": 0,
+                        "money": 10
+                    },
+                    {
+                        "text": "This city is a historic town dating back to the 14th century when it was founded by Earl Bathing.",
+                        "discourse": 0,
+                        "money": 10
                     }
                 ],
                 "images": [
                     {
                         "text": "res://Art/Pictures/CityScape.png",
-                        "discourse": 100,
-                        "money": 10000
+                        "discourse": 0,
+                        "money": 0
                     },
                     {
                         "text": "res://Art/Pictures/CityScape2.png",
-                        "discourse": 100,
-                        "money": 10000
+                        "discourse": 0,
+                        "money": 10
                     }
                 ],
                 "captions": [
                     {
-                        "text": "hello",
+                        "text": "The city Bathington",
                         "discourse": 1,
                         "money": 1
                     }
                 ],
                 "interviews": [
                     {
-                        "text": "I am a art expert and I am scared. So very scared. I used some of my majestic art pieces as toilet paper to clean my shit-stained pants",
-                        "discourse": 100,
-                        "money": 234834095834
+                        "text": "",
+                        "discourse": -10,
+                        "money": 23
                     }
                 ],
                 "studies": [
                     {
-                        "text": "Arts are bad mostly but sometimes ok",
-                        "discourse": 23904,
-                        "money": 092384203948
+                        "text": "85% of people think this is a great place to live",
+                        "discourse": 0,
+                        "money": 0
+                    },
+                    {
+                        "text": "The city has a population of 30,000",
+                        "discourse": 0,
+                        "money": 0
                     }
                 ]
             },
             "Right-wing Agency": {
-                "titles": [],
-                "content": [],
-                "images": [],
-                "captions": [],
-                "interviews": [],
-                "studies": []
+                "titles": [
+                    {
+                        "text": "Welcome to the City.",
+                        "discourse": 10,
+                        "money": 100
+                    },
+                    {
+                        "text": "New writer in Town.",
+                        "discourse": 0,
+                        "money": 10
+                    },
+                    {
+                        "text": "First impressions of Bathington.",
+                        "discourse": 0,
+                        "money": 10
+                    }
+                ],
+                "content": [
+                    {
+                        "text": "I am are new to this city and are hoping to have a big impact",
+                        "discourse": 0,
+                        "money": 10
+                    },
+                    {
+                        "text": "This city is a historic town dating back to the 14th century when it was founded by Earl Bathing.",
+                        "discourse": 0,
+                        "money": 10
+                    }
+                ],
+                "images": [
+                    {
+                        "text": "res://Art/Pictures/CityScape.png",
+                        "discourse": 0,
+                        "money": 0
+                    },
+                    {
+                        "text": "res://Art/Pictures/CityScape2.png",
+                        "discourse": 0,
+                        "money": 10
+                    }
+                ],
+                "captions": [
+                    {
+                        "text": "The city Bathington",
+                        "discourse": 1,
+                        "money": 1
+                    }
+                ],
+                "interviews": [
+                    {
+                        "text": "",
+                        "discourse": -10,
+                        "money": 23
+                    }
+                ],
+                "studies": [
+                    {
+                        "text": "85% of people think this is a great place to live",
+                        "discourse": 0,
+                        "money": 0
+                    },
+                    {
+                        "text": "The city has a population of 30,000",
+                        "discourse": 0,
+                        "money": 0
+                    }
+                ]
             },
             "Center-wing Agency": {
-                "titles": [],
-                "content": [],
-                "images": [],
-                "captions": [],
-                "interviews": [],
-                "studies": []
+                "titles": [
+                    {
+                        "text": "Welcome to the City.",
+                        "discourse": 10,
+                        "money": 100
+                    },
+                    {
+                        "text": "New writer in Town.",
+                        "discourse": 0,
+                        "money": 10
+                    },
+                    {
+                        "text": "First impressions of Bathington.",
+                        "discourse": 0,
+                        "money": 10
+                    }
+                ],
+                "content": [
+                    {
+                        "text": "I am are new to this city and are hoping to have a big impact",
+                        "discourse": 0,
+                        "money": 10
+                    },
+                    {
+                        "text": "This city is a historic town dating back to the 14th century when it was founded by Earl Bathing.",
+                        "discourse": 0,
+                        "money": 10
+                    }
+                ],
+                "images": [
+                    {
+                        "text": "res://Art/Pictures/CityScape.png",
+                        "discourse": 0,
+                        "money": 0
+                    },
+                    {
+                        "text": "res://Art/Pictures/CityScape2.png",
+                        "discourse": 0,
+                        "money": 10
+                    }
+                ],
+                "captions": [
+                    {
+                        "text": "The city Bathington",
+                        "discourse": 1,
+                        "money": 1
+                    }
+                ],
+                "interviews": [
+                    {
+                        "text": "",
+                        "discourse": -10,
+                        "money": 23
+                    }
+                ],
+                "studies": [
+                    {
+                        "text": "85% of people think this is a great place to live",
+                        "discourse": 0,
+                        "money": 0
+                    },
+                    {
+                        "text": "The city has a population of 30,000",
+                        "discourse": 0,
+                        "money": 0
+                    }
+                ]
             }
         }
     },
@@ -81,45 +218,45 @@
                 "titles": [
                     {
                         "text": "Mayor Billy Bohan opens investigation of so-called 'Rat Crisis'",
-                        "discourse": 0,
-                        "money": 0
+                        "discourse": 100,
+                        "money": 10
                     },
                     {
                         "text": "Rat Infestation Obliterating Poor Neighbourhoods.",
-                        "discourse": 0,
-                        "money": 0
+                        "discourse": -50,
+                        "money": 100
                     },
                     {
                         "text": "Billionaire, Jermey Johnson, tells “Lazy” Working Class People to keep the Rats to themselves.",
-                        "discourse": 0,
-                        "money": 0
+                        "discourse": -100,
+                        "money": 500
                     }
                 ],
                 "content": [
                     {
                         "text": "This evening, Mayor Billy Bohan stated that his team has opened an investigation regarding the recent rat infestation in the city.",
-                        "discourse": 0,
-                        "money": 0
+                        "discourse": 10,
+                        "money": 10
                     },
                     {
                         "text": "The majority of these areas affected are those with a high percentage council housing. This is after the mayor promised he would invest an additional 4% of the city’s budget into government housing back in 2017.",
-                        "discourse": 0,
-                        "money": 0
+                        "discourse": 50,
+                        "money": 7
                     },
                     {
                         "text": "This is after Bohan has failed to fulfill his promise of additional funding into Government housing. This is after Bohan reduced the city corporate tax rate which disproportionately benefits larger companies, such as the supermarket chain Saintroise.",
-                        "discourse": 0,
-                        "money": 0
+                        "discourse": -50,
+                        "money": 47
                     },
                     {
                         "text": "This 'pest problem' has caused many to voice opinions on the cause of the problem. Saintroise CEO, Jermey Johnson, stated earlier this week that the rats should be quarantined within 'forfeited' areas.",
-                        "discourse": 0,
-                        "money": 0
+                        "discourse": 50,
+                        "money": 3
                     },
                     {
                         "text": "Johnson called those living in affected areas 'lazy' and should start 'revitalising' their area. Once again showing the ever widening social gap between the Wealthy and Working Class.",
-                        "discourse": 0,
-                        "money": 0
+                        "discourse": -75,
+                        "money": 75
                     }
                 ],
                 "images": [
@@ -145,24 +282,24 @@
                 "interviews": [
                     {
                         "text": "‘I say the current forfeited areas should be quarantined. Those who live there should not be so lazy and start revitalising the area. The best time to clean up was yesterday, the second best time is now.’ - Johnson",
-                        "discourse": 0,
-                        "money": 0
+                        "discourse": 25,
+                        "money": 5
                     },
                     {
                         "text": "‘Those who live there should not be so lazy and start revitalising the area.’ - Johnson",
-                        "discourse": 0,
-                        "money": 0
+                        "discourse": -90,
+                        "money": 90
                     }
                 ],
                 "studies": [
                     {
                         "text": "A recent poll suggests that increased public housing spending is very popular. 83% stated that the currently promised 4% increase was too low. Over half demanded over a 10% increase.",
-                        "discourse": 0,
+                        "discourse": 15,
                         "money": 0
                     },
                     {
                         "text": "The number of rat sightings has doubled that of 2016.",
-                        "discourse": 0,
+                        "discourse": 10,
                         "money": 0
                     }
                 ]
@@ -171,45 +308,45 @@
                 "titles": [
                     {
                         "text": "Mayor Billy Bohan opens investigation of so-called 'Rat Crisis'.",
-                        "discourse": 0,
-                        "money": 0
+                        "discourse": 100,
+                        "money": 47
                     },
                     {
                         "text": "Government Housing is allowing Rat Infestation to Spread.",
-                        "discourse": 0,
-                        "money": 0
+                        "discourse": -50,
+                        "money": 47
                     },
                     {
                         "text": "Saintroise CEO, Jermey Johnson, Cancelled over suggesting Housing Reforms.",
-                        "discourse": 0,
-                        "money": 0
+                        "discourse": -150,
+                        "money": 100
                     }
                 ],
                 "content": [
                     {
                         "text": "This evening, Mayor Billy Bohan stated that his team has opened an investigation regarding the recent rat infestation in the city.",
-                        "discourse": 0,
-                        "money": 0
+                        "discourse": 10,
+                        "money": 10
                     },
                     {
                         "text": "The majority of these areas affected are those with a high percentage council housing. This is after the mayor increased the amount of Government spending on publicly funded housing.",
-                        "discourse": 0,
-                        "money": 0
+                        "discourse": 50,
+                        "money": 10
                     },
                     {
                         "text": "This is after Bohan has already invested additional tax payer’s finances into government house funding and reducing funds allocated to small businesses earlier in the year.",
-                        "discourse": 0,
-                        "money": 0
+                        "discourse": -45,
+                        "money": 30
                     },
                     {
                         "text": "This 'pest problem' has caused many to voice opinions on the cause of the problem. Saintroise CEO, Jermey Johnson, stated earlier this week that the rats should be quarantined to stop the spread to other neighbourhoods.",
-                        "discourse": 0,
-                        "money": 0
+                        "discourse": 50,
+                        "money": 3
                     },
                     {
                         "text": "Johnson’s remarks on the subject resulted in many calling for him to be 'Cancelled' and for locals to boycott shopping at Saintroise. This another example of manufactured outrage by the left wing press.",
-                        "discourse": 0,
-                        "money": 0
+                        "discourse": -72,
+                        "money": 67
                     }
                 ],
                 "images": [
@@ -221,25 +358,25 @@
                 "interviews": [
                     {
                         "text": "‘I say the current forfeited areas should be quarantined. Those who live there should not be so lazy and start revitalising the area. The best time to clean up was yesterday, the second best time is now.’ - Johnson",
-                        "discourse": 0,
-                        "money": 0
+                        "discourse": 40,
+                        "money": 1
                     },
                     {
                         "text": "‘The best time to clean up was yesterday, the second best time is now. - Johnson",
-                        "discourse": 0,
-                        "money": 0
+                        "discourse": 40,
+                        "money": 39
                     }
                 ],
                 "studies": [
                     {
                         "text": "Public housing funding has increased by 15% in the last 10 years.",
-                        "discourse": 0,
-                        "money": 0
+                        "discourse": 10,
+                        "money": 7
                     },
                     {
                         "text": "The number of businesses in Bathington have decreased. Total number was 160 last year while in 2009 it was 256.",
-                        "discourse": 0,
-                        "money": 0
+                        "discourse": -20,
+                        "money": 17
                     }
                 ]
             },
@@ -247,45 +384,45 @@
                 "titles": [
                     {
                         "text": "Mayor Billy Bohan opens investigation of so-called 'Rat Crisis'.",
-                        "discourse": 0,
-                        "money": 0
+                        "discourse": 10,
+                        "money": 10
                     },
                     {
                         "text": "Why Council Housing is so susceptible to Pest Problems.",
-                        "discourse": 0,
-                        "money": 0
+                        "discourse": 10,
+                        "money": 2
                     },
                     {
                         "text": "How Jermey Johnson’s, comments illustrate how today’s rich are out of touch.",
-                        "discourse": 0,
-                        "money": 0
+                        "discourse": -30,
+                        "money": 43
                     }
                 ],
                 "content": [
                     {
                         "text": "This evening, Mayor Billy Bohan has opened an investigation regarding the recent rat infestation in the city.",
-                        "discourse": 0,
-                        "money": 0
+                        "discourse": 10,
+                        "money": 10
                     },
                     {
                         "text": "The majority of these areas affected are those with a high number of council housing. This is after Bohan increased spending on public house by 2%, half of what he promised in 2017.",
-                        "discourse": 0,
-                        "money": 0
+                        "discourse": 20,
+                        "money": 42
                     },
                     {
                         "text": "The effectiveness of the increased spending has yet to be seen. The additional 2% of spending has only been active policy for the last year, despite Bohan’s promises otherwise.",
-                        "discourse": 0,
-                        "money": 0
+                        "discourse": -40,
+                        "money": 63
                     },
                     {
                         "text": "This ‘pest problem’ has caused many to voice opinions on the cause of the problem. Saintroise CEO, Jermey Johnson, caused controversy earlier this week impling that it was the duty of those living in areas already infested to help contain the unwanted animals.",
-                        "discourse": 0,
-                        "money": 0
+                        "discourse": 70,
+                        "money": 21
                     },
                     {
                         "text": "Johnson’s remarks sparked controversy after he stated that those living in “forfeited” areas should not be so “lazy” and allow the infestation to spread. The outrage started once again to disconnection between the wealthy and poor in Bathington as Johnson seems to suggest that it is the resident’s fault of this issue and not partially to blame on the local governments tardiness.",
-                        "discourse": 0,
-                        "money": 0
+                        "discourse": -50,
+                        "money": 63
                     }
                 ],
                 "images": [
@@ -297,25 +434,25 @@
                 "interviews": [
                     {
                         "text": "‘I say the current forfeited areas should be quarantined. Those who live there should not be so lazy and start revitalising the area. The best time to clean up was yesterday, the second best time is now.’ - Johnson",
-                        "discourse": 0,
-                        "money": 0
+                        "discourse": 20,
+                        "money": 18
                     },
                     {
                         "text": "‘I say the current forfeited areas should be quarantined.” - Johnson",
-                        "discourse": 0,
-                        "money": 0
+                        "discourse": -30,
+                        "money": 50
                     }
                 ],
                 "studies": [
                     {
                         "text": "Public housing funding has increased by 15% in the last 10 years.",
                         "discourse": 0,
-                        "money": 0
+                        "money": 10
                     },
                     {
                         "text": "The number of rat sightings has doubled that of 2016.",
                         "discourse": 0,
-                        "money": 0
+                        "money": 10
                     }
                 ]
             }
@@ -329,25 +466,25 @@
                 "titles": [
                     {
                         "text": "Working People protest due to Mayor Bohan’s failure to fulfill spending promises.",
-                        "discourse": 0,
-                        "money": 0
+                        "discourse": -100,
+                        "money": 73
                     },
                     {
                         "text": "The Truth about the weekend’s protests!",
-                        "discourse": 0,
-                        "money": 0
+                        "discourse": 70,
+                        "money": 42
                     }
                 ],
                 "content": [
                     {
                         "text": "The weekend workers gathered to peacefully protest outside the Mayor’s Office. The gathering was caused by the recent rat infestation in the town that affected mostly government funded residential areas.",
-                        "discourse": 0,
-                        "money": 0
+                        "discourse": 30,
+                        "money": 15
                     },
                     {
                         "text": "Bohan’s inability to have integrity has sparked justified outrage. After failing to fulfill his promises, he has to face the reality that his failure to invest sufficiently into the most vulnerable of society.",
-                        "discourse": 0,
-                        "money": 0
+                        "discourse": -30,
+                        "money": 45
                     }
                 ],
                 "images": [
@@ -367,25 +504,25 @@
                 "titles": [
                     {
                         "text": "Poor protest due to Mayor Bohan’s failure to fulfill spending promises.",
-                        "discourse": 0,
-                        "money": 0
+                        "discourse": -67,
+                        "money": 45
                     },
                     {
                         "text": "Government Assisted Residents demand more money!",
-                        "discourse": 0,
-                        "money": 0
+                        "discourse": 40,
+                        "money": 20
                     }
                 ],
                 "content": [
                     {
                         "text": "The weekend workers gathered to protest outside the Mayor’s Office. The gathering was caused by the recent rat infestation in the town that affected mostly government funded residential areas.",
-                        "discourse": 0,
-                        "money": 0
+                        "discourse": 20,
+                        "money": 16
                     },
                     {
                         "text": "Bohan was harassed by protesters on his way to his office. After increasing spending on government housing, residents demanded for more.",
-                        "discourse": 0,
-                        "money": 0
+                        "discourse": -30,
+                        "money": 42
                     }
                 ],
                 "images": [
@@ -405,25 +542,25 @@
                 "titles": [
                     {
                         "text": "Lower Class protest due to Mayor Bohan’s failure to fulfill spending promises.",
-                        "discourse": 0,
-                        "money": 0
+                        "discourse": -20,
+                        "money": 59
                     },
                     {
                         "text": "Bohan underpressure due to recent rat infestation.",
-                        "discourse": 0,
-                        "money": 0
+                        "discourse": 30,
+                        "money": 20
                     }
                 ],
                 "content": [
                     {
                         "text": "The weekend workers gathered to peacefully protest outside the Mayor’s Office. The gathering was caused by the recent rat infestation in the town that affected mostly government funded residential areas.",
-                        "discourse": 0,
-                        "money": 0
+                        "discourse": 53,
+                        "money": 21
                     },
                     {
                         "text": "Protesters stood outside Bohan’s office demanding for more financial support from the government after promises to increase during the Mayoral race back in 2017. This after David Dacey, the previous Mayor increased spending by 8% from 2014 to 2017.",
-                        "discourse": 0,
-                        "money": 0
+                        "discourse": -57,
+                        "money": 43
                     }
                 ],
                 "images": [
@@ -446,10 +583,33 @@
         "agencies": {
             "Left-wing Agency": {
                 "titles": [
-                    
+                    {
+                        "text": "Rat Numbers Decrease. ",
+                        "discourse": 20,
+                        "money": 10
+                    },
+                    {
+                        "text": "Why the Rat Problem has not gone away.",
+                        "discourse": -30,
+                        "money": 33
+                    }
                 ],
                 "content": [
-                    
+                    {
+                        "text": "After the outburst of rat sightings 2 days ago, the total number of pests spoted have decreased. However, the vast majority of this reduction has taken place within middle class neighbourhoods. ",
+                        "discourse": 0,
+                        "money": 10
+                    },
+                    {
+                        "text": "Bohan has still yet to make a statement with regard to his lack of funding of long term solutions. ",
+                        "discourse": -27,
+                        "money": 31
+                    },
+                    {
+                        "text": "Most of the short term relief was focused on suburban neighborhoods rather than the areas most affected. ",
+                        "discourse": -20,
+                        "money": 28
+                    }
                 ],
                 "images": [
                     
@@ -461,24 +621,110 @@
                     
                 ],
                 "studies": [
+                    {
+                        "text": "The number of rat sightings decreased by 30% from yesterday.",
+                        "discourse": 27,
+                        "money": 25
+                    },
+                    {
+                        "text": "95% of the decrease was in suburban neighbourhoods.",
+                        "discourse": -20,
+                        "money": 35
+                    }
                     
                 ]
             },
             "Right-wing Agency": {
-                "titles": [],
-                "content": [],
+                "titles": [
+                    {
+                        "text": "Rat Numbers Decrease. ",
+                        "discourse": 35,
+                        "money": 28
+                    },
+                    {
+                        "text": "How the Recent Rat Infestation was used to Reduce small business support. ",
+                        "discourse": -30,
+                        "money": 55
+                    }
+                ],
+                "content": [
+                    {
+                        "text": "After the outburst of rat sightings 2 days ago, the total number of pests spoted have decreased. However, multiple stores had to be closed due to rumours of protests. ",
+                        "discourse": 23,
+                        "money": 24
+                    },
+                    {
+                        "text": "This is after Bohan started an investigation focusing on the ‘Pest Problem’. Short term Relief provided, while focused on Middle Class neighbourhoods, were very successful.  ",
+                        "discourse": 10,
+                        "money": 12
+                    },
+                    {
+                        "text": "The focus on suburban areas has been stated to be because of the speed in which relief was accepted was much higher. Many of those in poorer areas were less accommodating for those giving relief.",
+                        "discourse": -20,
+                        "money": 35
+                    }
+                ],
                 "images": [],
                 "captions": [],
                 "interviews": [],
-                "studies": []
+                "studies": [
+                    {
+                        "text": "The number of rat sightings decreased by 30% from yesterday. ",
+                        "discourse": 31,
+                        "money": 12
+                    },
+                    {
+                        "text": "4 Saintroise outlets were forced to stay closed yesterday. ",
+                        "discourse": -10,
+                        "money": 20
+                    }
+                ]
             },
             "Center-wing Agency": {
-                "titles": [],
-                "content": [],
+                "titles": [
+                    {
+                        "text": "Rat Numbers Decrease.",
+                        "discourse": 20,
+                        "money": 32
+                    },
+                    {
+                        "text": "Can Bohan calm anger after recent Rat Infestation ",
+                        "discourse": -30,
+                        "money": 45
+                    }
+                ],
+                "content": [
+                    {
+                        "text": "After the outburst of rat sightings 2 days ago, the total number of pests spoted have decreased.",
+                        "discourse": 15,
+                        "money": 24
+                    },
+                    {
+                        "text": "Despite rumours of strikes and protests, none have been carried out. The Investigation of the problem by Bohan is still ongoing. ",
+                        "discourse": -10,
+                        "money": 32
+                    },
+                    {
+                        "text": "Short term relief has been successful in areas it has been focused on. That being suburban middle class neighbourhoods. However, relief is still being awaited by those in government funded housing. One would think these areas would be focused on due to yesterday’s statistics. ",
+                        "discourse": 20,
+                        "money": 15
+                    }
+                ],
                 "images": [],
                 "captions": [],
                 "interviews": [],
-                "studies": []
+                "studies": [
+                    {
+                        "text": "The number of rat sightings decreased by 30% from yesterday.",
+                        "discourse": 10,
+                        "money": 5
+                    },
+                    {
+                        "text": "55% percent of rat sightings this week have been from those in government funded housing. ",
+                        "discourse": -20,
+                        "money": 24
+                    }
+                ]
             }
             
         }
@@ -488,10 +734,38 @@
         "agencies": {
             "Left-wing Agency": {
                 "titles": [
-                    
+                    {
+                        "text": "Protests have Escalated to Riots amid growing unrest. ",
+                        "discourse": -20,
+                        "money": 34
+                    },
+                    {
+                        "text": "Riots break out as Bohan continues to ignore ‘Rat Crisis’.",
+                        "discourse": -30,
+                        "money": 40
+                    }
                 ],
                 "content": [
-                    
+                    {
+                        "text": "Riots broke out across the city due to the recent lack of information from Mayor Billy Bohan. ",
+                        "discourse": 30,
+                        "money": 23
+                    },
+                    {
+                        "text": "The riots took place after Bohan stated he opened an investigation into the rat investigation earlier this week. However, no official statement has been made. Due to the ever growing pressure, it is thought that a statement will be released soon. ",
+                        "discourse": 33,
+                        "money": 13
+                    },
+                    {
+                        "text": "It is unsure if an official statement from Bohan will result in suitable funding for those in financial trouble. ",
+                        "discourse": -40,
+                        "money": 100
+                    },
+                    {
+                        "text": "These riots are just the culmination of anger and frustration at the Mayor’s failure to fulfill his promises he made before his current term. ",
+                        "discourse": -50,
+                        "money": 1000
+                    }
                 ],
                 "images": [
                     
@@ -507,16 +781,75 @@
                 ]
             },
             "Right-wing Agency": {
-                "titles": [],
-                "content": [],
+                "titles": [
+                    {
+                        "text": "Protests have Escalated to Riots amid growing unrest. ",
+                        "discourse": 10,
+                        "money": 20
+                    },
+                    {
+                        "text": "Small family-owned businesses damaged during Riots.",
+                        "discourse": -50,
+                        "money": 1000
+                    }
+                ],
+                "content": [
+                    {
+                        "text": "Riots broke out across the city due to the recent lack of information from Mayor Billy Bohan. ",
+                        "discourse": 30,
+                        "money": 15
+                    },
+                    {
+                        "text": "The riots took place after many refused additional relief, stating that they want ‘more permanent solutions’. ",
+                        "discourse": 20,
+                        "money": 10
+                    },
+                    {
+                        "text": "Bohan is under much pressure to succumb to the demands of the violent actors. However, the mayor has yet to make the statement. ",
+                        "discourse": -50,
+                        "money": 70
+                    },
+                    {
+                        "text": "Many Saintroise have been looted and damaged. This is most likely due to Jermey Johnson’s comments earlier this week. While some may say canceling is just social ostracisation, the consequences for this outrage are severe. ",
+                        "discourse": -40,
+                        "money": 58
+                    }
+                ],
                 "images": [],
                 "captions": [],
                 "interviews": [],
                 "studies": []
             },
             "Center-wing Agency": {
-                "titles": [],
-                "content": [],
+                "titles": [
+                    {
+                        "text": "Protests have Escalated to Riots amid growing unrest. ",
+                        "discourse": 50,
+                        "money": 20
+                    },
+                    {
+                        "text": "Bohan remains under pressure due to Riots over rat infestation.",
+                        "discourse": -40,
+                        "money": 58
+                    }
+                ],
+                "content": [
+                    {
+                        "text": "Riots broke out across the city due to the recent lack of information from Mayor Billy Bohan. ",
+                        "discourse": 20,
+                        "money": 34
+                    },
+                    {
+                        "text": "This riot, while sparked by it, is not entirely due to the recent response to the rat infestation. It is just the straw that broke the proverbial ‘camel’s back’.",
+                        "discourse": 35,
+                        "money": 28
+                    },
+                    {
+                        "text": "During the riot, some started to destroy private property and defame cultural sites. However, damage was minimal. ",
+                        "discourse": 24,
+                        "money": 27
+                    }
+                ],
                 "images": [],
                 "captions": [],
                 "interviews": [],
