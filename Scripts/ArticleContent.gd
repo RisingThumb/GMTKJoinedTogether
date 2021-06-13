@@ -86,8 +86,40 @@ func get_content_strings(day: int, agency: String) -> Array:
 	return _get_element_strings(day, agency, "content")
 
 func get_content_strings_brief(day: int, agency: String) -> Array:
+	return _get_element_strings_brief(day, agency, "content")
+
+func get_image_strings(day: int, agency: String) -> Array:
+	return _get_element_strings(day, agency, "images")
+
+func get_caption_strings(day: int, agency: String) -> Array:
+	return _get_element_strings(day, agency, "captions")
+
+func get_interview_strings(day: int, agency: String) -> Array:
+	return _get_element_strings(day, agency, "interviews")
+
+func get_interview_strings_brief(day: int, agency: String) -> Array:
+	return _get_element_strings_brief(day, agency, "captions")
+
+func get_study_strings(day: int, agency: String) -> Array:
+	return _get_element_strings(day, agency, "studies")
+
+func get_study_strings_brief(day: int, agency: String) -> Array:
+	return _get_element_strings_brief(day, agency, "studies")
+
+func _get_element_strings(day, agency, attribute) -> Array: 
+	var agencies = article_content[day]["agencies"]
+	var elements = agencies[agency][attribute]
+	
+	var element_strings = []
+	
+	for element in elements:
+		element_strings.push_back(element["text"])
+		
+	return element_strings
+
+func _get_element_strings_brief(day, agency, attribute):
 	var result = []
-	var content_strings = get_content_strings(day, agency)
+	var content_strings = _get_element_strings(day, agency, attribute)
 	
 	var terminator = "."
 	
@@ -102,29 +134,6 @@ func get_content_strings_brief(day: int, agency: String) -> Array:
 		result.push_back(content_string.left(index))
 	
 	return result
-
-func get_image_strings(day: int, agency: String) -> Array:
-	return _get_element_strings(day, agency, "images")
-
-func get_caption_strings(day: int, agency: String) -> Array:
-	return _get_element_strings(day, agency, "captions")
-
-func get_interview_strings(day: int, agency: String) -> Array:
-	return _get_element_strings(day, agency, "interviews")
-	
-func get_study_strings(day: int, agency: String) -> Array:
-	return _get_element_strings(day, agency, "studies")
-
-func _get_element_strings(day, agency, attribute) -> Array: 
-	var agencies = article_content[day]["agencies"]
-	var elements = agencies[agency][attribute]
-	
-	var element_strings = []
-	
-	for element in elements:
-		element_strings.push_back(element["text"])
-		
-	return element_strings
 
 func _get_element(day, agency, attribute, index):
 	#if index == -1:
