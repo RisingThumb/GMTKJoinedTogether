@@ -2,7 +2,7 @@
     {
         "event": "New writer in town",
         "agencies": {
-            "agency A": {
+            "Left-wing Agency": {
                 "titles": [
                     {
                         "text": "Rats are Taking Over!!!!",
@@ -51,7 +51,7 @@
                     }
                 ]
             },
-            "agency B": {
+            "Right-wing Agency": {
                 "titles": [],
                 "content": [],
                 "images": [],
@@ -59,7 +59,7 @@
                 "interviews": [],
                 "studies": []
             },
-            "agency C": {
+            "Center-wing Agency": {
                 "titles": [],
                 "content": [],
                 "images": [],
@@ -208,7 +208,7 @@
     {
         "event": "City in Unrest",
         "agencies": {
-            "agency A": {
+            "Left-wing Agency": {
                 "titles": [
                     {
                         "text": "Rats are Taking Over!!!!",
@@ -257,7 +257,7 @@
                     }
                 ]
             },
-            "agency B": {
+            "Right-wing Agency": {
                 "titles": [],
                 "content": [],
                 "images": [],
@@ -265,7 +265,7 @@
                 "interviews": [],
                 "studies": []
             },
-            "agency C": {
+            "Center-wing Agency": {
                 "titles": [],
                 "content": [],
                 "images": [],
@@ -279,7 +279,7 @@
     {
         "event": "Rat Infestation Decreased",
         "agencies": {
-            "agency A": {
+            "Left-wing Agency": {
                 "titles": [
                     {
                         "text": "Rats are Taking Over!!!!",
@@ -328,7 +328,7 @@
                     }
                 ]
             },
-            "agency B": {
+            "Right-wing Agency": {
                 "titles": [],
                 "content": [],
                 "images": [],
@@ -336,7 +336,7 @@
                 "interviews": [],
                 "studies": []
             },
-            "agency C": {
+            "Center-wing Agency": {
                 "titles": [],
                 "content": [],
                 "images": [],
@@ -350,7 +350,7 @@
     {
         "event": "Rat Riots",
         "agencies": {
-            "agency A": {
+            "Left-wing Agency": {
                 "titles": [
                     {
                         "text": "Rats are Taking Over!!!!",
@@ -399,7 +399,7 @@
                     }
                 ]
             },
-            "agency B": {
+            "Right-wing Agency": {
                 "titles": [],
                 "content": [],
                 "images": [],
@@ -407,7 +407,7 @@
                 "interviews": [],
                 "studies": []
             },
-            "agency C": {
+            "Center-wing Agency": {
                 "titles": [],
                 "content": [],
                 "images": [],
@@ -421,7 +421,7 @@
     {
         "event": "Mayor makes speach reguarding Rat issue",
         "agencies": {
-            "agency A": {
+            "Left-wing Agency": {
                 "titles": [
                     {
                         "text": "Rats are Taking Over!!!!",
@@ -470,7 +470,7 @@
                     }
                 ]
             },
-            "agency B": {
+            "Right-wing Agency": {
                 "titles": [],
                 "content": [],
                 "images": [],
@@ -478,7 +478,7 @@
                 "interviews": [],
                 "studies": []
             },
-            "agency C": {
+            "Center-wing Agency": {
                 "titles": [],
                 "content": [],
                 "images": [],
@@ -492,7 +492,7 @@
     {
         "event": "City of peace",
         "agencies": {
-            "agency A": {
+            "Left-wing Agency": {
                 "titles": [
                     {
                         "text": "Rats are Taking Over!!!!",
@@ -541,14 +541,14 @@
                     }
                 ]
             },
-            "agency B": {
+            "Right-wing Agency": {
                 "titles": [],
                 "content": [],
                 "images": [],
                 "interviews": [],
                 "studies": []
             },
-            "agency C": {
+            "Center-wing Agency": {
                 "titles": [],
                 "content": [],
                 "images": [],
