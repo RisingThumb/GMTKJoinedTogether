@@ -40,8 +40,15 @@ func _ready() -> void:
 
 func dayForward() -> void:
 	day += 1
+	var new_state = PathTree.get_next_state(state, discord)
 	
-	state = PathTree.get_next_state(state, discord)
+	if new_state == null:
+		get_tree().change_scene("res://Scenes/Ending.tscn")
+		ArticleContent.ending_label_message = str(state.get_name(), " ", state.get_description())
+		
+		return
+		
+	state = new_state
 	event_index = state.get_event_index()
 	
 	$DayPanel/CenterContainer/DayLabel.updateDayText(day)
@@ -53,7 +60,7 @@ func setupAgenciesAvailable() -> void:
 	var agencies = ArticleContent.get_agencies(event_index)
 	for agency in agencies:
 		$AgencyPanel/CenterContainer/OptionButton.add_item(agency)
-	$EventPanel/CenterContainer/VBoxContainer/EventLabel.text = ArticleContent.get_event(day - 1)
+	$EventPanel/CenterContainer/VBoxContainer/EventLabel.text = ArticleContent.get_event(event_index)
 
 func setupTopicDropDowns() -> void:
 	for a in [titleChoice, textChoice, imageChoice, captionChoice, studyChoice, interviewChoice]:

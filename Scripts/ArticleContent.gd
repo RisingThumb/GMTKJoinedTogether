@@ -3,6 +3,8 @@ extends Node
 export(String) var article_content_file
 var article_content
 
+var ending_label_message
+
 const DEFAULT_OBJECT = {
 	"discourse": 0,
 	"money": 0	
@@ -136,8 +138,8 @@ func _get_element_strings_brief(day, agency, attribute):
 	return result
 
 func _get_element(day, agency, attribute, index):
-	#if index == -1:
-	#	return DEFAULT_OBJECT
+	if index == -1:
+		return DEFAULT_OBJECT
 	
 	var agencies = article_content[day]["agencies"]
 	var elements = agencies[agency][attribute]
