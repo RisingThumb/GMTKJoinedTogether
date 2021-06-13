@@ -53,7 +53,7 @@ func setupTopicDropDowns() -> void:
 	$NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper/Topic.text = ArticleContent.get_event(day - 1)
 
 	var temp = state.get_event_index()
-
+	print(temp)
 	var titles = ArticleContent.get_title_strings(temp, selectedAgency)
 	var texts = ArticleContent.get_content_strings(temp, selectedAgency)
 	var images = ArticleContent.get_image_strings(temp, selectedAgency)
@@ -65,6 +65,7 @@ func setupTopicDropDowns() -> void:
 	for title in titles:
 		titleChoice.add_item(title)
 	for text in texts:
+		print(text)
 		textChoice.add_item(text)
 	for image in images:
 		imageChoice.add_icon_item(load(image), "")
@@ -97,7 +98,7 @@ func _on_Publish_pressed() -> void:
 	$Fader.play("NewspaperCreationPanelFadeOut")
 	print(titleChoice.selected)
 	calc.add_title(titleChoice.selected)
-	calc.add_content(textChoice.selected)
+	calc.add_content(textChoice.selected())
 	calc.add_image(imageChoice.selected)
 	calc.add_caption(captionChoice.selected)
 	calc.add_study(studyChoice.selected)

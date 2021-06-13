@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Scripts/DayLabel.gd" type="Script" id=1]
 [ext_resource path="res://Scripts/Game.gd" type="Script" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://Themes/BodyText.tres" type="DynamicFont" id=6]
 [ext_resource path="res://Art/Background.png" type="Texture" id=7]
 [ext_resource path="res://Themes/SymbolFont.tres" type="DynamicFont" id=8]
+[ext_resource path="res://Scenes/WrappedOptionsMenu.tscn" type="PackedScene" id=9]
 
 [sub_resource type="Animation" id=1]
 resource_name = "AgencyPanelFadeOut"
@@ -483,42 +484,43 @@ margin_bottom = 475.0
 rect_min_size = Vector2( 400, 400 )
 
 [node name="Paper" type="VBoxContainer" parent="NewspaperCreationPanel/CenterContainer/ScrollContainer"]
-margin_left = 90.0
-margin_right = 309.0
+margin_left = 117.0
+margin_right = 282.0
 margin_bottom = 307.0
 size_flags_horizontal = 6
 alignment = 1
 
 [node name="HSeparator3" type="HSeparator" parent="NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper"]
-margin_right = 219.0
+margin_right = 165.0
 margin_bottom = 4.0
 
 [node name="Topic" type="Label" parent="NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper"]
 margin_top = 8.0
-margin_right = 219.0
+margin_right = 165.0
 margin_bottom = 32.0
 align = 1
 
 [node name="HSeparator2" type="HSeparator" parent="NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper"]
 margin_top = 36.0
-margin_right = 219.0
+margin_right = 165.0
 margin_bottom = 40.0
 
 [node name="ArticleTitle" type="OptionButton" parent="NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper"]
 margin_top = 44.0
-margin_right = 219.0
+margin_right = 165.0
 margin_bottom = 68.0
 
-[node name="TextChoice" type="OptionButton" parent="NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper"]
+[node name="TextChoice" parent="NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper" instance=ExtResource( 9 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
 margin_top = 72.0
-margin_right = 219.0
+margin_right = 165.0
 margin_bottom = 96.0
-text = "Select Introduction"
 
 [node name="Imagechoice" type="OptionButton" parent="NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper"]
-margin_left = 65.0
+margin_left = 38.0
 margin_top = 100.0
-margin_right = 153.0
+margin_right = 126.0
 margin_bottom = 164.0
 size_flags_horizontal = 4
 icon = ExtResource( 3 )
@@ -527,30 +529,30 @@ selected = 0
 
 [node name="CaptionChoice" type="OptionButton" parent="NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper"]
 margin_top = 168.0
-margin_right = 219.0
+margin_right = 165.0
 margin_bottom = 192.0
 text = "Select Caption"
 
 [node name="StudyChoice" type="OptionButton" parent="NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper"]
 margin_top = 196.0
-margin_right = 219.0
+margin_right = 165.0
 margin_bottom = 220.0
 text = "Select Study"
 
 [node name="InterviewChoice" type="OptionButton" parent="NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper"]
 margin_top = 224.0
-margin_right = 219.0
+margin_right = 165.0
 margin_bottom = 248.0
 
 [node name="HSeparator" type="HSeparator" parent="NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper"]
 margin_top = 252.0
-margin_right = 219.0
+margin_right = 165.0
 margin_bottom = 256.0
 
 [node name="Publish" type="Button" parent="NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper"]
-margin_left = 72.0
+margin_left = 45.0
 margin_top = 260.0
-margin_right = 146.0
+margin_right = 119.0
 margin_bottom = 299.0
 rect_min_size = Vector2( 0, 39 )
 size_flags_horizontal = 4
@@ -558,7 +560,7 @@ text = "Publish"
 
 [node name="HSeparator4" type="HSeparator" parent="NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper"]
 margin_top = 303.0
-margin_right = 219.0
+margin_right = 165.0
 margin_bottom = 307.0
 
 [node name="BillPanel" type="Panel" parent="."]
