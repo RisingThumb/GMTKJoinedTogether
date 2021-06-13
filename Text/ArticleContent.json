@@ -67,25 +67,131 @@
     {
         "event": "Rat Infestation",
         "agencies": {
-            "agency A": {
-                "titles": [],
-                "content": [],
+            "Left-wing Agency": {
+                "titles": [
+                    {
+                        "text": "Mayor Billy Bohan opens investigation of so-called 'Rat Crisis'",
+                        "discourse": 0,
+                        "money": 0
+                    },
+                    {
+                        "text": "Rat Infestation Obliterating Poor Neighbourhoods.",
+                        "discourse": 0,
+                        "money": 0
+                    },
+                    {
+                        "text": "Billionaire, Jermey Johnson, tells “Lazy” Working Class People to keep the Rats to themselves.",
+                        "discourse": 0,
+                        "money": 0
+                    }
+                ],
+                "content": [
+                    {
+                        "text": "This evening, Mayor Billy Bohan stated that his team has opened an investigation regarding the recent rat infestation in the city.",
+                        "discourse": 0,
+                        "money": 0
+                    },
+                    {
+                        "text": "The majority of these areas affected are those with a high percentage council housing. This is after the mayor promised he would invest an additional 4% of the city’s budget into government housing back in 2017.",
+                        "discourse": 0,
+                        "money": 0
+                    },
+                    {
+                        "text": "This is after Bohan has failed to fulfill his promise of additional funding into Government housing. This is after Bohan reduced the city corporate tax rate which disproportionately benefits larger companies, such as the supermarket chain Saintroise.",
+                        "discourse": 0,
+                        "money": 0
+                    },
+                    {
+                        "text": "This 'pest problem' has caused many to voice opinions on the cause of the problem. Saintroise CEO, Jermey Johnson, stated earlier this week that the rats should be quarantined within 'forfeited' areas.",
+                        "discourse": 0,
+                        "money": 0
+                    },
+                    {
+                        "text": "Johnson called those living in affected areas 'lazy' and should start 'revitalising' their area. Once again showing the ever widening social gap between the Wealthy and Working Class.",
+                        "discourse": 0,
+                        "money": 0
+                    }
+                ],
+                "images": [
+                    
+                ],
+                "captions": [],
+                "interviews": [],
+                "studies": []
+            },
+            "Right-wing Agency": {
+                "titles": [
+                    {
+                        "text": "Mayor Billy Bohan opens investigation of so-called 'Rat Crisis'.",
+                        "discourse": 0,
+                        "money": 0
+                    },
+                    {
+                        "text": "Government Housing is allowing Rat Infestation to Spread.",
+                        "discourse": 0,
+                        "money": 0
+                    },
+                    {
+                        "text": "Saintroise CEO, Jermey Johnson, Cancelled over suggesting Housing Reforms.",
+                        "discourse": 0,
+                        "money": 0
+                    }
+                ],
+                "content": [
+                    {
+                        "text": "This evening, Mayor Billy Bohan stated that his team has opened an investigation regarding the recent rat infestation in the city.",
+                        "discourse": 0,
+                        "money": 0
+                    },
+                    {
+                        "text": "The majority of these areas affected are those with a high percentage council housing. This is after the mayor increased the amount of Government spending on publicly funded housing.",
+                        "discourse": 0,
+                        "money": 0
+                    },
+                    {
+                        "text": "This is after Bohan has already invested additional tax payer’s finances into government house funding and reducing funds allocated to small businesses earlier in the year.",
+                        "discourse": 0,
+                        "money": 0
+                    },
+                    {
+                        "text": "This 'pest problem' has caused many to voice opinions on the cause of the problem. Saintroise CEO, Jermey Johnson, stated earlier this week that the rats should be quarantined to stop the spread to other neighbourhoods.",
+                        "discourse": 0,
+                        "money": 0
+                    },
+                    {
+                        "text": "Johnson’s remarks on the subject resulted in many calling for him to be 'Cancelled' and for locals to boycott shopping at Saintroise. This another example of manufactured outrage by the left wing press.",
+                        "discourse": 0,
+                        "money": 0
+                    }
+                ],
                 "images": [],
                 "captions": [],
                 "interviews": [],
                 "studies": []
             },
-            "agency B": {
-                "titles": [],
-                "content": [],
-                "images": [],
-                "captions": [],
-                "interviews": [],
-                "studies": []
-            },
-            "agency C": {
-                "titles": [],
-                "content": [],
+            "Center-wing Agency": {
+                "titles": [
+                    {
+                        "text": "Mayor Billy Bohan opens investigation of so-called 'Rat Crisis'.",
+                        "discourse": 0,
+                        "money": 0
+                    },
+                    {
+                        "text": "Why Council Housing is so susceptible to Pest Problems.",
+                        "discourse": 0,
+                        "money": 0
+                    },
+                    {
+                        "text": "How Jermey Johnson’s, comments illustrate how today’s rich are out of touch.",
+                        "discourse": 0,
+                        "money": 0
+                    }
+                ],
+                "content": [
+                    {
+                        
+                    }
+                ],
                 "images": [],
                 "captions": [],
                 "interviews": [],
