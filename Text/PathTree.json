@@ -3,52 +3,68 @@
         {
             "name": "New writer in town",
             "description": "",
-            "event_index": 0
+            "event_index": 0,
+            "image_url" : ""
+
         },
         {
             "name": "Rat Infestation",
             "description": "Rats have decended upon the city",
-            "event_index": 1
+            "event_index": 1,
+            "image_url" : ""
+
         },
         {
             "name": "City in Unrest",
             "description": "",
-            "event_index": 2
+            "event_index": 2,
+            "image_url" : ""
+
         },
         {
             "name": "Rat Infestation Decreased",
             "description": "",
-            "event_index": 3
+            "event_index": 3,
+            "image_url" : ""
+
         },
         {
             "name": "Rat Riots",
             "description": "Riots decend on to the city due to the growing rat issue",
-            "event_index": 4
+            "event_index": 4,
+            "image_url" : ""
+
         },
         {
             "name": "Mayor makes speach reguarding Rat issue",
             "description": "",
-            "event_index": 5
+            "event_index": 5,
+            "image_url" : ""
+
         },
         {
             "name": "City of peace",
             "description": "The city is calm",
-            "event_index": 6
+            "event_index": 6,
+            "image_url" : ""
         },
         {
             "name": "SOCIETY COLLAPSES",
             "description": "Observation: Society has collapsed and the city is in ruins. it's all your fault.",
-            "event_index": 7
+            "event_index": 7,
+            "image_url" : "res://Art/EndingBadScreen.png"
         },
         {
             "name": "This is the good ending",
             "description": "Congratulations. You have managed to keep society intact without going bankrupt..",
-            "event_index": 8
+            "event_index": 8,
+            "image_url" : "res://Art/EndingWinScreen.png"
         },
         {
             "name": "NO Money",
             "description": "Statement: No one read your boring articles You are out of money, unfortunate.",
-            "event_index": 9
+            "event_index": 9,
+            "image_url" : "res://Art/EndingStarveScreen.png"
         }
     ],
     "associations": [
