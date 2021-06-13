@@ -43,12 +43,20 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+<<<<<<< HEAD
 [node name="VBoxContainer" type="VBoxContainer" parent="Panel/CenterContainer"]
 margin_left = 25.0
 margin_top = 79.0
 margin_right = 275.0
 margin_bottom = 121.0
 rect_min_size = Vector2( 250, 0 )
+=======
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+margin_left = 622.0
+margin_top = 365.0
+margin_right = 743.0
+margin_bottom = 403.0
+>>>>>>> bf33e70c754844e0af5a647fbd725570b46a3a6b
 __meta__ = {
 "_edit_use_anchors_": false
 }
