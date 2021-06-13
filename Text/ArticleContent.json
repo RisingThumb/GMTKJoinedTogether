@@ -2,7 +2,7 @@
     {
         "event": "New writer in town",
         "agencies": {
-            "The Defender": {
+            "Left-wing Agency": {
                 "titles": [
                     {
                         "text": "Welcome to the City.",
@@ -81,7 +81,7 @@
                     }
                 ]
             },
-            "The Moon": {
+            "Right-wing Agency": {
                 "titles": [
                     {
                         "text": "Welcome to the City.",
@@ -160,7 +160,7 @@
                     }
                 ]
             },
-            "The Fortnitely": {
+            "Center-wing Agency": {
                 "titles": [
                     {
                         "text": "Welcome to the City.",
@@ -244,7 +244,7 @@
     {
         "event": "Rat Infestation",
         "agencies": {
-            "The Defender": {
+            "Left-wing Agency": {
                 "titles": [
                     {
                         "text": "Mayor Billy Bohan opens investigation of so-called 'Rat Crisis'",
@@ -343,7 +343,7 @@
                     }
                 ]
             },
-            "The Moon": {
+            "Right-wing Agency": {
                 "titles": [
                     {
                         "text": "Mayor Billy Bohan opens investigation of so-called 'Rat Crisis'.",
@@ -442,7 +442,7 @@
                     }
                 ]
             },
-            "The Fortnitely": {
+            "Center-wing Agency": {
                 "titles": [
                     {
                         "text": "Mayor Billy Bohan opens investigation of so-called 'Rat Crisis'.",
@@ -547,7 +547,7 @@
     {
         "event": "Protests in Bathington due to Rat Infestion",
         "agencies": {
-            "The Defender": {
+            "Left-wing Agency": {
                 "titles": [
                     {
                         "text": "Working People protest due to Mayor Bohan’s failure to fulfill spending promises.",
@@ -602,21 +602,13 @@
                     }
                 ],
                 "interviews": [
-                    {
-                        "text": "",
-                        "discourse": 0,
-                        "money": 0
-                    }
+                    
                 ],
                 "studies": [
-                    {
-                        "text": "",
-                        "discourse": 0,
-                        "money": 0
-                    }
+                  
                 ]
             },
-            "The Moon": {
+            "Right-wing Agency": {
                 "titles": [
                     {
                         "text": "Poor protest due to Mayor Bohan’s failure to fulfill spending promises.",
@@ -677,7 +669,7 @@
                     
                 ]
             },
-            "The Fortnitely": {
+            "Center-wing Agency": {
                 "titles": [
                     {
                         "text": "Lower Class protest due to Mayor Bohan’s failure to fulfill spending promises.",
@@ -732,18 +724,10 @@
                     }
                 ],
                 "interviews": [
-                    {
-                        "text": "",
-                        "discourse": 0,
-                        "money": 0
-                    }
+                    
                 ],
                 "studies": [
-                    {
-                        "text": "",
-                        "discourse": 0,
-                        "money": 0
-                    }
+                    
                 ]
             }  
         }
@@ -751,7 +735,7 @@
     {
         "event": "Rat Infestation Decreased",
         "agencies": {
-            "The Defender": {
+            "Left-wing Agency": {
                 "titles": [
                     {
                         "text": "Rat Numbers Decrease. ",
@@ -806,11 +790,7 @@
                     }
                 ],
                 "interviews": [
-                    {
-                        "text": "",
-                        "discourse": 0,
-                        "money": 0
-                    }
+                    
                 ],
                 "studies": [
                     {
@@ -826,7 +806,7 @@
                     
                 ]
             },
-            "The Moon": {
+            "Right-wing Agency": {
                 "titles": [
                     {
                         "text": "Rat Numbers Decrease. ",
@@ -880,13 +860,7 @@
                         "money": 1
                     }
                 ],
-                "interviews": [
-                    {
-                        "text": "",
-                        "discourse": 0,
-                        "money": 0
-                    }
-                ],
+                "interviews": [],
                 "studies": [
                     {
                         "text": "The number of rat sightings decreased by 30% from yesterday. ",
@@ -900,7 +874,7 @@
                     }
                 ]
             },
-            "The Fortnitely": {
+            "Center-wing Agency": {
                 "titles": [
                     {
                         "text": "Rat Numbers Decrease.",
@@ -954,13 +928,7 @@
                         "money": 1
                     }
                 ],
-                "interviews": [
-                    {
-                        "text": "",
-                        "discourse": 0,
-                        "money": 0
-                    }
-                ],
+                "interviews": [],
                 "studies": [
                     {
                         "text": "The number of rat sightings decreased by 30% from yesterday.",
@@ -980,7 +948,7 @@
     {
         "event": "Rat Riots",
         "agencies": {
-            "The Defender": {
+            "Left-wing Agency": {
                 "titles": [
                     {
                         "text": "Protests have Escalated to Riots amid growing unrest. ",
@@ -1005,7 +973,7 @@
                         "money": 13
                     },
                     {
-                        "text": "The official statement was underwhelming and left many disappointed. Once again another loose and vapid response in the hopes this spike in unrest would blow over.",
+                        "text": "It is unsure if an official statement from Bohan will result in suitable funding for those in financial trouble. ",
                         "discourse": -40,
                         "money": 100
                     },
@@ -1045,21 +1013,13 @@
                     }
                 ],
                 "interviews": [
-                    {
-                        "text": "",
-                        "discourse": 0,
-                        "money": 0
-                    }
+                    
                 ],
                 "studies": [
-                    {
-                        "text": "",
-                        "discourse": 0,
-                        "money": 0
-                    }
+                    
                 ]
             },
-            "The Moon": {
+            "Right-wing Agency": {
                 "titles": [
                     {
                         "text": "Protests have Escalated to Riots amid growing unrest. ",
@@ -1084,7 +1044,7 @@
                         "money": 10
                     },
                     {
-                        "text": "Even after succumbing to the demands of the protesters, they have not been satisfied.  ",
+                        "text": "Bohan is under much pressure to succumb to the demands of the violent actors. However, the mayor has yet to make the statement. ",
                         "discourse": -50,
                         "money": 70
                     },
@@ -1123,22 +1083,10 @@
                         "money": 1
                     }
                 ],
-                "interviews": [
-                    {
-                        "text": "",
-                        "discourse": 0,
-                        "money": 0
-                    }
-                ],
-                "studies": [
-                    {
-                        "text": "",
-                        "discourse": 0,
-                        "money": 0
-                    }
-                ]
+                "interviews": [],
+                "studies": []
             },
-            "The Fortnitely": {
+            "Center-wing Agency": {
                 "titles": [
                     {
                         "text": "Protests have Escalated to Riots amid growing unrest. ",
@@ -1197,20 +1145,8 @@
                         "money": 1
                     }
                 ],
-                "interviews": [
-                    {
-                        "text": "",
-                        "discourse": 0,
-                        "money": 0
-                    }
-                ],
-                "studies": [
-                    {
-                        "text": "",
-                        "discourse": 0,
-                        "money": 0
-                    }
-                ]
+                "interviews": [],
+                "studies": []
             }
             
         }
@@ -1218,30 +1154,12 @@
     {
         "event": "Mayor makes speach reguarding Rat issue",
         "agencies": {
-            "The Defender": {
+            "Left-wing Agency": {
                 "titles": [
-                    {
-                        "text": "Bohan questioned over current ‘Rat Crisis’ investigation.",
-                        "discourse": 20,
-                        "money": 37
-                    },
-                    {
-                        "text": "Bohan Bumbles Blindly",
-                        "discourse": -30,
-                        "money": 53
-                    }
+                    
                 ],
                 "content": [
-                    {
-                        "text": "Mayor Bohan has been under scrutiny due to his lack of comments with regard to the Rat Infestation earlier this week. He made a statement saying that he is ‘working to find ways to benefit those most marginalised in the city’.",
-                        "discourse": 10,
-                        "money": 23
-                    },
-                    {
-                        "text": "Bohan’s statement had no concrete plans to help solve the issue. This is despite the overwhelming evidence supporting improved waste management infrastructure. ",
-                        "discourse": -15,
-                        "money": 42
-                    }
+                    
                 ],
                 "images": [
                     {
@@ -1268,43 +1186,15 @@
                     }
                 ],
                 "interviews": [
-                    {
-                        "text": "‘I have heard the people of Bathington and in the spirit of this great city, my team  and I are working to find ways to benefit those most marginalised in the city. We have a proud history of defending the most vulnerable among us, it is a tradition I am most proud of.’ - Mayor Billy Bohan",
-                        "discourse": 2,
-                        "money": 15
-                    }
+                    
                 ],
                 "studies": [
-                    {
-                        "text": "A study in 2015 showed that rat sightings were reduced by 73% after, David Darcey, the previous Mayor’s waste management reforms.",
-                        "discourse": 0,
-                        "money": 7
-                    }
+                    
                 ]
             },
-            "The Moon": {
-                "titles": [{
-                    "text": "Bohan questioned over current ‘Rat Crisis’ investigation",
-                    "discourse": 32,
-                    "money": 39
-                },
-                {
-                    "text": "Bohan succumbs to mounting pressure.",
-                    "discourse": -36,
-                    "money": 53
-                }],
-                "content": [
-                    {
-                        "text": "Mayor Bohan has been under scrutiny due to his lack of comments with regard to the Rat Infestation earlier this week. He made a statement saying that he is ‘working to find ways to benefit those most marginalised in the city’",
-                        "discourse": 16,
-                        "money": 13
-                    },
-                    {
-                        "text": "Bohan’s statement all shows how he has had to bend to the demands of the protests. This will encourage more social unrest in the future.",
-                        "discourse": -26,
-                        "money": 23
-                    }
-                ],
+            "Right-wing Agency": {
+                "titles": [],
+                "content": [],
                 "images": [
                     {
                         "text": "res://Art/Pictures/BillyBohanOfGuard.png",
@@ -1329,39 +1219,12 @@
                         "money": 1
                     }
                 ],
-                "interviews": [
-                    {
-                        "text": "‘I have heard the people of Bathington and in the spirit of this great city me and my team are working to find ways to benefit those most marginalised in the city. We have a proud history of defending the most vulnerable among us, it is a tradition I am most proud of.’ - Mayor Billy Bohan ",
-                        "discourse": 0,
-                        "money": 10
-                    }
-                ],
-                "studies": [
-                    {
-                        "text": "",
-                        "discourse": 0,
-                        "money": 0
-                    }
-                ]
+                "interviews": [],
+                "studies": []
             },
-            "The Fortnitely": {
-                "titles": [{
-                    "text": "Bohan questioned over current ‘Rat Crisis’ investigation",
-                    "discourse": 0,
-                    "money": 46
-                }],
-                "content": [
-                    {
-                        "text": "Mayor Bohan has been under scrutiny due to his lack of comments with regard to the Rat Infestation earlier this week. He made a statement saying that he is ‘working to find ways to benefit those most marginalised in the city’. ",
-                        "discourse": 22,
-                        "money": 13
-                    },
-                    {
-                        "text": "Despite his conviction, the specifics of his plans have been revealed. He further stated that he 'wanted to get this right' and avoid any missteps. However, this may be too slow to stop further escalation. ",
-                        "discourse": -25,
-                        "money": 43
-                    }
-                ],
+            "Center-wing Agency": {
+                "titles": [],
+                "content": [],
                 "images": [
                     {
                         "text": "res://Art/Pictures/BillyBohanOfGuard.png",
@@ -1386,25 +1249,8 @@
                         "money": 1
                     }
                 ],
-                "interviews": [
-                    {
-                        "text": "‘I have heard the people of Bathington and in the spirit of this great city me and my team are working to find ways to benefit those most marginalised in the city. We have a proud history of defending the most vulnerable among us, it is a tradition I am most proud of.’ - Mayor Billy Bohan",
-                        "discourse": -12,
-                        "money": 34
-                    },
-                    {
-                        "text": "‘It is of utmost importance that we get this right the first time. I understand the frustration due to the lack of specifics but this is a delicate issue.’ - Mayor Billy Bohan ",
-                        "discourse": 25,
-                        "money": 13
-                    }
-                ],
-                "studies": [
-                    {
-                        "text": "",
-                        "discourse": 0,
-                        "money": 0
-                    }
-                ]
+                "interviews": [],
+                "studies": []
             }
             
         }
@@ -1412,30 +1258,12 @@
     {
         "event": "City of peace",
         "agencies": {
-            "The Defender": {
+            "Left-wing Agency": {
                 "titles": [
-                    {
-                        "text": "Protesters give up on the demonstration.",
-                        "discourse": 52,
-                        "money": 2
-                    },
-                    {
-                        "text": "Mayor has abandoned the poor for Nepotism! ",
-                        "discourse": -75,
-                        "money": 37
-                    }
+                    
                 ],
                 "content": [
-                    {
-                        "text": "After the spike of rat infestations, the short term relief has resulted in a quelling of tensions around the city. The Mayor has stated that the details of his plans will be revealed tomorrow.",
-                        "discourse": 32,
-                        "money": 3
-                    },
-                    {
-                        "text": "After his vague statement, Bohan, has still failed to reveal any details to his plan for fixing these long term issues. Furthermore, it has been found that his short term relief has been used to funnel money into the pockets of Hans Handel, his brother in law. ",
-                        "discourse": -35,
-                        "money": 24
-                    }
+                    
                 ],
                 "images": [
                     {
@@ -1462,43 +1290,15 @@
                     }
                 ],
                 "interviews": [
-                    {
-                        "text": "",
-                        "discourse": 0,
-                        "money": 0
-                    }
+                    
                 ],
                 "studies": [
-                    {
-                        "text": "",
-                        "discourse": 0,
-                        "money": 0
-                    }
+                    
                 ]
             },
-            "The Moon": {
-                "titles": [{
-                    "text": "Protesters give up on the demonstration.",
-                    "discourse": 52,
-                    "money": 2
-                },
-                {
-                    "text": "Mayor appeals to ‘Woke’ crowd before election.",
-                    "discourse": -72,
-                    "money": 54
-                }],
-                "content": [
-                    {
-                        "text": "After the spike of rat infestations, the short term relief has resulted in a quelling of tensions around the city. The Mayor has stated that the details of his plans will be revealed tomorrow. ",
-                        "discourse": 32,
-                        "money": 4
-                    },
-                    {
-                        "text": "In his statement, Bohan fully committed to the agenda peddled by those who have demanded far left social reforms during the protests. Not only has these protests hamstrung the Mayor’s ability to enact pro-small business policy but it is also a possible beginning of a slippery slope. ",
-                        "discourse": -32,
-                        "money": 26
-                    }
-                ],
+            "Right-wing Agency": {
+                "titles": [],
+                "content": [],
                 "images": [
                     {
                         "text": "res://Art/Pictures/BillyBohanPose.png",
@@ -1523,44 +1323,12 @@
                         "money": 1
                     }
                 ],
-                "interviews": [
-                    {
-                        "text": "",
-                        "discourse": 0,
-                        "money": 0
-                    }
-                ],
-                "studies": [{
-                    "text": "",
-                    "discourse": 0,
-                    "money": 0
-                }]
+                "interviews": [],
+                "studies": []
             },
-            "The Fortnitely": {
-                "titles": [
-                    {
-                        "text": "Protesters give up on the demonstration.",
-                        "discourse": 52,
-                        "money": 2
-                    },
-                    {
-                        "text": "Bohan possibly to announce major public housing reforms?",
-                        "discourse": -57,
-                        "money": 35
-                    }
-                ],
-                "content": [
-                    {
-                        "text": "After the spike of rat infestations, the short term relief has resulted in a quelling of tensions around the city. The Mayor has stated that the details of his plans will be revealed tomorrow. ",
-                        "discourse": 37,
-                        "money": 0
-                    },
-                    {
-                        "text": "",
-                        "discourse": -37,
-                        "money": 35
-                    }
-                ],
+            "Center-wing Agency": {
+                "titles": [],
+                "content": [],
                 "images": [
                     {
                         "text": "res://Art/Pictures/BillyBohanPose.png",
@@ -1585,20 +1353,8 @@
                         "money": 1
                     }
                 ],
-                "interviews": [
-                    {
-                        "text": "",
-                        "discourse": 0,
-                        "money": 0
-                    }
-                ],
-                "studies": [
-                    {
-                        "text": "",
-                        "discourse": 0,
-                        "money": 0
-                    }
-                ]
+                "interviews": [],
+                "studies": []
             }
             
         }
