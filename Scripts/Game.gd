@@ -7,6 +7,7 @@ var discord = 0
 var connections = 1
 var moneyCost = 0
 var interviews = true
+var state = null
 export(int) var billsCost = 100
 export(int) var connectionCost = 20
 export(int) var interviewCost = 30
@@ -14,7 +15,7 @@ export(int) var interviewCost = 30
 onready var topicLabel = $NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper/Topic
 onready var titleChoice = $NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper/ArticleTitle
 onready var textChoice = $NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper/TextChoice
-onready var imageChoice = $NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper/Imagechoice
+onready var imageChoice = $NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper/ImageChoice
 onready var captionChoice = $NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper/CaptionChoice
 onready var studyChoice = $NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper/StudyChoice
 onready var interviewChoice = $NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper/InterviewChoice
@@ -29,13 +30,16 @@ func _ready() -> void:
 	$BillPanel.visible = false
 	
 	$Fader.play("DayPanelFadeOut")
+	
+	state = PathTree.get_next_state(state, discord)
 
 func dayForward() -> void:
 	day += 1
+	state = PathTree.get_next_state(state, discord)
 	$DayPanel/CenterContainer/DayLabel.updateDayText(day)
 
 func setupAgenciesAvailable() -> void:
-	$AgencyPanel/CenterContainer/OptionButton.items.clear()
+	$AgencyPanel/CenterContainer/OptionButton.clear()
 	$AgencyPanel/CenterContainer/OptionButton.add_item("Select an Agency to work for")
 	$AgencyPanel/CenterContainer/OptionButton.selected = 0
 	var agencies = ArticleContent.get_agencies(day - 1)
@@ -48,17 +52,20 @@ func setupTopicDropDowns() -> void:
 		a.clear()
 	$NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper/Topic.text = ArticleContent.get_event(day - 1)
 
-	var titles = ArticleContent.get_title_strings(day - 1, selectedAgency)
-	var texts = ArticleContent.get_content_strings(day - 1, selectedAgency)
-	var images = ArticleContent.get_image_strings(day - 1, selectedAgency)
-	var captions = ArticleContent.get_caption_strings(day - 1, selectedAgency)
-	var studies = ArticleContent.get_study_strings(day - 1, selectedAgency)
+	var temp = state.get_event_index()
+	print(temp)
+	var titles = ArticleContent.get_title_strings(temp-1, selectedAgency)
+	var texts = ArticleContent.get_content_strings(temp-1, selectedAgency)
+	var images = ArticleContent.get_image_strings(temp-1, selectedAgency)
+	var captions = ArticleContent.get_caption_strings(temp-1, selectedAgency)
+	var studies = ArticleContent.get_study_strings(temp-1, selectedAgency)
 		
-	calc = ArticleContent.Calculator.new(day-1, selectedAgency, discord, money)
+	calc = ArticleContent.Calculator.new(temp-1, selectedAgency, discord, money)
 	
 	for title in titles:
 		titleChoice.add_item(title)
 	for text in texts:
+		print(text)
 		textChoice.add_item(text)
 	for image in images:
 		imageChoice.add_icon_item(load(image), "")
@@ -69,7 +76,7 @@ func setupTopicDropDowns() -> void:
 	interviewChoice.visible = interviews
 	if interviews:
 		var interviewIcon = load("res://icon.png")
-		var interviewItems = ArticleContent.get_interview_strings(day - 1, selectedAgency)
+		var interviewItems = ArticleContent.get_interview_strings(temp-1, selectedAgency)
 		for interview in interviewItems:
 			interviewChoice.add_icon_item(interviewIcon, interview)
 
@@ -90,15 +97,16 @@ func _on_EventButton_pressed() -> void:
 func _on_Publish_pressed() -> void:
 	$Fader.play("NewspaperCreationPanelFadeOut")
 	print(titleChoice.selected)
-	calc.add_title(titleChoice.selected)
-	calc.add_content(textChoice.selected)
+	calc.add_title(titleChoice.selected())
+	calc.add_content(textChoice.selected())
 	calc.add_image(imageChoice.selected)
-	calc.add_caption(captionChoice.selected)
-	calc.add_study(studyChoice.selected)
+	calc.add_caption(captionChoice.selected())
+	calc.add_study(studyChoice.selected())
 	if interviews:
 		calc.add_interview(interviewChoice.selected)
 	money = calc.get_money()
 	discord = calc.get_discord()
+	discord = clamp(discord,-500, 500)
 	$BillPanel2/Stats.set_discord(discord)
 	$BillPanel2/Stats.set_money(money)
 	
