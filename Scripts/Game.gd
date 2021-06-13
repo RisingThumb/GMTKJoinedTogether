@@ -53,7 +53,6 @@ func setupTopicDropDowns() -> void:
 	$NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper/Topic.text = ArticleContent.get_event(day - 1)
 
 	var temp = state.get_event_index()
-	print(temp)
 	var titles = ArticleContent.get_title_strings(temp-1, selectedAgency)
 	var texts = ArticleContent.get_content_strings(temp-1, selectedAgency)
 	var images = ArticleContent.get_image_strings(temp-1, selectedAgency)
@@ -68,17 +67,16 @@ func setupTopicDropDowns() -> void:
 		print(text)
 		textChoice.add_item(text)
 	for image in images:
-		imageChoice.add_icon_item(load(image), "")
+		imageChoice.add_icon_item(image, "")
 	for caption in captions:
 		captionChoice.add_item(caption)
 	for study in studies:
 		studyChoice.add_item(study)
 	interviewChoice.visible = interviews
 	if interviews:
-		var interviewIcon = load("res://icon.png")
 		var interviewItems = ArticleContent.get_interview_strings(temp-1, selectedAgency)
 		for interview in interviewItems:
-			interviewChoice.add_icon_item(interviewIcon, interview)
+			interviewChoice.add_icon_item("res://icon.png", interview)
 
 
 func _on_OptionButton_item_selected(index: int) -> void:
@@ -96,14 +94,14 @@ func _on_EventButton_pressed() -> void:
 
 func _on_Publish_pressed() -> void:
 	$Fader.play("NewspaperCreationPanelFadeOut")
-	print(titleChoice.selected)
+	print(titleChoice.selected())
 	calc.add_title(titleChoice.selected())
 	calc.add_content(textChoice.selected())
-	calc.add_image(imageChoice.selected)
+	calc.add_image(imageChoice.selected())
 	calc.add_caption(captionChoice.selected())
 	calc.add_study(studyChoice.selected())
 	if interviews:
-		calc.add_interview(interviewChoice.selected)
+		calc.add_interview(interviewChoice.selected())
 	money = calc.get_money()
 	discord = calc.get_discord()
 	discord = clamp(discord,-500, 500)
