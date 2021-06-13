@@ -8,9 +8,9 @@ var connections = 1
 var moneyCost = 0
 var interviews = false
 
-export(int) var billsCost = 20
+export(int) var billsCost = 40
 export(int) var connectionCost = 20
-export(int) var interviewCost = 5
+export(int) var interviewCost = 10
 
 onready var topicLabel = $NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper/Topic
 onready var titleChoice = $NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper/ArticleTitle
@@ -38,14 +38,16 @@ func _ready() -> void:
 	state = PathTree.get_next_state(null, discord)
 	event_index = state.get_event_index()
 
+func triggerEnding(string: String) -> void:
+	get_tree().change_scene("res://Scenes/Ending.tscn")
+	ArticleContent.ending_label_message = string
+
 func dayForward() -> void:
 	day += 1
 	state = PathTree.get_next_state(state, discord)
 	
 	if state.get_children().size() == 0:
-		get_tree().change_scene("res://Scenes/Ending.tscn")
-		ArticleContent.ending_label_message = str(state.get_name(), " ", state.get_description())
-		
+		triggerEnding(str(state.get_name(), " ", state.get_description()))
 		return
 		
 	event_index = state.get_event_index()
@@ -136,7 +138,8 @@ func _on_Publish_pressed() -> void:
 	$NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper/Publish.disabled = true
 
 func bankruptEnding():
-	print("You went bankrupt")
+	triggerEnding("You didn't pay your bills. You were forcibly removed and viciously mauled by hordes of rats. The end. Next time try paying your bills on time.")
+	# print("You went bankrupt")
 
 func _on_FinishFinanceButton_pressed() -> void:
 	money -= moneyCost
