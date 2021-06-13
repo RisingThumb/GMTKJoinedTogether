@@ -40,17 +40,15 @@ func _ready() -> void:
 
 func dayForward() -> void:
 	day += 1
-	var new_state = PathTree.get_next_state(state, discord)
+	state = PathTree.get_next_state(state, discord)
 	
-	if new_state == null:
+	if state.get_children().size() == 0:
 		get_tree().change_scene("res://Scenes/Ending.tscn")
 		ArticleContent.ending_label_message = str(state.get_name(), " ", state.get_description())
 		
 		return
 		
-	state = new_state
 	event_index = state.get_event_index()
-	
 	$DayPanel/CenterContainer/DayLabel.updateDayText(day)
 
 func setupAgenciesAvailable() -> void:
