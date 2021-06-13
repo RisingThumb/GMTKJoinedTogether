@@ -38,16 +38,20 @@ func _ready() -> void:
 	state = PathTree.get_next_state(null, discord)
 	event_index = state.get_event_index()
 
-func triggerEnding(string: String) -> void:
+func triggerEnding(string: String, url: String) -> void:
 	get_tree().change_scene("res://Scenes/Ending.tscn")
+	
 	ArticleContent.ending_label_message = string
+	ArticleContent.ending_image = load(url)
 
 func dayForward() -> void:
 	day += 1
 	state = PathTree.get_next_state(state, discord)
 	
 	if state.get_children().size() == 0:
-		triggerEnding(str(state.get_name(), " ", state.get_description()))
+		var message = str(state.get_name(), " ", state.get_description())
+		triggerEnding(message, state.get_image_url())
+		
 		return
 		
 	event_index = state.get_event_index()
@@ -138,8 +142,7 @@ func _on_Publish_pressed() -> void:
 	$NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper/Publish.disabled = true
 
 func bankruptEnding():
-	triggerEnding("You didn't pay your bills. You were forcibly removed and viciously mauled by hordes of rats. The end. Next time try paying your bills on time.")
-	# print("You went bankrupt")
+	triggerEnding("You didn't pay your bills. You were forcibly removed and viciously mauled by hordes of rats. The end. Next time try paying your bills on time.", "res://Art/EndingStarveScreen.png")
 
 func _on_FinishFinanceButton_pressed() -> void:
 	money -= moneyCost

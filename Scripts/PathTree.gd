@@ -7,6 +7,7 @@ class State:
 	var name: String
 	var description: String
 	var event_index: int
+	var image_url: String
 	
 	var children: Array
 	var ranges: Array
@@ -20,16 +21,20 @@ class State:
 	func get_event_index():
 		return event_index
 		
+	func get_image_url():
+		return image_url	
+	
 	func get_children():
 		return children
 		
 	func get_ranges():
 		return ranges
 		
-	func _init(_name: String, _description: String, _event_index: int):
+	func _init(_name: String, _description: String, _event_index: int, _image_url: String):
 		name = _name
 		description = _description
 		event_index = _event_index
+		image_url = _image_url
 	
 	func _set_children(_children: Array):
 		children = _children
@@ -58,7 +63,7 @@ func _construct_tree(data):
 	var states = []
 	
 	for object in data["states"]:
-		states.push_back(State.new(object["name"], object["description"], object["event_index"]))
+		states.push_back(State.new(object["name"], object["description"], object["event_index"], object["image_url"]))
 	
 	for association in data["associations"]:
 		var to = association["to"]

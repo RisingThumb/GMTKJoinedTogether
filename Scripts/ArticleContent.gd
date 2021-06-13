@@ -4,6 +4,7 @@ export(String) var article_content_file
 var article_content
 
 var ending_label_message
+var ending_image
 
 const DEFAULT_OBJECT = {
 	"discourse": 0,
