@@ -9,18 +9,16 @@
 [ext_resource path="res://Themes/UnderlineTextStyle.tres" type="StyleBox" id=7]
 [ext_resource path="res://Themes/BoxFlatTransparent.tres" type="StyleBox" id=8]
 [ext_resource path="res://Themes/LineSeperator.tres" type="StyleBox" id=9]
+[ext_resource path="res://Themes/VertScroll.tres" type="StyleBox" id=10]
+[ext_resource path="res://Themes/Line.tres" type="StyleBox" id=11]
 
 [sub_resource type="StyleBoxLine" id=1]
 thickness = 2
 
 [sub_resource type="StyleBoxLine" id=2]
-thickness = 2
-
-[sub_resource type="StyleBoxLine" id=3]
-thickness = 2
-
-[sub_resource type="StyleBoxLine" id=4]
-thickness = 2
+color = Color( 1, 1, 1, 0 )
+thickness = 10
+vertical = true
 
 [resource]
 Button/colors/font_color = Color( 0, 0, 0, 1 )
@@ -59,9 +57,9 @@ HSlider/icons/grabber = ExtResource( 3 )
 HSlider/icons/grabber_disabled = ExtResource( 3 )
 HSlider/icons/grabber_highlight = ExtResource( 3 )
 HSlider/icons/tick = ExtResource( 3 )
-HSlider/styles/grabber_area = SubResource( 2 )
-HSlider/styles/grabber_area_highlight = SubResource( 3 )
-HSlider/styles/slider = SubResource( 4 )
+HSlider/styles/grabber_area = ExtResource( 11 )
+HSlider/styles/grabber_area_highlight = ExtResource( 11 )
+HSlider/styles/slider = ExtResource( 11 )
 Label/colors/font_color = Color( 0, 0, 0, 1 )
 Label/colors/font_color_shadow = Color( 0, 0, 0, 0 )
 Label/colors/font_outline_modulate = Color( 0, 0, 0, 1 )
@@ -103,3 +101,12 @@ PopupMenu/styles/labeled_separator_right = ExtResource( 1 )
 PopupMenu/styles/panel = ExtResource( 1 )
 PopupMenu/styles/panel_disabled = ExtResource( 1 )
 PopupMenu/styles/separator = ExtResource( 9 )
+VScrollBar/icons/decrement = null
+VScrollBar/icons/decrement_highlight = null
+VScrollBar/icons/increment = null
+VScrollBar/icons/increment_highlight = null
+VScrollBar/styles/grabber = ExtResource( 10 )
+VScrollBar/styles/grabber_highlight = ExtResource( 10 )
+VScrollBar/styles/grabber_pressed = ExtResource( 10 )
+VScrollBar/styles/scroll = SubResource( 2 )
+VScrollBar/styles/scroll_focus = null
