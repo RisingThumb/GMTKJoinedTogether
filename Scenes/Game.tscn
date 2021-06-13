@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://Scripts/DayLabel.gd" type="Script" id=1]
 [ext_resource path="res://Scripts/Game.gd" type="Script" id=2]
@@ -11,6 +11,8 @@
 [ext_resource path="res://Scenes/WrappedOptionsMenu.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Scenes/WrappedOptionsMenuIcon.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Themes/TitleText.tres" type="DynamicFont" id=11]
+[ext_resource path="res://Audio/Button.wav" type="AudioStream" id=12]
+[ext_resource path="res://Audio/Submit.wav" type="AudioStream" id=13]
 
 [sub_resource type="Animation" id=1]
 resource_name = "AgencyPanelFadeOut"
@@ -804,8 +806,10 @@ anims/NewspaperCreationPanelFadeOut = SubResource( 5 )
 stream = ExtResource( 3 )
 
 [node name="SubmitAudio" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 13 )
 
 [node name="ButtonAudio" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 12 )
 
 [connection signal="pressed" from="EventPanel/CenterContainer/VBoxContainer/EventButton" to="." method="_on_EventButton_pressed"]
 [connection signal="item_selected" from="AgencyPanel/CenterContainer/OptionButton" to="." method="_on_OptionButton_item_selected"]

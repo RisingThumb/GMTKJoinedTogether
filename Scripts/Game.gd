@@ -101,6 +101,7 @@ func setupTopicDropDowns() -> void:
 
 
 func _on_OptionButton_item_selected(index: int) -> void:
+	$ButtonAudio.play()
 	$AgencyPanel/CenterContainer/OptionButton.disabled = true
 	$NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper/Publish.disabled = false
 	selectedAgency = $AgencyPanel/CenterContainer/OptionButton.get_item_text(index)
@@ -108,12 +109,14 @@ func _on_OptionButton_item_selected(index: int) -> void:
 
 
 func _on_EventButton_pressed() -> void:
+	$ButtonAudio.play()
 	$NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper/Publish.disabled = true
 	$Fader.play("EventPanelFadeOut")
 	$NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper/Publish.disabled = false
 
 
 func _on_Publish_pressed() -> void:
+	$ButtonAudio.play()
 	$Fader.play("NewspaperCreationPanelFadeOut")
 	
 	calc.add_title(titleChoice.selected())
@@ -144,6 +147,7 @@ func _on_FinishFinanceButton_pressed() -> void:
 	interviews = $BillPanel/CenterContainer/VBoxContainer/CheckInterview.pressed
 	$BillPanel2/Stats.set_money(money)
 	$Fader.play("BillFadeout")
+	$ButtonAudio.play()
 	dayForward()
 
 func recalculateBills():
@@ -159,12 +163,15 @@ func recalculateBills():
 	$BillPanel/CenterContainer/VBoxContainer/HBoxContainer3/NewMoneyAmount.text = str(money-moneyCost)
 
 func _on_CheckBill_pressed():
+	$ButtonAudio.play()
 	recalculateBills()
 
 
 func _on_CheckConnection_pressed():
+	$ButtonAudio.play()
 	recalculateBills()
 
 
 func _on_CheckInterview_pressed():
+	$ButtonAudio.play()
 	recalculateBills()
