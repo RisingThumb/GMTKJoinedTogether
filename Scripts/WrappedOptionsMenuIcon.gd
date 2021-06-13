@@ -6,7 +6,7 @@ extends HBoxContainer
 # var b = "text"
 var day = 0
 var agency = ""
-var briefs = [""]
+var briefs = []
 
 func set_day(var day:int) -> void:
 	self.day = day
@@ -20,7 +20,7 @@ func set_briefs(var briefs:Array) -> void:
 func _process(delta) -> void:
 	var index = $Label/TextureRect/TextChoice.selected
 	var textToUse
-	if index == -1:
+	if index == -1 || briefs.size() == 0:
 		textToUse = ""
 	else:
 		textToUse = briefs[index]
@@ -32,7 +32,7 @@ func add_item(var textToAdd : String) -> void:
 func add_icon_item(var imagePath: String, textToAdd : String) -> void:
 	var img = load(imagePath)
 	$Label/TextureRect/TextChoice.add_icon_item(img, textToAdd)
-	$TextureRect.texture = img
+	$TextureRect.texture = $Label/TextureRect/TextChoice.icon
 	
 
 func selected() -> int:
@@ -47,3 +47,7 @@ func clear():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
+
+
+func _on_TextChoice_item_selected(index):
+	$TextureRect.texture = $Label/TextureRect/TextChoice.icon

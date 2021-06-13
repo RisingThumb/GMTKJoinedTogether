@@ -16,9 +16,7 @@
 thickness = 2
 
 [sub_resource type="StyleBoxLine" id=2]
-color = Color( 1, 1, 1, 0 )
-thickness = 10
-vertical = true
+thickness = 2
 
 [resource]
 Button/colors/font_color = Color( 0, 0, 0, 1 )

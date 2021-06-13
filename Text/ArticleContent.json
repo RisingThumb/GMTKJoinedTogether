@@ -24,7 +24,12 @@
                 ],
                 "images": [
                     {
-                        "text": "res://Art/RatsKillingPerson.jpg",
+                        "text": "res://Art/Pictures/CityScape.png",
+                        "discourse": 100,
+                        "money": 10000
+                    },
+                    {
+                        "text": "res://Art/Pictures/CityScape2.png",
                         "discourse": 100,
                         "money": 10000
                     }
@@ -118,7 +123,21 @@
                     }
                 ],
                 "images": [
-                    
+                    {
+                        "text": "res://Art/Pictures/CityScape2.png",
+                        "discourse": 10,
+                        "money": 5
+                    },
+                    {
+                        "text": "res://Art/Pictures/PoorNeighbourhood.png",
+                        "discourse": -30,
+                        "money": 20
+                    },
+                    {
+                        "text": "res://Art/Pictures/BillyBohanScared.png",
+                        "discourse": 20,
+                        "money": 15
+                    }
                 ],
                 "captions": [
                     

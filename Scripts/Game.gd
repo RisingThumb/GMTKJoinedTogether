@@ -89,9 +89,10 @@ func setupTopicDropDowns() -> void:
 	interviewChoice.visible = interviews
 	if interviews:
 		var interviewItems = ArticleContent.get_interview_strings(event_index, selectedAgency)
+		#var interviewItemsLong = ArticleContent.get_interview_strings(event_index, selectedAgency)
 		interviewChoice.set_briefs(interviewItems)
 		for interview in interviewItems:
-			interviewChoice.add_icon_item("res://icon.png", interview)
+			interviewChoice.add_item(interview)
 
 
 func _on_OptionButton_item_selected(index: int) -> void:
