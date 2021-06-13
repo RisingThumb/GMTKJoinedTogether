@@ -115,6 +115,7 @@ func _on_Publish_pressed() -> void:
 	discord = clamp(discord,-500, 500)
 	$BillPanel2/Stats.set_discord(discord)
 	$BillPanel2/Stats.set_money(money)
+	recalculateBills()
 	
 	$NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper/Publish.disabled = true
 
