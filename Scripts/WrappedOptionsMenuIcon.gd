@@ -51,3 +51,4 @@ func clear():
 
 func _on_TextChoice_item_selected(index):
 	$TextureRect.texture = $Label/TextureRect/TextChoice.icon
+	$AudioStreamPlayer.play()
