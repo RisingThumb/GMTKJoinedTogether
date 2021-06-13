@@ -8,9 +8,9 @@ var connections = 1
 var moneyCost = 0
 var interviews = false
 
-export(int) var billsCost = 100
+export(int) var billsCost = 20
 export(int) var connectionCost = 20
-export(int) var interviewCost = 30
+export(int) var interviewCost = 5
 
 onready var topicLabel = $NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper/Topic
 onready var titleChoice = $NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper/ArticleTitle
