@@ -4,10 +4,22 @@ extends HBoxContainer
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
+var day = 0
+var agency = ""
+var briefs = [""]
 
+func set_day(var day:int) -> void:
+	self.day = day
+
+func set_agency(var agency:String) -> void:
+	self.agency = agency
+
+func set_briefs(var briefs:Array) -> void:
+	self.briefs = briefs
 
 func _process(delta) -> void:
-	$Label.text = "* " + $Label/TextureRect/TextChoice.text
+	var textToUse = briefs[$Label/TextureRect/TextChoice.selected]
+	$Label.text = "* " + textToUse
 
 func add_item(var textToAdd : String) -> void:
 	$Label/TextureRect/TextChoice.add_item(textToAdd)

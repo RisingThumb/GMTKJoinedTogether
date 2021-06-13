@@ -58,13 +58,20 @@ func setupAgenciesAvailable() -> void:
 func setupTopicDropDowns() -> void:
 	for a in [titleChoice, textChoice, imageChoice, captionChoice, studyChoice, interviewChoice]:
 		a.clear()
+		a.set_agency(selectedAgency)
+		a.set_day(event_index)
 	$NewspaperCreationPanel/CenterContainer/ScrollContainer/Paper/Topic.text = ArticleContent.get_event(day - 1)
 
 	var titles = ArticleContent.get_title_strings(event_index, selectedAgency)
+	titleChoice.set_briefs(titles)
 	var texts = ArticleContent.get_content_strings_brief(event_index, selectedAgency)
+	var textsFull = ArticleContent.get_content_strings(event_index, selectedAgency)
+	textChoice.set_briefs(textsFull)
 	var images = ArticleContent.get_image_strings(event_index, selectedAgency)
 	var captions = ArticleContent.get_caption_strings(event_index, selectedAgency)
+	captionChoice.set_briefs(captions)
 	var studies = ArticleContent.get_study_strings(event_index, selectedAgency)
+	studyChoice.set_briefs(studies)
 	
 	calc = ArticleContent.Calculator.new(event_index, selectedAgency, discord, money)
 	
@@ -82,6 +89,7 @@ func setupTopicDropDowns() -> void:
 	interviewChoice.visible = interviews
 	if interviews:
 		var interviewItems = ArticleContent.get_interview_strings(event_index, selectedAgency)
+		interviewChoice.set_briefs(interviewItems)
 		for interview in interviewItems:
 			interviewChoice.add_icon_item("res://icon.png", interview)
 
