@@ -70,15 +70,15 @@ func setupTopicDropDowns() -> void:
 	var images = ArticleContent.get_image_strings(event_index, selectedAgency)
 	var captions = ArticleContent.get_caption_strings(event_index, selectedAgency)
 	captionChoice.set_briefs(captions)
-	var studies = ArticleContent.get_study_strings(event_index, selectedAgency)
-	studyChoice.set_briefs(studies)
+	var studies = ArticleContent.get_study_strings_brief(event_index, selectedAgency)
+	var studiesLong = ArticleContent.get_study_strings(event_index, selectedAgency)
+	studyChoice.set_briefs(studiesLong)
 	
 	calc = ArticleContent.Calculator.new(event_index, selectedAgency, discord, money)
 	
 	for title in titles:
 		titleChoice.add_item(title)
 	for text in texts:
-		print(text)
 		textChoice.add_item(text)
 	for image in images:
 		imageChoice.add_icon_item(image, "")
@@ -88,8 +88,8 @@ func setupTopicDropDowns() -> void:
 		studyChoice.add_item(study)
 	interviewChoice.visible = interviews
 	if interviews:
-		var interviewItems = ArticleContent.get_interview_strings(event_index, selectedAgency)
-		#var interviewItemsLong = ArticleContent.get_interview_strings(event_index, selectedAgency)
+		var interviewItems = ArticleContent.get_interview_strings_brief(event_index, selectedAgency)
+		var interviewItemsLong = ArticleContent.get_interview_strings(event_index, selectedAgency)
 		interviewChoice.set_briefs(interviewItems)
 		for interview in interviewItems:
 			interviewChoice.add_item(interview)
