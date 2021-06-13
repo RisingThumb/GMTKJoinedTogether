@@ -359,7 +359,9 @@
                 "interviews": [
                     
                 ],
-                "studies": []
+                "studies": [
+                  
+                ]
             },
             "Right-wing Agency": {
                 "titles": [
@@ -444,51 +446,22 @@
         "agencies": {
             "Left-wing Agency": {
                 "titles": [
-                    {
-                        "text": "Rats are Taking Over!!!!",
-                        "discourse": 10,
-                        "money": 100
-                    },
-                    {
-                        "text": "Rats the Facts",
-                        "discourse": 1984,
-                        "money": 10
-                    }
+                    
                 ],
                 "content": [
-                    {
-                        "text": "The rats killed someone at 9am...",
-                        "discourse": 1000,
-                        "money": 1000000
-                    }
+                    
                 ],
                 "images": [
-                    {
-                        "text": "res://Art/RatsKillingPerson.jpg",
-                        "discourse": 100,
-                        "money": 10000
-                    }
+                    
                 ],
                 "captions": [
-                    {
-                        "text": "hello",
-                        "discourse": 1,
-                        "money": 1
-                    }
+                    
                 ],
                 "interviews": [
-                    {
-                        "text": "I am a art expert and I am scared",
-                        "discourse": 100,
-                        "money": 234834095834
-                    }
+                    
                 ],
                 "studies": [
-                    {
-                        "text": "Arts are bad mostly but sometimes ok",
-                        "discourse": 23904,
-                        "money": 092384203948
-                    }
+                    
                 ]
             },
             "Right-wing Agency": {
@@ -515,51 +488,22 @@
         "agencies": {
             "Left-wing Agency": {
                 "titles": [
-                    {
-                        "text": "Rats are Taking Over!!!!",
-                        "discourse": 10,
-                        "money": 100
-                    },
-                    {
-                        "text": "Rats the Facts",
-                        "discourse": 1984,
-                        "money": 10
-                    }
+                    
                 ],
                 "content": [
-                    {
-                        "text": "The rats killed someone at 9am...",
-                        "discourse": 1000,
-                        "money": 1000000
-                    }
+                    
                 ],
                 "images": [
-                    {
-                        "text": "res://Art/RatsKillingPerson.jpg",
-                        "discourse": 100,
-                        "money": 10000
-                    }
+                    
                 ],
                 "captions": [
-                    {
-                        "text": "hello",
-                        "discourse": 1,
-                        "money": 1
-                    }
+                    
                 ],
                 "interviews": [
-                    {
-                        "text": "I am a art expert and I am scared",
-                        "discourse": 100,
-                        "money": 234834095834
-                    }
+                    
                 ],
                 "studies": [
-                    {
-                        "text": "Arts are bad mostly but sometimes ok",
-                        "discourse": 23904,
-                        "money": 092384203948
-                    }
+                    
                 ]
             },
             "Right-wing Agency": {
@@ -586,51 +530,22 @@
         "agencies": {
             "Left-wing Agency": {
                 "titles": [
-                    {
-                        "text": "Rats are Taking Over!!!!",
-                        "discourse": 10,
-                        "money": 100
-                    },
-                    {
-                        "text": "Rats the Facts",
-                        "discourse": 1984,
-                        "money": 10
-                    }
+                    
                 ],
                 "content": [
-                    {
-                        "text": "The rats killed someone at 9am...",
-                        "discourse": 1000,
-                        "money": 1000000
-                    }
+                    
                 ],
                 "images": [
-                    {
-                        "text": "res://Art/RatsKillingPerson.jpg",
-                        "discourse": 100,
-                        "money": 10000
-                    }
+                    
                 ],
                 "captions": [
-                    {
-                        "text": "hello",
-                        "discourse": 1,
-                        "money": 1
-                    }
+                    
                 ],
                 "interviews": [
-                    {
-                        "text": "I am a art expert and I am scared",
-                        "discourse": 100,
-                        "money": 234834095834
-                    }
+                    
                 ],
                 "studies": [
-                    {
-                        "text": "Arts are bad mostly but sometimes ok",
-                        "discourse": 23904,
-                        "money": 092384203948
-                    }
+                    
                 ]
             },
             "Right-wing Agency": {
@@ -657,51 +572,22 @@
         "agencies": {
             "Left-wing Agency": {
                 "titles": [
-                    {
-                        "text": "Rats are Taking Over!!!!",
-                        "discourse": 10,
-                        "money": 100
-                    },
-                    {
-                        "text": "Rats the Facts",
-                        "discourse": 1984,
-                        "money": 10
-                    }
+                    
                 ],
                 "content": [
-                    {
-                        "text": "The rats killed someone at 9am...",
-                        "discourse": 1000,
-                        "money": 1000000
-                    }
+                    
                 ],
                 "images": [
-                    {
-                        "text": "res://Art/RatsKillingPerson.jpg",
-                        "discourse": 100,
-                        "money": 10000
-                    }
+                    
                 ],
                 "captions": [
-                    {
-                        "text": "hello",
-                        "discourse": 1,
-                        "money": 1
-                    }
+                    
                 ],
                 "interviews": [
-                    {
-                        "text": "I am a art expert and I am scared",
-                        "discourse": 100,
-                        "money": 234834095834
-                    }
+                    
                 ],
                 "studies": [
-                    {
-                        "text": "Arts are bad mostly but sometimes ok",
-                        "discourse": 23904,
-                        "money": 092384203948
-                    }
+                    
                 ]
             },
             "Right-wing Agency": {
