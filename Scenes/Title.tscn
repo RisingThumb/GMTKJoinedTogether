@@ -46,4 +46,5 @@ margin_top = 18.0
 margin_right = 102.0
 margin_bottom = 38.0
 text = "Play the game"
+
 [connection signal="pressed" from="CenterContainer/VBoxContainer/Button" to="." method="_on_Button_pressed"]
